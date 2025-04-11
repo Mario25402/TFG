@@ -27,9 +27,10 @@ asignatura = translateAsignatura("2961154", "../externos/asignaturasII.ods")
 print(asignatura) 
 """
 
-listaAsig = Asignaturas("../jesus/horariosgiit.csv")
+listaAsig = Asignaturas("/home/mario/Escritorio/TFG/jesus/horariosgiit.csv")
 #print(listaAsig[0])
 
-listaMat = Matriculas("../jesus/matricula.csv", "../jesus/horariosgiit.csv")
+listaMat = Matriculas("/home/mario/Escritorio/TFG/jesus/matricula.csv", "/home/mario/Escritorio/TFG/jesus/horariosgiit.csv")
 print(listaMat)
+
 

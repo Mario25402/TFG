@@ -38,3 +38,14 @@ class Asignaturas:
 
     def getLongitud(self):
         return len(self.codigos)
+    
+    def getHorario(self, index):
+        res = ""
+        
+        for i in range(len(self.horas)):
+            elemento = str(self.horas[i][index])
+
+            if elemento != "nan":
+                res += f"{translateDia(elemento)}: {translateHora(elemento)} - "
+            
+        return res[:-3]
