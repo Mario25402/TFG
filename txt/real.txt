@@ -1,0 +1,53 @@
+Problema: Crear un programa que realice de manera eficaz la asignación de alumnos a subgrupos de manera que estén equilibrados y se cumpla en la medida de lo posible las peticiones y/o preferencias de cada alumno, indicadas previamente.
+
+Características:
+~~~~~~~~~~ PRE ~~~~~~~~~~
+
+- Formularios de preferencias para los alumnos.
+	- Encuesta para los motivos de asignación de un buen horario.
+	
+- Formularios de ALTERACIÓN de subgrupos.
+	- Categorizar motivos para ordenar prioridad entre peticiones.
+	- A igualdad de condiciones, ordenar manualmente o guiarnos por algún elemento discriminativo como puede ser antelación de relleno del formulario.
+	- Permisividad de la edición manual, ejemplo: permutas.
+	- Susceptibilidad a solapamientos bajo aclaración explicita.
+
+- Se conoce el horario de cada asignatura.
+
+- Se conoce la asignación de cada aula a cada hora.
+
+~~~~~~~~~~ PRE ~~~~~~~~~~
+~~~~~~~~~~ INTRA ~~~~~~~~~~
+
+- Las siguientes asignaciones exceptuando la primera, tienen que basarse en la anterior realizada.
+
+- Las preferencias de los alumnos deben ser tomadas en cuenta.
+
+- Hay cierta holgura al sobrepasar la capacidad de las aulas.
+
+- Aprovecharemos los alumnos que no han dado preferencias para rellenar grupos.
+
+~~~~~~~~~~ INTRA ~~~~~~~~~~
+~~~~~~~~~~ POST ~~~~~~~~~~
+
+- Cambios en tiempo real, si se actualiza un dato, el resultado se generará automáticamente. ***
+
+~~~~~~~~~~ POST ~~~~~~~~~~
+~~~~~~~~~~ COMÚN ~~~~~~~~~~
+
+- El programa debe resultar en asignaciones para cada grado (inf, tel, inf-ade, inf-mat). 
+
+- La interacción del programa debería ser ciertamente interactiva y/o visual.
+
+- Debe haber equilibrio entre el recuento de estudiantes en cada grupo.
+
+- La primera asignación resultante puede que no sea la mejor.
+
+~~~~~~~~~~ COMÚN ~~~~~~~~~~
+
+Casos Específicos:
+ - IES no tiene horario de prácticas.
+ - LMD y CA alternan una misma hora cada semana para el grupo de teleco.
+ - SO tiene cuatro grupos de prácticas.
+ - Los subgrupos de los dobles grados son los mismos.
+ 	- Excepto si hay coincidencias entre asignaturas de diferentes facultades.
