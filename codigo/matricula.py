@@ -11,6 +11,7 @@ class Matriculas():
         self.grupos = df["GRUPO"].tolist()
 
         self.asignaturas = Asignaturas(archivoAsignaturas)
+        self.matriculaciones = self.getMatriculaciones()
     
     ####################
 
@@ -71,17 +72,28 @@ class Matriculas():
         for i in range(len(datos)):
             for valores in datos[i].values():
                 actual = valores[0]
+
+                if actual != anterior:
+                    matriculaciones[anterior] = asignaturas
+                    asignaturas = []
+                    anterior = actual
+
                 asignaturas.append((valores[1], valores[2], valores[3]))
 
             if i == 0: 
                 anterior = actual
 
-            if actual != anterior:
-                matriculaciones[anterior] = asignaturas
-
-                asignaturas = []
-                anterior = actual
-
         return matriculaciones
     
     ####################
+
+    # Devuelve la información de la persona que coincide con el dni
+    def getAsignaturasAlumno(self, alumno):
+        return self.matriculaciones[int(alumno)]
+
+    # Devuelve la información de la persona que coincide con el índice
+    def getIndex(self, index):
+        lista = list(self.matriculaciones.keys())
+        clave = lista[index]
+
+        return {clave: self.getAsignaturasAlumno(clave)}
