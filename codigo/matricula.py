@@ -41,3 +41,34 @@ class Matriculas():
                     break
                                 
         return asignaturas
+    
+    def getMatriculaciones(self):
+        # Clave: alumno
+        # Valor: [(asignatura0, grupo0, horas0), (asignatura1, grupo1, horas1), ...]
+        
+        matAlumno = []
+        for i in range(len(self.dnis)):
+            matAlumno.append((self[i]))
+
+        datos = self.buscarAsignatura(matAlumno)
+
+        actual = None
+        anterior = None
+        asignaturas = []
+        matriculaciones = {}
+
+        for i in range(len(datos)):
+            for valores in datos[i].values():
+                actual = valores[0]
+                asignaturas.append((valores[1], valores[2], valores[3]))
+
+            if i == 0: 
+                anterior = actual
+
+            if actual != anterior:
+                matriculaciones[anterior] = asignaturas
+
+                asignaturas = []
+                anterior = actual
+
+        return matriculaciones
