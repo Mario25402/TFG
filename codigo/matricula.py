@@ -54,6 +54,23 @@ class Matriculas():
         return asignaturas
     
     ####################
+
+    # Clave: asignatura
+    # Valor: [subgrupo0, subgrupo1, subgrupo2]
+    def buscarSubgrupos(self, codigo, grupo):
+        asignaturas = {}
+        subgrupos = []
+
+        for i in self.asignaturas:
+            subgrupo = f"{grupo}."
+
+            if (codigo == i[0]) and re.fullmatch(subgrupo, i[2]):
+                subgrupos.append(i[2])
+
+        asignaturas[codigo] = subgrupos
+        return asignaturas
+
+    ####################
     
     # Clave: alumno
     # Valor: [(asignatura0, grupo0, horas0), (asignatura1, grupo1, horas1), ...]
@@ -73,6 +90,9 @@ class Matriculas():
             for valores in datos[i].values():
                 actual = valores[0]
 
+                if i == 0: 
+                    anterior = actual
+
                 if actual != anterior:
                     matriculaciones[anterior] = asignaturas
                     asignaturas = []
@@ -80,16 +100,15 @@ class Matriculas():
 
                 asignaturas.append((valores[1], valores[2], valores[3]))
 
-            if i == 0: 
-                anterior = actual
-
         return matriculaciones
     
     ####################
 
-    # Devuelve la información de la persona que coincide con el dni
+    # Devuelve las asignaturas, grupos y horas de la persona que coincide con el dni
     def getAsignaturasAlumno(self, alumno):
         return self.matriculaciones[int(alumno)]
+    
+    ####################
 
     # Devuelve la información de la persona que coincide con el índice
     def getIndex(self, index):
@@ -97,3 +116,23 @@ class Matriculas():
         clave = lista[index]
 
         return {clave: self.getAsignaturasAlumno(clave)}
+    
+    ####################
+
+    # Clave: dni
+    # Valor: [{asignatura0: [subgrupo0, subgrupo1, subgrupo2]}, {asignatura1: [subgrupo0, subgrupo1, subgrupo2]}, ...]
+    def getPosiblesSubgrupos(self):
+        resultado = {}
+        subgrupos = []
+
+        for i in self.matriculaciones:
+            asignaturas = self.getAsignaturasAlumno(i)
+
+            for j in range(len(asignaturas)):
+                asignatura = self.buscarSubgrupos(asignaturas[j][0], asignaturas[j][1])
+                subgrupos.append(asignatura) 
+                
+            resultado[i] = subgrupos
+            subgrupos = []
+        
+        return resultado
