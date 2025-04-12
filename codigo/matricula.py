@@ -11,10 +11,16 @@ class Matriculas():
         self.grupos = df["GRUPO"].tolist()
 
         self.asignaturas = Asignaturas(archivoAsignaturas)
+    
+    ####################
 
+    # Dni, codigoCarrera, codigoAsignatura, grupo
     def __getitem__(self, index):
         return self.dnis[index], self.carreras[index], self.codigos[index], self.grupos[index]
     
+    ####################
+    
+    # Alumno: dni, Asignatura: codigo, Grupo: grupo, Horario: dia - hora
     def __str__(self):
         matAlumno = []
         for i in range(len(self.dnis)):
@@ -29,6 +35,10 @@ class Matriculas():
         
         return res
     
+    ####################
+    
+    # Clave: índice
+    # Valor: (dni, codigoAsignatura, grupo, horario)
     def buscarAsignatura(self, matricula):
         asignaturas = []
 
@@ -42,10 +52,11 @@ class Matriculas():
                                 
         return asignaturas
     
+    ####################
+    
+    # Clave: alumno
+    # Valor: [(asignatura0, grupo0, horas0), (asignatura1, grupo1, horas1), ...]
     def getMatriculaciones(self):
-        # Clave: alumno
-        # Valor: [(asignatura0, grupo0, horas0), (asignatura1, grupo1, horas1), ...]
-        
         matAlumno = []
         for i in range(len(self.dnis)):
             matAlumno.append((self[i]))
@@ -72,3 +83,5 @@ class Matriculas():
                 anterior = actual
 
         return matriculaciones
+    
+    ####################

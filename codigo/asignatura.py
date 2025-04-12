@@ -15,30 +15,33 @@ class Asignaturas:
         hora5 = df["HORA5"].tolist()
 
         self.horas = [hora1, hora2, hora3, hora4, hora5]
-        
-    def __str__(self):
-        res = ""
 
-        for i in range(len(self.codigo)):
-            res += f"{self.codigos[i]}: {self.nombres[i]} - {self.grupo[i]}"
+    ####################
 
-            for j in range(len(self.horas)):
-                elemento = self.horas[j][i]
-                elemento = str(elemento)
-
-                if elemento != "nan":
-                    res += f" - {translateDia(elemento)}: {translateHora(elemento)}"
-
-            res += "\n"
-
-        return res
-
+    # Codigo, abreviatura, (sub)grupo
     def __getitem__(self, index):
         return self.codigos[index], self.nombres[index], self.grupo[index]
 
+    ####################
+    
+    # Código: abreviatura - (sub)grupo -> Dia(s): hora(s)
+    def __str__(self):
+        res = ""
+
+        for i in range(len(self.codigos)):
+            res += f"{self.codigos[i]}: {self.nombres[i]} - {self.grupo[i]} -> {self.getHorario(i)}\n"
+
+        return res
+    
+    ####################
+
+    # Número de asignaturas en el archivo
     def getLongitud(self):
         return len(self.codigos)
     
+    ####################
+    
+    # "Dia(s): hora(s)" de la asignatura "index"
     def getHorario(self, index):
         res = ""
         
@@ -48,4 +51,6 @@ class Asignaturas:
             if elemento != "nan":
                 res += f"{translateDia(elemento)}: {translateHora(elemento)} - "
             
-        return res[:-3]
+        return res[:-3] # Eliminar último guión
+    
+    ####################

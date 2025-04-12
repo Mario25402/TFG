@@ -1,7 +1,7 @@
-import pandas as pd
+####################
+# Funciones auxiliares
 
-##########
-
+# Traduce el código a día de la semana
 def translateDia(num):
     num = num[0]
 
@@ -18,6 +18,7 @@ def translateDia(num):
     
 ##########
     
+# Traduce el código a hora
 def translateHora(num):
     num = num[1:3]
 
@@ -48,7 +49,8 @@ def translateHora(num):
     
 ##########
 
-def translateGrado(codigo): ## COMPROBAR NUMEROS
+# Traduce el código a grado
+def translateGrado(codigo): # Useless I think
     codigo = codigo[0:3]
 
     if codigo == "296":
@@ -64,20 +66,3 @@ def translateGrado(codigo): ## COMPROBAR NUMEROS
     # 999 es reconocimiento de creditos
     # 230 es caminos
     # en la columna de CEA me puedo encontrar de todo con los erasmus
-    
-##########
-    
-def translateAsignatura(codigo, archivo):
-    if isinstance(codigo, str):
-        codigo = int(codigo)
-
-    codigos, asignaturas = procesarAsignaturas(archivo)
-    indice = codigos.tolist().index(codigo)
-    return asignaturas[indice]
-        
-##########
-
-def procesarAsignaturas(archivo):
-    return True
-
-##########
