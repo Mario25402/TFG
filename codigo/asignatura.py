@@ -54,3 +54,30 @@ class Asignaturas:
         return res[:-3] # Eliminar último guión
     
     ####################
+
+    # "Dia(s): hora(s)" de una asignatura con grupo
+    def getHorario(self, asignatura, grupo):
+        res = ""
+        
+        for i in range(len(self.codigos)):
+            if self.codigos[i] == asignatura and self.grupo[i] == grupo:
+
+                for j in range(len(self.horas)):
+                    elemento = str(self.horas[j][i])
+
+                    if elemento != "nan":
+                        res += f"{translateDia(elemento)}: {translateHora(elemento)} - "
+                
+                return res[:-3]
+            
+    ####################
+
+    # Lista de los códigos horarios para una asignatura y grupo
+    def getCodigoHoras(self, asignatura, grupo):
+        res = []
+        
+        for i in range(len(self.codigos)):
+            if self.codigos[i] == asignatura and self.grupo[i] == grupo:
+                res.append(self.horas[i])
+
+        return res
