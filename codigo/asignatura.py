@@ -46,7 +46,7 @@ class Asignaturas:
     
     ####################
     
-    # "Dia(s): hora(s)" de la asignatura "index"
+    """# "Dia(s): hora(s)" de la asignatura "index"
     ## Necesario en:
     def getHorario(self, index):
         res = ""
@@ -57,7 +57,7 @@ class Asignaturas:
             if elemento != "nan":
                 res += f"{translateDia(elemento)}: {translateHora(elemento)} - "
             
-        return res[:-3] # Eliminar último guión
+        return res[:-3] # Eliminar último guión"""
     
     ####################
 
@@ -83,10 +83,15 @@ class Asignaturas:
     ## Necesario en Matriculas.solapamiento
     def getCodigoHoras(self, asignatura, grupo):
         res = []
-        
+
         for i in range(len(self.codigos)):
             if self.codigos[i] == asignatura and self.grupo[i] == grupo:
-                res.append(self.horas[i])
+    
+                for j in range(len(self.horas)):
+                    elemento = str(self.horas[j][i])
+
+                    if elemento != "nan":
+                        res.append(int(float(elemento)))
 
         return res
     

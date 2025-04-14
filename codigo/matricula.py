@@ -53,7 +53,7 @@ class Matriculas():
                 asignatura = f"{matricula[i][1]}..{matricula[i][2]}"
 
                 if re.fullmatch(asignatura, self.asignaturas[j][0]) and matricula[i][3] == self.asignaturas[j][2]:
-                    asignaturas.append({i: (matricula[i][0], self.asignaturas[j][0], self.asignaturas[j][2], self.asignaturas.getHorario(j, self.asignaturas[j][2]))})
+                    asignaturas.append({i: (matricula[i][0], self.asignaturas[j][0], self.asignaturas[j][2], self.asignaturas.getHorario(self.asignaturas[j][0], self.asignaturas[j][2]))})
                     break
                                 
         return asignaturas
@@ -67,9 +67,8 @@ class Matriculas():
         asignaturas = {}
         subgrupos = []
 
+        subgrupo = f"{grupo}."
         for i in self.asignaturas:
-            subgrupo = f"{grupo}."
-
             if (codigo == i[0]) and re.fullmatch(subgrupo, i[2]):
                 subgrupos.append(i[2])
 
@@ -139,8 +138,8 @@ class Matriculas():
             asignaturas = self.getAsignaturasAlumno(i)
 
             for j in range(len(asignaturas)):
-                asignatura = self.buscarSubgrupos(asignaturas[j][0], asignaturas[j][1])
-                subgrupos.append(asignatura) 
+                asignaturaSubgrupos = self.buscarSubgrupos(asignaturas[j][0], asignaturas[j][1])
+                subgrupos.append(asignaturaSubgrupos) 
                 
             resultado[i] = subgrupos
             subgrupos = []
@@ -151,7 +150,7 @@ class Matriculas():
 
     # Devuelve el grupo de teoría de la "asignatura" de un alumno
     ## Necesario en: combinarSubgrupos
-    def getGruposTeoria(self, asignatura, alumno):
+    def getGrupoTeoria(self, asignatura, alumno):
         for i in range(len(self.matriculaciones[alumno])):
             if self.matriculaciones[alumno][i][0] == asignatura:
                 return self.matriculaciones[alumno][i][1]
@@ -160,14 +159,15 @@ class Matriculas():
 
     # Compruba si hay solapamiento de una asignatura nueva a un grupo de ellas
     ## Necesario en: combinarSubgrupos
-    def solapamiento(self, asignatura, grupo, combinacion):
-        establecidos = []
-        nuevo = self.asignaturas.getCodigoHoras(asignatura, grupo)
+    def solapamiento(self, asignaturaNueva, grupoNuevo, rellenados):
+        codigosRellenados = []
+        nuevo = self.asignaturas.getCodigoHoras(asignaturaNueva, grupoNuevo)
 
-        for i in combinacion:
-            establecidos.append(self.asignaturas.getCodigoHoras(combinacion[i], grupo))
+        for asig, grupo in rellenados:
+            codigo = self.asignaturas.getCodigoHoras(asig, grupo)
+            codigosRellenados.extend(codigo)
 
-        if nuevo in establecidos:
+        if nuevo[0] in codigosRellenados:
             return True
         else:
             return False
@@ -179,20 +179,18 @@ class Matriculas():
     ## Necesario en: getCombinacionSubgrupos
     def combinarSubgrupos(self, alumno, asignaturas, actual, resultado, tamFin):
         if len(resultado) == tamFin:
-            resultado.append(actual)
+            resultado.extend(actual)
 
         else:
             for i in asignaturas:
-                actual.append(self.grupoTeoria(i, alumno))
-
                 for j in range(len(asignaturas[i])):
                     if not self.solapamiento(i, asignaturas[i][j], actual):
-                        actual.append(asignaturas[i][j])
-                        self.combinarSubgrupos(asignaturas, actual, resultado, tamFin)
+                        actual.append((i, asignaturas[i][j]))
+                        self.combinarSubgrupos(alumno, asignaturas, actual, resultado, tamFin)
                         actual.pop()
 
     ####################
-
+    
     # Clave: dni
     # Valor: [{indice0: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}
     #        {indice1: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}]
@@ -201,12 +199,17 @@ class Matriculas():
         combinaciones = {}
         subgruposAlumno = self.getPosiblesSubgrupos()
 
-        # DNI
-        for i in subgruposAlumno.keys():
-            combinaciones[i] = []
+        # Alumno
+        for alumno in subgruposAlumno.keys():
+            combinaciones[alumno] = []
 
             # Asignatura
-            for j in subgruposAlumno[i]:
-                self.combinarSubgrupos(i, j, [], combinaciones[i], len(j)-1)
+            for asigaturaSubgrupo in subgruposAlumno[alumno]:
+                # Añadir grupo de teoria de la asingatura a evaluar
+                actual = [(list(asigaturaSubgrupo.keys())[0], self.getGrupoTeoria(list(asigaturaSubgrupo.keys())[0], alumno))]
 
+                self.combinarSubgrupos(alumno, asigaturaSubgrupo, actual, combinaciones[alumno], len(subgruposAlumno[alumno])-1)
+
+        return combinaciones
+                
     ####################
