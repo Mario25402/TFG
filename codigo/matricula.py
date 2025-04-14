@@ -2,6 +2,8 @@ import re
 import pandas as pd
 from asignatura import Asignaturas
 
+########################
+
 class Matriculas():
     def __init__(self, archivoMatricula, archivoAsignaturas):
         df = pd.read_csv(archivoMatricula)
@@ -16,12 +18,14 @@ class Matriculas():
     ####################
 
     # Dni, codigoCarrera, codigoAsignatura, grupo
+    ## Necesario en: getMatriculaciones y str
     def __getitem__(self, index):
         return self.dnis[index], self.carreras[index], self.codigos[index], self.grupos[index]
     
     ####################
     
     # Alumno: dni, Asignatura: codigo, Grupo: grupo, Horario: dia - hora
+    ## Necesario en:
     def __str__(self):
         matAlumno = []
         for i in range(len(self.dnis)):
@@ -40,6 +44,7 @@ class Matriculas():
     
     # Clave: índice
     # Valor: (dni, codigoAsignatura, grupo, horario)
+    ## Necesario en: getMatriculaciones
     def buscarAsignatura(self, matricula):
         asignaturas = []
 
@@ -57,6 +62,7 @@ class Matriculas():
 
     # Clave: asignatura
     # Valor: [subgrupo0, subgrupo1, subgrupo2]
+    ## Necesario en: getPosiblesSubgrupos
     def buscarSubgrupos(self, codigo, grupo):
         asignaturas = {}
         subgrupos = []
@@ -74,6 +80,7 @@ class Matriculas():
     
     # Clave: alumno
     # Valor: [(asignatura0, grupo0, horas0), (asignatura1, grupo1, horas1), ...]
+    ## Necesario en: constructor
     def getMatriculaciones(self):
         matAlumno = []
         for i in range(len(self.dnis)):
@@ -105,12 +112,14 @@ class Matriculas():
     ####################
 
     # Devuelve las asignaturas, grupos y horas de la persona que coincide con el dni
+    ## Necesario en: getPosiblesSubgrupos
     def getAsignaturasAlumno(self, alumno):
         return self.matriculaciones[int(alumno)]
     
     ####################
 
     # Devuelve la información de la persona que coincide con el índice
+    ## Necesario en: 
     def getIndex(self, index):
         lista = list(self.matriculaciones.keys())
         clave = lista[index]
@@ -121,6 +130,7 @@ class Matriculas():
 
     # Clave: dni
     # Valor: [{asignatura0: [subgrupo0, subgrupo1, subgrupo2]}, {asignatura1: [subgrupo0, subgrupo1, subgrupo2]}, ...]
+    ## Necesario en: getCombinacionSubgrupos
     def getPosiblesSubgrupos(self):
         resultado = {}
         subgrupos = []
@@ -136,28 +146,11 @@ class Matriculas():
             subgrupos = []
         
         return resultado
-            
-    ####################
-
-    # Clave: dni
-    # Valor: [{indice0: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}
-    #        {indice1: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}]
-    def getCombinacionSubgrupos(self):
-        indice = 0
-        combinaciones = {}
-        subgruposAlumno = self.getPosiblesSubgrupos()
-
-        # DNI
-        for i in subgruposAlumno.keys():
-            combinaciones[i] = []
-
-            # Asignatura
-            for j in subgruposAlumno[i]:
-                self.combinarSubgrupos(i, j, [], combinaciones[i], len(j)-1)
-                        
+                                    
     ####################
 
     # Devuelve el grupo de teoría de la "asignatura" de un alumno
+    ## Necesario en: combinarSubgrupos
     def getGruposTeoria(self, asignatura, alumno):
         for i in range(len(self.matriculaciones[alumno])):
             if self.matriculaciones[alumno][i][0] == asignatura:
@@ -166,11 +159,13 @@ class Matriculas():
     ####################
 
     # Compruba si hay solapamiento de una asignatura nueva a un grupo de ellas
+    ## Necesario en: combinarSubgrupos
     def solapamiento(self, asignatura, grupo, combinacion):
-        nuevo = self.asignaturas.getHorario(asignatura, grupo)
+        establecidos = []
+        nuevo = self.asignaturas.getCodigoHoras(asignatura, grupo)
 
         for i in combinacion:
-            establecidos = self.asignaturas.getHorario(combinacion[i], grupo)
+            establecidos.append(self.asignaturas.getCodigoHoras(combinacion[i], grupo))
 
         if nuevo in establecidos:
             return True
@@ -179,6 +174,9 @@ class Matriculas():
 
     ####################
 
+    # Devuelve las combinaciones factibles entre grupos
+    # y subgrupos de las asignaturas de un alumno
+    ## Necesario en: getCombinacionSubgrupos
     def combinarSubgrupos(self, alumno, asignaturas, actual, resultado, tamFin):
         if len(resultado) == tamFin:
             resultado.append(actual)
@@ -192,5 +190,23 @@ class Matriculas():
                         actual.append(asignaturas[i][j])
                         self.combinarSubgrupos(asignaturas, actual, resultado, tamFin)
                         actual.pop()
+
+    ####################
+
+    # Clave: dni
+    # Valor: [{indice0: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}
+    #        {indice1: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}]
+    ## Necesario en: Main
+    def getCombinacionSubgrupos(self):
+        combinaciones = {}
+        subgruposAlumno = self.getPosiblesSubgrupos()
+
+        # DNI
+        for i in subgruposAlumno.keys():
+            combinaciones[i] = []
+
+            # Asignatura
+            for j in subgruposAlumno[i]:
+                self.combinarSubgrupos(i, j, [], combinaciones[i], len(j)-1)
 
     ####################

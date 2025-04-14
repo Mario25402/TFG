@@ -1,6 +1,8 @@
 from auxiliar import translateHora, translateDia
 import pandas as pd
 
+########################
+
 class Asignaturas:
     def __init__(self, archivo):
         df = pd.read_csv(archivo)
@@ -19,12 +21,14 @@ class Asignaturas:
     ####################
 
     # Codigo, abreviatura, (sub)grupo
+    ## Necesario en: Matriculas.buscarAsignatura
     def __getitem__(self, index):
         return self.codigos[index], self.nombres[index], self.grupo[index]
 
     ####################
     
     # Código: abreviatura - (sub)grupo -> Dia(s): hora(s)
+    ## Necesario en: 
     def __str__(self):
         res = ""
 
@@ -36,12 +40,14 @@ class Asignaturas:
     ####################
 
     # Número de asignaturas en el archivo
+    ## Necesario en: Matriculas.buscarAsignatura
     def getLongitud(self):
         return len(self.codigos)
     
     ####################
     
     # "Dia(s): hora(s)" de la asignatura "index"
+    ## Necesario en:
     def getHorario(self, index):
         res = ""
         
@@ -56,6 +62,7 @@ class Asignaturas:
     ####################
 
     # "Dia(s): hora(s)" de una asignatura con grupo
+    ## Necesario en: Matriculas.buscarAsignatura
     def getHorario(self, asignatura, grupo):
         res = ""
         
@@ -73,6 +80,7 @@ class Asignaturas:
     ####################
 
     # Lista de los códigos horarios para una asignatura y grupo
+    ## Necesario en Matriculas.solapamiento
     def getCodigoHoras(self, asignatura, grupo):
         res = []
         
@@ -81,3 +89,5 @@ class Asignaturas:
                 res.append(self.horas[i])
 
         return res
+    
+    ####################
