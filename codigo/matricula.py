@@ -165,14 +165,20 @@ class Matriculas():
     # Compruba si hay solapamiento de una asignatura nueva a un grupo de ellas
     ## Necesario en: combinarSubgrupos
     def solapamiento(self, asigNueva, gpNuevo, combinacion):
-        codigosRellenados = []
-        nuevaHora = self.asignaturas.getCodigoHoras(asigNueva, gpNuevo)[0]
+        horasRellenas = []
+        nuevaHora = self.asignaturas.getCodigoHoras(asigNueva, gpNuevo)
 
         for asig, grupo in combinacion:
             codigo = self.asignaturas.getCodigoHoras(asig, grupo)
-            codigosRellenados.append(codigo)
+            
+            for i in codigo:
+                horasRellenas.append(i)
 
-        return nuevaHora in codigosRellenados
+        for hora in nuevaHora:
+            if hora in horasRellenas:
+                return True
+            
+        return False
     
     ########################################
     
