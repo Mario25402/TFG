@@ -1,5 +1,5 @@
 from matricula import *
 
-listaMat = Matriculas("/home/mario/Escritorio/TFG/jesus/demo/matricula.csv", "/home/mario/Escritorio/TFG/jesus/demo/horariosgiit.csv")
+listaMat = Matriculas("./jesus/demo/matricula.csv", "./jesus/demo/horariosgiit.csv")
 
 print(listaMat.getCombinacionSubgrupos())
