@@ -6,17 +6,11 @@ import pandas as pd
 class Asignaturas:
     def __init__(self, archivo):
         df = pd.read_csv(archivo)
+
         self.codigos = df["CODIGO"].tolist()
         self.nombres = df["ASIGNATURA"].tolist()
         self.grupo = df["GRUPO"].tolist()
-
-        hora1 = df["HORA1"].tolist()
-        hora2 = df["HORA2"].tolist()
-        hora3 = df["HORA3"].tolist()
-        hora4 = df["HORA4"].tolist()
-        hora5 = df["HORA5"].tolist()
-
-        self.horas = [hora1, hora2, hora3, hora4, hora5]
+        self.horas = [df[f"HORA{i}"].tolist() for i in range(1, 6)]
 
     ####################
 
@@ -32,7 +26,7 @@ class Asignaturas:
     def __str__(self):
         res = ""
 
-        for i in range(len(self.codigos)):
+        for i in range(self.getLongitud()):
             res += f"{self.codigos[i]}: {self.nombres[i]} - {self.grupo[i]} -> {self.getHorario(i)}\n"
 
         return res
@@ -66,7 +60,7 @@ class Asignaturas:
     def getHorario(self, asignatura, grupo):
         res = ""
         
-        for i in range(len(self.codigos)):
+        for i in range(self.getLongitud()):
             if self.codigos[i] == asignatura and self.grupo[i] == grupo:
 
                 for j in range(len(self.horas)):
@@ -84,14 +78,12 @@ class Asignaturas:
     def getCodigoHoras(self, asignatura, grupo):
         res = []
 
-        for i in range(len(self.codigos)):
+        for i in range(self.getLongitud()):
             if self.codigos[i] == asignatura and self.grupo[i] == grupo:
     
                 for j in range(len(self.horas)):
-                    elemento = str(self.horas[j][i])
-
-                    if elemento != "nan":
-                        res.append(int(float(elemento)))
+                    if not pd.isna(self.horas[j][i]):
+                        res.append(int(float(self.horas[j][i])))
 
         return res
     

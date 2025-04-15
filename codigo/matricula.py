@@ -7,6 +7,7 @@ from asignatura import Asignaturas
 class Matriculas():
     def __init__(self, archivoMatricula, archivoAsignaturas):
         df = pd.read_csv(archivoMatricula)
+
         self.carreras = df["CARRERA"].tolist()
         self.dnis = df["DNI"].tolist()
         self.codigos = df["CEA"].tolist()
@@ -149,11 +150,23 @@ class Matriculas():
     ####################
 
     # Devuelve el grupo de teoría de la "asignatura" de un alumno
-    ## Necesario en: combinarSubgrupos
+    ## Necesario en:
     def getGrupoTeoria(self, asignatura, alumno):
-        for i in range(len(self.matriculaciones[alumno])):
-            if self.matriculaciones[alumno][i][0] == asignatura:
-                return self.matriculaciones[alumno][i][1]
+        for i in self.matriculaciones[alumno]:
+            if i[0] == asignatura:
+                return i[1]
+            
+    ####################
+
+    # Devuelve todos los grupo de teoría de las asignaturaa de un alumno
+    ## Necesario en: getCombinacionSubgrupos
+    def getGruposTeoria(self, alumno):
+        res = []
+
+        for i in self.matriculaciones[alumno]:
+                res.append((i[0], i[1]))
+
+        return res
     
     ####################
 
@@ -161,7 +174,7 @@ class Matriculas():
     ## Necesario en: combinarSubgrupos
     def solapamiento(self, asignaturaNueva, grupoNuevo, rellenados):
         codigosRellenados = []
-        nuevo = self.asignaturas.getCodigoHoras(asignaturaNueva, grupoNuevo)
+        nuevo = self.asignaturas.getCodigoHoras(list(asignaturaNueva.keys())[0], grupoNuevo)
 
         for asig, grupo in rellenados:
             codigo = self.asignaturas.getCodigoHoras(asig, grupo)
@@ -182,12 +195,22 @@ class Matriculas():
             resultado.extend(actual)
 
         else:
-            for i in asignaturas:
-                for j in range(len(asignaturas[i])):
-                    if not self.solapamiento(i, asignaturas[i][j], actual):
-                        actual.append((i, asignaturas[i][j]))
-                        self.combinarSubgrupos(alumno, asignaturas, actual, resultado, tamFin)
-                        actual.pop()
+            j = 0
+            for dictAsignatura in asignaturas:
+                for i in asignaturas[j].values():
+                    for k in i:
+                        if not self.solapamiento(dictAsignatura, k, actual):
+
+                            count = 0
+                            for k in actual:
+                                if dictAsignatura == k[0]:
+                                    count += 1 
+
+                            if count == 1:
+                                actual.append((dictAsignatura, i))
+                                self.combinarSubgrupos(alumno, asignaturas, actual, resultado, tamFin-1)
+                                actual.pop()
+                j += 1
 
     ####################
     
@@ -202,13 +225,13 @@ class Matriculas():
         # Alumno
         for alumno in subgruposAlumno.keys():
             combinaciones[alumno] = []
+            actual = []
 
-            # Asignatura
-            for asigaturaSubgrupo in subgruposAlumno[alumno]:
-                # Añadir grupo de teoria de la asingatura a evaluar
-                actual = [(list(asigaturaSubgrupo.keys())[0], self.getGrupoTeoria(list(asigaturaSubgrupo.keys())[0], alumno))]
+            # Grupos Teoría
+            actual = self.getGruposTeoria(alumno)
 
-                self.combinarSubgrupos(alumno, asigaturaSubgrupo, actual, combinaciones[alumno], len(subgruposAlumno[alumno])-1)
+            # Subgrupos Prácticas
+            self.combinarSubgrupos(alumno, subgruposAlumno[alumno], actual, combinaciones[alumno], len(actual)*2)
 
         return combinaciones
                 
