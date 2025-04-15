@@ -31,27 +31,13 @@ class Asignaturas:
 
         return res
     
-    ####################
+    ########################################
+    ########################################
 
     # Número de asignaturas en el archivo
     ## Necesario en: Matriculas.buscarAsignatura
     def getLongitud(self):
         return len(self.codigos)
-    
-    ####################
-    
-    """# "Dia(s): hora(s)" de la asignatura "index"
-    ## Necesario en:
-    def getHorario(self, index):
-        res = ""
-        
-        for i in range(len(self.horas)):
-            elemento = str(self.horas[i][index])
-
-            if elemento != "nan":
-                res += f"{translateDia(elemento)}: {translateHora(elemento)} - "
-            
-        return res[:-3] # Eliminar último guión"""
     
     ####################
 
@@ -71,7 +57,7 @@ class Asignaturas:
                 
                 return res[:-3]
             
-    ####################
+    ########################################
 
     # Lista de los códigos horarios para una asignatura y grupo
     ## Necesario en Matriculas.solapamiento
@@ -87,4 +73,5 @@ class Asignaturas:
 
         return res
     
-    ####################
+    ########################################
+    ########################################
