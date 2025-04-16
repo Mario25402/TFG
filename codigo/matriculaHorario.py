@@ -31,32 +31,37 @@ class MatriculasHorarios():
         self.sinAsignar = {}    # Datos de subgrupos posibles
         self.asignados = {}     # Datos de subgrupos asignados
 
+        for i in range(len(dnis)):
+            self.datos[dnis[i]] = []
+            self.sinAsignar[dnis[i]] = []
+            self.asignados[dnis[i]] = []
+
         ###
 
         for i in range(len(dnis)):
             patronSgn = f"{carreras[i]}..{codigos[i]}"
             patronSgp = f"{grupos[i]}."
 
-            self.datos[dnis[i]] = []
-            self.sinAsignar[dnis[i]] = []
-
             for j in range(len(codigosCompletos)):
-                if re.fullmatch(patronSgn, codigosCompletos[j]) and grupos[i] == gruposTP[j]:
-                    self.datos[dnis[i]].append({
-                        "codigo": codigosCompletos[j],
-                        "asignatura": nombres[j],
-                        "grupo": grupos[i],
-                        "horario": [lista[j] for lista in horas]
-                    })
-                    break
+                if re.fullmatch(patronSgn, codigosCompletos[j]):
+                    if grupos[i] == gruposTP[j]:
+                        codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
 
-                elif re.fullmatch(patronSgp, codigosCompletos[j]) and re.fullmatch(patronSgp, gruposTP[j]):
-                    self.sinAsignar[dnis[i]].append({
-                        "codigo": codigosCompletos[j],
-                        "asignatura": nombres[j],
-                        "grupo": grupos[j],
-                        "horario": [lista[j] for lista in horas]
-                    })
-                    break
+                        self.datos[dnis[i]].append({
+                            "codigo": codigosCompletos[j],
+                            "asignatura": nombres[j],
+                            "grupo": grupos[i],
+                            "horario": codigoHoras
+                        })
+
+                    elif re.fullmatch(patronSgp, gruposTP[j]):
+                        codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
+
+                        self.sinAsignar[dnis[i]].append({
+                            "codigo": codigosCompletos[j],
+                            "asignatura": nombres[j],
+                            "grupo": gruposTP[j],
+                            "horario": codigoHoras
+                        })
 
         ###

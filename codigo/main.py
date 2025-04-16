@@ -13,7 +13,6 @@ combinacionSubgruposToString(combAlumnos)"""
 
 def main():
     matHor = MatriculasHorarios("./jesus/matricula.csv", "./jesus/horariosgiit.csv")
-    print("Hola")
 
 ##########
 
