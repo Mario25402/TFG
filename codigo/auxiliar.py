@@ -1,6 +1,10 @@
 ####################
 # Funciones auxiliares
 
+import pandas as pd
+
+####################
+
 # Traduce el código a día de la semana
 def translateDia(num):
     num = num[0]
@@ -66,3 +70,24 @@ def translateGrado(codigo): # Useless I think
     # 999 es reconocimiento de creditos
     # 230 es caminos
     # en la columna de CEA me puedo encontrar de todo con los erasmus
+
+##########
+
+def translateNombreAsignatura(codigo):
+    df = pd.read_csv("./jesus/horariosgiit.csv")
+    asignaturas = df["CODIGO"].tolist()
+    nombres = df["ASIGNATURA"].tolist()
+
+    for i in range(len(asignaturas)):
+        if asignaturas[i] == codigo:
+            return nombres[i]
+
+# Ver de manera legible las combinaciones de subgrupos de los alumnos
+def combinacionSubgruposToString(diccionario):
+    for dni, combinaciones in diccionario.items():
+        print(f"\n\nAlumno {dni}:")
+        for index, combinacion in enumerate(combinaciones):
+            opciones = ', '.join(f"{translateNombreAsignatura(asig)} ({grupo})" for asig, grupo in combinacion)
+            print(f"\tCombinación {index}: {opciones}\n")
+
+##########

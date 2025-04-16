@@ -1,5 +1,8 @@
 from matricula import *
+from auxiliar import *
 
-listaMat = Matriculas("./jesus/demo/matricula.csv", "./jesus/demo/horariosgiit.csv")
+listaMat = Matriculas("./jesus/matricula.csv", "./jesus/horariosgiit.csv")
 
-print(listaMat.getCombinacionSubgrupos())
+combAlumnos = listaMat.getCombinacionSubgrupos()
+combinacionSubgruposToString(combAlumnos)
+    

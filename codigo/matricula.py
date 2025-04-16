@@ -95,7 +95,7 @@ class Matriculas():
     
     ########################################
     ########################################
-    
+
     # Clave: dni
     # Valor: [{indice0: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}
     #        {indice1: (asignatura0, (sub)grupo0), (asignatura1, (sub)grupo1), ...}]
