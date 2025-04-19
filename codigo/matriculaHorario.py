@@ -73,24 +73,23 @@ class MatriculasHorarios():
 
     def getCombinacionSubgrupos(self):
         for alumno in self.datos.keys():
-            self.combinarSubgrupos(self.sinAsignar[alumno], self.datos[alumno], self.combinaciones[alumno], len(self.datos[alumno])*2)
+            subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
+
+            self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], len(self.datos[alumno])*2)
                         
     ###
 
-    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, longitud):
+    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, longitud, start=0):
         if len(actual) == longitud:
             ordenada = sorted(actual, key=lambda x: (x['codigo'], x['grupo']))
-
-            if ordenada not in combinaciones:
-                combinaciones.append(ordenada)
+            combinaciones.append(ordenada)
             return
 
-        for i, subgrupo in enumerate(subgruposAlumno):
-            if self.factible(subgrupo, actual):
-                actual.append(subgrupo)
+        for i in range(start, len(subgruposAlumno)):
+            if self.factible(subgruposAlumno[i], actual):
+                actual.append(subgruposAlumno[i])
                 
-                restantes = subgruposAlumno[:i] + subgruposAlumno[i+1:]
-                self.combinarSubgrupos(restantes, actual, combinaciones, longitud)
+                self.combinarSubgrupos(subgruposAlumno, actual, combinaciones, longitud, i+1)
 
                 actual.pop()
 
