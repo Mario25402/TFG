@@ -79,7 +79,10 @@ class MatriculasHorarios():
 
     def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, longitud):
         if len(actual) == longitud:
-            combinaciones.append(actual.copy())
+            ordenada = sorted(actual, key=lambda x: (x['codigo'], x['grupo']))
+
+            if ordenada not in combinaciones:
+                combinaciones.append(ordenada)
             return
 
         for i, subgrupo in enumerate(subgruposAlumno):
