@@ -30,11 +30,13 @@ class MatriculasHorarios():
         self.datos = {}         # Datos trascritos de los archivos
         self.sinAsignar = {}    # Datos de subgrupos posibles
         self.asignados = {}     # Datos de subgrupos asignados
+        self.combinaciones = {} # Combinaciones de subgrupos posibles
 
-        for i in range(len(dnis)):
-            self.datos[dnis[i]] = []
-            self.sinAsignar[dnis[i]] = []
-            self.asignados[dnis[i]] = []
+        for alumno in dnis:
+            self.datos[alumno] = []
+            self.sinAsignar[alumno] = []
+            self.asignados[alumno] = []
+            self.combinaciones[alumno] = []
 
         ###
 
@@ -64,4 +66,54 @@ class MatriculasHorarios():
                             "horario": codigoHoras
                         })
 
-        ###
+        # Rellenar "combinaciones"
+        self.getCombinacionSubgrupos()
+        
+    ####################
+
+    def getCombinacionSubgrupos(self):
+        for alumno in self.datos.keys():
+            self.combinarSubgrupos(self.sinAsignar[alumno], self.datos[alumno], self.combinaciones[alumno], len(self.datos[alumno])*2)
+                        
+    ###
+
+    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, longitud):
+        if len(actual) == longitud:
+            combinaciones.append(actual.copy())
+            return
+
+        for i, subgrupo in enumerate(subgruposAlumno):
+            if self.factible(subgrupo, actual):
+                actual.append(subgrupo)
+                
+                restantes = subgruposAlumno[:i] + subgruposAlumno[i+1:]
+                self.combinarSubgrupos(restantes, actual, combinaciones, longitud)
+
+                actual.pop()
+
+    ###
+
+    def factible(self, nuevo, actual):
+        asignadas = []
+        apariciones = 0
+
+        for entrada in actual:
+            if entrada['codigo'] == nuevo['codigo']:
+                apariciones += 1
+
+        # Solo un grupo de teoría y un subgrupo de prácticas
+        if apariciones == 1:
+            for entrada in actual:
+                for hora in entrada['horario']:
+                    asignadas.append(hora)
+                    
+            for hora in nuevo['horario']:
+                if hora in asignadas:
+                    return False
+                    
+            return True
+        
+        else:
+            return False
+    
+    ####################
