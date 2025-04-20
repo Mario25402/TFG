@@ -1,17 +1,21 @@
-import pandas as pd
 import re
+import pandas as pd
 
 class MatriculasHorarios():
     def __init__(self, fileMat, fileHor):
+        # Cargar matrículas
         df = pd.read_csv(fileMat)
 
         carreras = df["CARRERA"].tolist()
         dnis = df["DNI"].tolist()
         codigos = df["CEA"].tolist()
         grupos = df["GRUPO"].tolist()
+        denominaciones = df["DENOMINACIÓN"].tolist()
+
+        self.corregirGrupos(denominaciones, grupos)
 
         ###
-
+        # Cargar horarios
         df = pd.read_csv(fileHor)
 
         codigosCompletos = df["CODIGO"].tolist()
@@ -26,6 +30,7 @@ class MatriculasHorarios():
         horas = [df[f"HORA{i}"].tolist() for i in range(1, 6)]
 
         ###
+        # Inicializar variables
 
         self.datos = {}         # Datos trascritos de los archivos
         self.sinAsignar = {}    # Datos de subgrupos posibles
@@ -39,6 +44,7 @@ class MatriculasHorarios():
             self.combinaciones[alumno] = []
 
         ###
+        # Rellenar "datos" y "sinAsignar"
 
         for i in range(len(dnis)):
             patronSgn = f"{carreras[i]}..{codigos[i]}"
@@ -66,15 +72,28 @@ class MatriculasHorarios():
                             "horario": codigoHoras
                         })
 
+        ###
         # Rellenar "combinaciones"
+
         self.getCombinacionSubgrupos()
         
+    ####################
+
+    # PREGUNTAR POR MATRICULAS SIN GRUPOS
+    # PREGUNTAR POR PRIORIDAD DE ALUMNOS CON MENCION ASIGNADA
+    def corregirGrupos(self, nombres, grupos):
+        patron = r"\(ESPECIALIDAD(?: [\wÁÉÍÓÚáéíóúÑñ]+)+\)$"
+
+        for i in range(len(nombres)):
+            if re.search(patron, nombres[i]) and pd.isna(grupos[i]):
+                grupos[i] = 'A'
+
+
     ####################
 
     def getCombinacionSubgrupos(self):
         for alumno in self.datos.keys():
             subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
-
             self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], len(self.datos[alumno])*2)
                         
     ###
@@ -88,19 +107,17 @@ class MatriculasHorarios():
         for i in range(start, len(subgruposAlumno)):
             if self.factible(subgruposAlumno[i], actual):
                 actual.append(subgruposAlumno[i])
-                
                 self.combinarSubgrupos(subgruposAlumno, actual, combinaciones, longitud, i+1)
-
                 actual.pop()
 
     ###
 
-    def factible(self, nuevo, actual):
+    def factible(self, nueva, actual):
         asignadas = []
         apariciones = 0
 
         for entrada in actual:
-            if entrada['codigo'] == nuevo['codigo']:
+            if entrada['codigo'] == nueva['codigo']:
                 apariciones += 1
 
         # Solo un grupo de teoría y un subgrupo de prácticas
@@ -109,7 +126,7 @@ class MatriculasHorarios():
                 for hora in entrada['horario']:
                     asignadas.append(hora)
                     
-            for hora in nuevo['horario']:
+            for hora in nueva['horario']:
                 if hora in asignadas:
                     return False
                     
@@ -119,3 +136,12 @@ class MatriculasHorarios():
             return False
     
     ####################
+
+    def combinacionesToString(self):
+        for alumno in self.combinaciones.keys():
+            print(f"Alumno: {alumno}")
+            for i, combinacion in enumerate(self.combinaciones[alumno]):
+                print(f"Combinación {i+1}:")
+                for subgrupo in combinacion:
+                    print(f"  - {subgrupo['asignatura']} ({subgrupo['grupo']})")
+            print()
