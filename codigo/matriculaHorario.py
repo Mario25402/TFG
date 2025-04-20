@@ -1,7 +1,7 @@
 import re
 import pandas as pd
 
-class MatriculasHorarios():
+class MatriculaHorario():
     def __init__(self, fileMat, fileHor):
         # Cargar matrículas
         df = pd.read_csv(fileMat)
@@ -16,6 +16,7 @@ class MatriculasHorarios():
 
         ###
         # Cargar horarios
+
         df = pd.read_csv(fileHor)
 
         codigosCompletos = df["CODIGO"].tolist()
