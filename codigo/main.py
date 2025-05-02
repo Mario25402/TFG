@@ -4,9 +4,9 @@ from gruposAsignatura import *
 ##########
 
 def main():
-    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit.csv")
+    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit2.csv")
 
-    clases = gruposAsignatura("./jesus/horariosgiit.csv")
+    clases = gruposAsignatura("./jesus/horariosgiit2.csv")
 
 ##########
 
