@@ -6,7 +6,9 @@ class ProcesadorHorarios:
     
     # Variables de la clase
     COL_CURSO = 0
-    CURSO1 = 1
+    FIL_CURSO = 1
+    DESCANSO1 = 16
+    DESCANSO2 = 48
     CONTENIDO1_INI = 4
     CONTENIDO1_FIN = 28
     CONTENIDO2_INI = 36
@@ -249,96 +251,103 @@ class ProcesadorHorarios:
         # Inicializar variables
 
         self.datos = {}
-
-        aula = None
-        subgrupo = None
-        asignatura = None
+        self.aula = None
+        self.subgrupo = None
+        self.asignatura = None
 
         ###
         # Recorrer las páginas y extraer la información
         
         for pagina, df in horarios.items():
-            if pagina == "1AGII":
-                for numCol in range(df.shape[1]):
-                    for numFila in range(df.shape[0]):
+            print(f"Procesando {pagina}...")
+            for numCol in range(df.shape[1]):
+
+                # Guardar curso y grupo
+                if numCol == self.COL_CURSO:
+                    for numFila in range(0, self.CONTENIDO1_INI - 1):
+                        if numFila == self.FIL_CURSO:
+                            texto = df.iat[numFila, numCol].replace(" ", "")
+                            self.curso = texto[0]
+                            self.grupo = texto[2]
+                            break
+
+                elif numCol >= self.COL_CONTENIDO_INI and numCol < df.shape[1] -2:
+
+                    # Primer Cuatrimestre
+                    for numFila in range(self.CONTENIDO1_INI, self.CONTENIDO1_FIN):
                         celda = df.iat[numFila, numCol]
 
                         if pd.notna(celda):
+                            self.procesarCelda(celda, numFila, numCol, 1)
 
-                            # Extraer curso
-                            if numFila == self.CURSO1 and numCol == self.COL_CURSO:
-                                celda = celda.replace(" ", "")
-                                curso = celda[0]
-                                grupo = celda[2]
+                    # Segundo Cuatrimestre
+                    for numFila in range(self.CONTENIDO2_INI, df.shape[0]):
+                        celda = df.iat[numFila, numCol]
 
-                            # Extraer asignatura y aula
-                            elif ((numFila >= self.CONTENIDO1_INI and numFila <= self.CONTENIDO1_FIN) or (numFila >= self.CONTENIDO2_INI and numFila <= self.CONTENIDO2_FIN)) and (numCol >= self.COL_CONTENIDO_INI and numCol <= self.COL_CONTENIDO_FIN):
-
-                                # Antes Mediodía
-                                if (numFila >= self.CONTENIDO1_INI and numFila <= self.CONTENIDO1_FIN):
-                                    if numFila % 2 != 0:
-                                        asignatura = celda
-
-                                        patron = rf"\({grupo}(\d+)\)"
-                                        match = re.search(patron, asignatura)
-                                        if match:
-                                            subgrupo = f"{grupo}{match.group(1)}"
-                                            asignatura = re.sub(patron, "", asignatura).strip()
-                                    else:
-                                        aula = celda
-
-                                # Después Mediodía
-                                else:
-                                    if numFila % 2 == 0:
-                                        asignatura = celda
-
-                                        patron = rf"\({grupo}(\d+)\)"
-                                        match = re.search(patron, asignatura)
-                                        if match:
-                                            subgrupo = f"{grupo}{match.group(1)}"
-                                            asignatura = re.sub(patron, "", asignatura).strip()
-                                    else:
-                                        aula = celda
-
-                                ###
-
-                                # Guardar datos en el diccionario
-                                if asignatura and aula:
-                                    codigo = self.traducirCodigo(numFila-1, numCol)
-
-                                    s_gp = grupo
-                                    if subgrupo:
-                                        s_gp = subgrupo
-
-                                    clave = (asignatura, s_gp)
-
-                                    # Si ya existe la clave, añadir la hora nueva
-                                    if self.datos.get(clave):
-                                        self.datos[clave]["horario"].append(codigo)
-
-                                    else:
-                                        if numFila >= self.CONTENIDO1_INI and numFila <= self.CONTENIDO1_FIN:
-                                            cuatrimestre = 1
-                                        else:
-                                            cuatrimestre = 2
-
-                                        self.datos[clave] = {
-                                            "codigo": self.codigosAsignaturas[asignatura],
-                                            "asignatura": asignatura,
-                                            "horario": [codigo],
-                                            "aula": aula,
-                                            "curso": curso,
-                                            "grupo": s_gp,
-                                            "cuatrimestre": cuatrimestre
-                                        }
-
-                                    aula = None
-                                    subgrupo = None
-                                    asignatura = None
+                        if pd.notna(celda):
+                            self.procesarCelda(celda, numFila, numCol, 2)
 
         self.datos = dict(sorted(self.datos.items()))
 
-    ####################
+    #####
+
+    def procesarCelda(self, celda, numFila, numCol, cuatrimestre):
+
+        # Antes de mediodía
+        if numFila < self.DESCANSO1 or (numFila > self.CONTENIDO2_INI and numFila < self.DESCANSO2):
+            if numFila % 2 == 0: # CAMBIAR A 
+                self.asignatura = celda
+                patron = rf"\({self.grupo}(\d+)\)"
+                match = re.search(patron, self.asignatura)
+
+                if match:
+                    self.subgrupo = f"{self.grupo}{match.group(1)}"
+                    self.asignatura = re.sub(patron, "", self.asignatura).strip()
+            else:
+                self.aula = celda
+
+        # Después de mediodía
+        else:
+            if numFila % 2 != 0: # CAMBIAR A 
+                self.asignatura = celda
+                patron = rf"\({self.grupo}(\d+)\)"
+                match = re.search(patron, self.asignatura)
+
+                if match:
+                    self.subgrupo = f"{self.grupo}{match.group(1)}"
+                    self.asignatura = re.sub(patron, "", self.asignatura).strip()
+
+            else:
+                self.aula = celda
+                
+
+        ###
+
+        # Guardar datos en el diccionario
+        if self.asignatura and self.aula:
+            codigo = self.traducirCodigo(numFila-1, numCol)
+            clave = (self.asignatura, self.subgrupo or self.grupo) # Establecer subgrupo si lo hay
+
+            # Si ya existe la clave, añadir la hora nueva
+            if self.datos.get(clave):
+                self.datos[clave]["horario"].append(codigo)
+
+            else:
+                self.datos[clave] = {
+                    "codigo": self.codigosAsignaturas[self.asignatura],
+                    "asignatura": self.asignatura,
+                    "horario": [codigo],
+                    "aula": self.aula,
+                    "curso": self.curso,
+                    "grupo": self.subgrupo or self.grupo,
+                    "cuatrimestre": cuatrimestre
+                }
+
+            self.aula = None
+            self.subgrupo = None
+            self.asignatura = None
+
+    #####
 
     def traducirCodigo(self, fila, columna):
         return f"{self.columnasDia[columna]}{self.filasHora[fila]}"
@@ -346,8 +355,7 @@ class ProcesadorHorarios:
     ####################
 
     def generarCSV(self):
-        if self.datos:
-            registros = []
+        registros = []
 
         for (asignatura, grupo), info in self.datos.items():
             codigo = info["codigo"]
