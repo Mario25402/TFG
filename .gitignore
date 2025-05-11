@@ -1,1 +1,4 @@
 /prueba
+.vscode
+/codigo/__pycache__/
+/codigo/.venv
