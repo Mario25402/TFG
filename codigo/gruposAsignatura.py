@@ -1,4 +1,5 @@
 import re
+import copy
 import pandas as pd
 
 class gruposAsignatura:
@@ -55,16 +56,25 @@ class gruposAsignatura:
     ####################
 
     def getAulasRellenas(self, alumnos):
-        for clave, datos in self.datos.items():
 
-            # Rellenar grupos de teoria
-            if len(clave[1]) == 1:
-                combMatriculados = self.__filtrarAlumnos(alumnos, clave)
-                self.rellenarGruposTeoria(combMatriculados)
+        # Rellenar grupos de teoría
+        combMatriculados = self.__filtrarAlumnos(alumnos)
+        self.rellenarGruposTeoria(combMatriculados)
 
-            """ while datos["capacidadActual"] < datos["capacidadTotal"]:
-                for alumnos in combMatriculados:
-                    self.rellenarAlumnos(datos, alumnos, [], [], 0) """
+        # Rellenar grupos de prácticas
+        combMatriculados = self.__filtrarSubgrupos(alumnos)
+        soluciones = self.explorarGruposPracticas(combMatriculados)
+
+        
+        for solucion in soluciones:
+            self.repartirFallidos(solucion[0], solucion[1], combMatriculados)
+
+    ###
+
+    def repartirFallidos(self, configuracion, alumnos, combinaciones):
+        for alumno in alumnos:
+            #self.rellenarSubgrupos(configuracion, alumno, combinaciones[alumno][0])
+            print(alumno)
 
     ###
 
@@ -81,7 +91,115 @@ class gruposAsignatura:
                         
     ###
 
-    def rellenarAlumnos(self, asignatura, alumnos, actual, mejorRelleno, mejorPuntuacion):
+    def explorarGruposPracticas(self, alumnos):
+        fallidos = []
+        soluciones = []
+        alumnos_lista = [] 
+        asignados = 0
+
+        for alumno, combinaciones in alumnos.items():
+            if len(combinaciones) == 1:
+                self.rellenarSubgrupos(self.datos, alumno, combinaciones[0])
+                asignados += 1
+
+            elif len(combinaciones) > 1:
+                alumnos_lista.append((alumno, combinaciones))
+
+        # Ordenar alumnos por el número de combinaciones (menos a más)
+        alumnos_lista.sort(key = lambda x: len(x[1]), reverse=False)
+
+        self.explorarCombinacionesSubgrupos(alumnos_lista, 0, copy.deepcopy(self.datos), soluciones, len(alumnos) - asignados, fallidos)
+
+        return soluciones
+
+    ###
+
+    def explorarCombinacionesSubgrupos(self, alumnos, indice, actual, soluciones, stop, fallidos):
+        if len(soluciones) >= 1:
+            return True
+        
+        if indice == stop:
+            if self.factible(actual):
+                soluciones.append((copy.deepcopy(actual), fallidos))
+                
+                #print(f"Nueva solución\n\n\n\n\n")
+                return self.explorarCombinacionesSubgrupos(alumnos, 0, copy.deepcopy(self.datos), soluciones, stop, [])
+            return False
+         
+
+        alumno, combinaciones = alumnos[indice]
+        continua = False
+
+        if alumno == 51231069:
+            pass
+
+        for i, combinacion in enumerate(combinaciones):
+            if not self.combinacionPermitida(actual, alumno, combinacion):
+                continue
+
+            siguiente = copy.deepcopy(actual)
+            self.rellenarSubgrupos(siguiente, alumno, combinacion)
+
+            if self.factible(siguiente):
+                #print(f"Alumno: {str(alumno)} - Combinacion nº: {i} - Índice: {indice}")
+                solucion = self.explorarCombinacionesSubgrupos(alumnos, indice + 1, siguiente, soluciones, stop, fallidos)
+
+                if solucion:
+                    return True
+                
+                continua = True
+                
+
+        if not continua:
+            #print (f"Alumno: {str(alumno)} - Fallido")
+            if alumno not in fallidos:
+                fallidos.append(alumno)
+
+            if indice + 1 < stop:
+                return self.explorarCombinacionesSubgrupos(alumnos, indice + 1, actual, soluciones, stop, fallidos)
+                
+        return False
+
+    ###
+
+    def combinacionPermitida(self, configuracion, alumno, combinacion):
+        for asignatura in combinacion:
+            clave = (asignatura["asignatura"], asignatura["grupo"])
+
+            if alumno in configuracion[clave]["alumnos"]:
+                return False
+
+            if configuracion[clave]["capacidadActual"] >= configuracion[clave]["capacidadTotal"]:
+                return False
+            
+            return True
+
+    ###
+
+    def factible(self, configuracion):
+        for clave, datos in configuracion.items():
+            if (datos['subgrupos'] == None) and (datos["capacidadActual"] > datos["capacidadTotal"]):
+                return False
+            elif (datos['subgrupos'] == None) and (datos["capacidadActual"] <= datos["capacidadTotal"]):
+                nuevaClave = (clave[0], clave[1][0])
+
+                if self.datos[nuevaClave]["capacidadActual"] - 5 > self.datos[nuevaClave]["capacidadTotal"]:
+                    return True
+        return True
+
+    ###
+
+    def rellenarSubgrupos(self, configuracion, alumno, combinacion):
+        for asignatura in combinacion:
+            clave = (asignatura["asignatura"], asignatura["grupo"])
+
+            if alumno not in configuracion[clave]["alumnos"]:
+                configuracion[clave]["alumnos"].append(alumno)
+                configuracion[clave]["capacidadActual"] += 1
+
+    ###
+
+    """ def rellenarAlumnos(self, asignatura, alumnos, actual, mejorRelleno, mejorPuntuacion):
         if asignatura["capacidadActual"] == asignatura["capacidadTotal"]:
             puntuacionActual = self.getPuntuacion(alumnos)
 
@@ -139,12 +257,12 @@ class gruposAsignatura:
     ###
 
     def asignarAlumno(self, alumno, asignatura):
-        pass
+        pass """
 
-    ###
+    ####################
 
     # Aisla a los alumnos matriculados en una asignatura
-    def __filtrarAlumnos(self, alumnos, claveAsignatura):
+    def __filtrarAlumnos(self, alumnos):
         resultado = {}
         alumnoCombinacion = {}
 
@@ -154,13 +272,37 @@ class gruposAsignatura:
             for combinacion in datos:
                 for asignatura in combinacion:
 
-                    if asignatura["asignatura"] == claveAsignatura[0] \
-                    and asignatura["grupo"] == claveAsignatura[1]:
+                    if len(asignatura["grupo"]) == 1:
                         alumnoCombinacion[alumno].append(combinacion)
 
             if len(alumnoCombinacion[alumno]) > 0:
                 resultado[alumno] = alumnoCombinacion[alumno]
 
-        return resultado       
+        return resultado   
+
+    ###
+
+    # Reduce las combinaciones de asignaturas solo a los subgrupos 
+    def __filtrarSubgrupos(self, alumnos):
+        resultado = {}
+        alumnoCombinacion = {}
+
+        for alumno, datos in alumnos.items():
+            alumnoCombinacion[alumno] = []
+
+            for combinacion in datos:
+                comb = []
+
+                for asignatura in combinacion:
+                    if len(asignatura["grupo"]) > 1:
+                        comb.append(asignatura)
+
+                if len(comb) > 0:
+                    alumnoCombinacion[alumno].append(comb)
+
+            if len(alumnoCombinacion[alumno]) > 0:
+                resultado[alumno] = alumnoCombinacion[alumno]
+
+        return resultado
                             
     ####################
