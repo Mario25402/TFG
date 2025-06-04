@@ -1,4 +1,5 @@
 import re
+import copy
 import pandas as pd
 
 class MatriculaHorario():
@@ -12,8 +13,6 @@ class MatriculaHorario():
         grupos = df["GRUPO"].tolist()
         denominaciones = df["DENOMINACIÓN"].tolist()
 
-        self.corregirGrupos(denominaciones, grupos)
-
         ###
         # Cargar horarios
 
@@ -22,12 +21,6 @@ class MatriculaHorario():
         codigosCompletos = df["CODIGO"].tolist()
         nombres = df["ASIGNATURA"].tolist()
         gruposTP = df["GRUPO"].tolist()
-        hora1 = df["HORA1"].tolist()
-        hora2 = df["HORA2"].tolist()
-        hora3 = df["HORA3"].tolist()
-        hora4 = df["HORA4"].tolist()
-        hora5 = df["HORA5"].tolist()
-
         horas = [df[f"HORA{i}"].tolist() for i in range(1, 6)]
 
         ###
@@ -37,6 +30,7 @@ class MatriculaHorario():
         self.sinAsignar = {}    # Datos de subgrupos posibles
         self.asignados = {}     # Datos de subgrupos asignados
         self.combinaciones = {} # Combinaciones de subgrupos posibles
+        self.incombinable = []  # Alumnos sin combinaciones factibles
 
         for alumno in dnis:
             self.datos[alumno] = []
@@ -53,6 +47,7 @@ class MatriculaHorario():
 
             for j in range(len(codigosCompletos)):
                 if re.fullmatch(patronSgn, codigosCompletos[j]):
+
                     if grupos[i] == gruposTP[j]:
                         codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
 
@@ -77,65 +72,99 @@ class MatriculaHorario():
         # Rellenar "combinaciones"
 
         self.getCombinacionSubgrupos()
-        
-    ####################
-
-    # PREGUNTAR POR MATRICULAS SIN GRUPOS
-    # PREGUNTAR POR PRIORIDAD DE ALUMNOS CON MENCION ASIGNADA
-    def corregirGrupos(self, nombres, grupos):
-        patron = r"\(ESPECIALIDAD(?: [\wÁÉÍÓÚáéíóúÑñ]+)+\)$"
-
-        for i in range(len(nombres)):
-            if re.search(patron, nombres[i]) and pd.isna(grupos[i]):
-                grupos[i] = 'A'
-
+        self.sinCombinaciones()
 
     ####################
+
+    def solapamientoTeoria(self, alumno):
+        horas = []
+
+        for asignatura in self.datos[alumno]:
+            for hora in asignatura['horario']:
+                horas.append(hora)
+
+        if len(horas) != len(set(horas)):
+            return True
+
+        return False
+
 
     def getCombinacionSubgrupos(self):
         for alumno in self.datos.keys():
-            subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
-            self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], len(self.datos[alumno])*2)
+
+            # No explorar subgrupos si ya hay solapamiento en teoría
+            if not self.solapamientoTeoria(alumno):
+                subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
+                if subgrupos != []:
+                    self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno])
                         
     ###
 
-    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, longitud, start=0):
-        if len(actual) == longitud:
-            ordenada = sorted(actual, key=lambda x: (x['codigo'], x['grupo']))
-            combinaciones.append(ordenada)
-            return
+    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones):
+        codTeoria = {asignatura['codigo'] for asignatura in actual}
 
-        for i in range(start, len(subgruposAlumno)):
-            if self.factible(subgruposAlumno[i], actual):
-                actual.append(subgruposAlumno[i])
-                self.combinarSubgrupos(subgruposAlumno, actual, combinaciones, longitud, i+1)
-                actual.pop()
+        def backtrack(index, combActual, usados):
+            if usados == codTeoria:
+                orden = sorted(copy.deepcopy(combActual), key=lambda x: (x['codigo'], x['grupo']))
+                combinaciones.append(orden)
+                return
+            
+            if index == len(subgruposAlumno):
+                return
+            
+            subgrupo = subgruposAlumno[index]
+            codigo = subgrupo['codigo']
+
+            if codigo in codTeoria and codigo not in usados:
+                if self.factible(subgrupo, actual + combActual):
+                    combActual.append(subgrupo)
+                    usados.add(codigo)
+
+                    backtrack(index + 1, combActual, usados)
+                    
+                    combActual.pop()
+                    usados.remove(codigo)
+                
+            backtrack(index + 1, combActual, usados)
+    
+        backtrack(0, [], set())
 
     ###
 
     def factible(self, nueva, actual):
-        asignadas = []
+        nuevoCod = nueva['codigo']
+        nuevaHora = set(nueva['horario'])
+
         apariciones = 0
 
-        for entrada in actual:
-            if entrada['codigo'] == nueva['codigo']:
+        for asignatura in actual:
+            # Contar asignaturas con el mismo código
+            if asignatura['codigo'] == nuevoCod:
                 apariciones += 1
 
-        # Solo un grupo de teoría y un subgrupo de prácticas
-        if apariciones == 1:
-            for entrada in actual:
-                for hora in entrada['horario']:
-                    asignadas.append(hora)
-                    
-            for hora in nueva['horario']:
-                if hora in asignadas:
-                    return False
-                    
-            return True
-        
-        else:
-            return False
+                if apariciones >= 2:
+                    return False  
+
+            # Verificar solapamiento de horarios
+            horarioActual = set(asignatura['horario'])
+            if nuevaHora & horarioActual:
+                return False  # Hay solapamiento
+
+        return True
+
     
+    ####################
+
+    def sinCombinaciones(self):
+        alumnos = []
+
+        for alumno, matriculas in self.datos.items():
+            if matriculas != [] and self.combinaciones[alumno] == []:
+                alumnos.append(alumno)
+
+        for i, alumno in enumerate(alumnos):
+            print(f"Alumno {i} sin combinación: {alumno}")
+
     ####################
 
     def combinacionesToString(self):
