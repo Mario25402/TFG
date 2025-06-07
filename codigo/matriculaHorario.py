@@ -99,6 +99,8 @@ class MatriculaHorario():
 
     def getCombinacionSubgrupos(self):
         for alumno in self.datos.keys():
+            if alumno == 27686938:
+                pass
 
             # No explorar subgrupos si ya hay solapamiento en teoría
             if not self.solapamientoTeoria(alumno):
@@ -181,8 +183,13 @@ class MatriculaHorario():
             if matriculas != [] and self.combinaciones[alumno] == []:
                 alumnos.append(alumno)
 
-        for i, alumno in enumerate(alumnos):
-            print(f"Alumno {i} sin combinación: {alumno}")
+        # Fichero de alumnos sin combinaciones
+        with open("./res/sinComb.txt", "w") as f:            
+            for i, alumno in enumerate(alumnos):
+                f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
+                f.write(f"\nTeoría: {self.datos[alumno]}\n")
+                f.write(f"\nSubgrupos: {self.sinAsignar[alumno]}\n")
+        
 
     ####################
 
