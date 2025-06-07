@@ -11,7 +11,7 @@ class MatriculaHorario():
         dnis = df["DNI"].tolist()
         codigos = df["CEA"].tolist()
         grupos = df["GRUPO"].tolist()
-        denominaciones = df["DENOMINACIÓN"].tolist()
+        #denominaciones = df["DENOMINACIÓN"].tolist()
 
         ###
         # Cargar horarios
@@ -59,14 +59,22 @@ class MatriculaHorario():
                         })
 
                     elif re.fullmatch(patronSgp, gruposTP[j]):
-                        codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
+                        if nombres[j] != "IES":
+                            codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
 
-                        self.sinAsignar[dnis[i]].append({
-                            "codigo": codigosCompletos[j],
-                            "asignatura": nombres[j],
-                            "grupo": gruposTP[j],
-                            "horario": codigoHoras
-                        })
+                            self.sinAsignar[dnis[i]].append({
+                                "codigo": codigosCompletos[j],
+                                "asignatura": nombres[j],
+                                "grupo": gruposTP[j],
+                                "horario": codigoHoras
+                            })
+
+                        else:
+                            codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
+                            self.datos[dnis[i]][len(self.datos[dnis[i]])-1]["horario"].extend(codigoHoras)
+                            
+                            sinRepetidos = list(set(self.datos[dnis[i]][len(self.datos[dnis[i]])-1]["horario"]))
+                            self.datos[dnis[i]][len(self.datos[dnis[i]])-1]["horario"] = sinRepetidos
 
         ###
         # Rellenar "combinaciones"
@@ -102,6 +110,17 @@ class MatriculaHorario():
 
     def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones):
         codTeoria = {asignatura['codigo'] for asignatura in actual}
+        
+        ###
+        # Eliminar IES
+
+        if '2961119' in codTeoria:
+            codTeoria.remove('2961119')
+        
+        if '2971151' in codTeoria:
+            codTeoria.remove('2971151')
+
+        ###
 
         def backtrack(index, combActual, usados):
             if usados == codTeoria:
