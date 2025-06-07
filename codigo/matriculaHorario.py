@@ -189,7 +189,23 @@ class MatriculaHorario():
                 f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
                 f.write(f"\nTeoría: {self.datos[alumno]}\n")
                 f.write(f"\nSubgrupos: {self.sinAsignar[alumno]}\n")
-        
+
+                f.write(f"\nHoras Teoría: {[hora for asignatura in self.datos[alumno] for hora in asignatura['horario']]}\n")
+
+                horasPracticas = []
+                asignaturas_alumno = []
+                # Agrupar por código de asignatura
+                codigos_asignaturas = set([x['codigo'] for x in self.sinAsignar[alumno]])
+                for codigo in codigos_asignaturas:
+                    grupos_asignatura = []
+                    # Buscar todos los grupos de esa asignatura para el alumno
+                    for asignatura in self.sinAsignar[alumno]:
+                        if asignatura['codigo'] == codigo:
+                            grupos_asignatura.append(asignatura['horario'])
+                    asignaturas_alumno.append(grupos_asignatura)
+                horasPracticas.append(asignaturas_alumno)
+
+                f.write(f"Horas Prácticas: {horasPracticas}\n")
 
     ####################
 
