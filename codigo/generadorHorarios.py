@@ -222,16 +222,10 @@ class ProcesadorHorarios:
         25: "12", 57: "12", # 19:30
         27: "13", 59: "13"  # 20:30
     }
-    
+
     ###
 
-    columnasDia = {
-        1: "1", 2: "1", 3: "1",     # Lunes
-        4: "2", 5: "2", 6: "2",     # Martes
-        7: "3", 8: "3", 9: "3",     # Miércoles
-        10: "4", 11: "4", 12: "4",  # Jueves
-        13: "5", 14: "5", 15: "5",  # Viernes
-    }
+    columnasDia = {}
 
     ####################
 
@@ -260,6 +254,19 @@ class ProcesadorHorarios:
         
         for pagina, df in horarios.items():
             print(f"Procesando {pagina}...")
+            iniDias = []
+
+            # Registrar donde empieza cada día
+            for numCol in range(df.shape[1]):
+                celda = df.iat[3, numCol]
+
+                if pd.notna(celda):
+                    iniDias.append(numCol);
+            
+            self.rellenarAnchoDias(iniDias, df.shape[1])
+
+            ###
+            
             for numCol in range(df.shape[1]):
 
                 # Guardar curso y grupo
@@ -267,8 +274,13 @@ class ProcesadorHorarios:
                     for numFila in range(0, self.CONTENIDO1_INI - 1):
                         if numFila == self.FIL_CURSO:
                             texto = df.iat[numFila, numCol].replace(" ", "")
+
+                            if "(" not in texto:
+                                self.grupo = texto[2]
+                            else:
+                                self.grupo = "A"
+
                             self.curso = texto[0]
-                            self.grupo = texto[2]
                             break
 
                 elif numCol >= self.COL_CONTENIDO_INI and numCol < df.shape[1] -2:
@@ -295,7 +307,7 @@ class ProcesadorHorarios:
 
         # Antes de mediodía
         if numFila < self.DESCANSO1 or (numFila > self.CONTENIDO2_INI and numFila < self.DESCANSO2):
-            if numFila % 2 == 0: # CAMBIAR A 
+            if numFila % 2 == 0:
                 self.asignatura = celda
                 patron = rf"\({self.grupo}(\d+)\)"
                 match = re.search(patron, self.asignatura)
@@ -308,7 +320,7 @@ class ProcesadorHorarios:
 
         # Después de mediodía
         else:
-            if numFila % 2 != 0: # CAMBIAR A 
+            if numFila % 2 != 0:
                 self.asignatura = celda
                 patron = rf"\({self.grupo}(\d+)\)"
                 match = re.search(patron, self.asignatura)
@@ -327,6 +339,9 @@ class ProcesadorHorarios:
         if self.asignatura and self.aula:
             codigo = self.traducirCodigo(numFila-1, numCol)
             clave = (self.asignatura, self.subgrupo or self.grupo) # Establecer subgrupo si lo hay
+
+            if 'SG' in clave[0]:
+                pass
 
             # Si ya existe la clave, añadir la hora nueva
             if self.datos.get(clave):
@@ -351,6 +366,21 @@ class ProcesadorHorarios:
 
     def traducirCodigo(self, fila, columna):
         return f"{self.columnasDia[columna]}{self.filasHora[fila]}"
+
+    ####################
+
+    def rellenarAnchoDias(self, posDias, anchoMax):
+        dia = 0
+        colDias = {}
+
+        for col in range(anchoMax):
+            for start in posDias:
+                if col == start:
+                    dia += 1
+
+                colDias[col] = dia
+
+        self.columnasDia = colDias
 
     ####################
 

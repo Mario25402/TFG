@@ -11,9 +11,9 @@ def main():
     # Primer Cuatrimestre
 
     matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit1.csv")
-    clases = gruposAsignatura("./jesus/horariosgiit1.csv")
+    clases = gruposAsignatura("./jesus/horariosgiit1.csv", matHor.combinaciones, matHor.datos)
 
-    clases.getAulasRellenas(matHor.combinaciones)
+    clases.getResults()
 
     ###
     # Segundo Cuatrimestre

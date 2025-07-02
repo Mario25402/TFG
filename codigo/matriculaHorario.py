@@ -99,12 +99,11 @@ class MatriculaHorario():
 
     def getCombinacionSubgrupos(self):
         for alumno in self.datos.keys():
-            if alumno == 27686938:
-                pass
 
             # No explorar subgrupos si ya hay solapamiento en teoría
             if not self.solapamientoTeoria(alumno):
                 subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
+
                 if subgrupos != []:
                     self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno])
                         
@@ -112,15 +111,10 @@ class MatriculaHorario():
 
     def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones):
         codTeoria = {asignatura['codigo'] for asignatura in actual}
-        
-        ###
-        # Eliminar IES
 
-        if '2961119' in codTeoria:
-            codTeoria.remove('2961119')
-        
-        if '2971151' in codTeoria:
-            codTeoria.remove('2971151')
+        # Eliminar IES
+        if '2211115' in codTeoria:
+            codTeoria.remove('2211115')
 
         ###
 
@@ -169,6 +163,12 @@ class MatriculaHorario():
             # Verificar solapamiento de horarios
             horarioActual = set(asignatura['horario'])
             if nuevaHora & horarioActual:
+                # Ignorar solapamiento entre AL y AM del mismo subgrupo
+                if (asignatura['codigo'] == "2211111" and nuevoCod == "2211112") or (
+                    asignatura['codigo'] == "2211112" and nuevoCod == "2211111"):
+                    if (asignatura["grupo"] == nueva["grupo"]):
+                        return True
+                
                 return False  # Hay solapamiento
 
         return True
@@ -187,25 +187,13 @@ class MatriculaHorario():
         with open("./res/sinComb.txt", "w") as f:            
             for i, alumno in enumerate(alumnos):
                 f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
-                f.write(f"\nTeoría: {self.datos[alumno]}\n")
-                f.write(f"\nSubgrupos: {self.sinAsignar[alumno]}\n")
 
+                f.write(f"\nTeoría: {self.datos[alumno]}\n")
                 f.write(f"\nHoras Teoría: {[hora for asignatura in self.datos[alumno] for hora in asignatura['horario']]}\n")
 
-                horasPracticas = []
-                asignaturas_alumno = []
-                # Agrupar por código de asignatura
-                codigos_asignaturas = set([x['codigo'] for x in self.sinAsignar[alumno]])
-                for codigo in codigos_asignaturas:
-                    grupos_asignatura = []
-                    # Buscar todos los grupos de esa asignatura para el alumno
-                    for asignatura in self.sinAsignar[alumno]:
-                        if asignatura['codigo'] == codigo:
-                            grupos_asignatura.append(asignatura['horario'])
-                    asignaturas_alumno.append(grupos_asignatura)
-                horasPracticas.append(asignaturas_alumno)
-
-                f.write(f"Horas Prácticas: {horasPracticas}\n")
+                f.write(f"\nSubgrupos:\n")
+                for i, combinacion in enumerate(self.sinAsignar[alumno]):
+                    f.write(f"Posibilidad {i}:\t{combinacion}\n")
 
     ####################
 
