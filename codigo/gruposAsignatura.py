@@ -46,12 +46,14 @@ class gruposAsignatura:
 
         # En primero de teleco hay una hora que se alterna entre AM y AL y tienen que coincidir si o si -> hacer bloques de asignaturas
 
-        # En los dobles grados hay unas asignaturas que se alternan una semana si y otra no INFOADE y INFOMATES,
+        # Los grupos de los dobles grados son asignaturas comunes, aunque sean diferentes carreras
+
+        # En los dobles grados hay unas asignaturas que se alternan una semana si y otra no (3INFOADE y 3INFOMATES),
         # en el subgrupo de FIS A1 solo pueden ir estudiantes de ADE
 
         # Priorizar las combinaciones que tienen las cinco asignaturas en el mismo subgrupo
 
-        # 
+        # Evitar combinaciones donde las horas esten muy separadas temporalmente
 
         # Hacer una lista ordenada de restricciones más o menos estrictas, si no dan buen resultado ir quitandolas.
 
@@ -112,9 +114,10 @@ class gruposAsignatura:
 
     ###
 
-    # Corregir asignaturas de AM y AL
-    def corregirAM_AL(self):
-        pass
+    # Unificar asignaturas de dobles grados
+    def corregirFISDoblesGrados(self):
+        claveMates = ('FIS', 'A1')
+        claveAde = ('FIS', 'A1')
 
     ####################
 

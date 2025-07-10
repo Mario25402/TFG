@@ -10,19 +10,24 @@ def main():
     ###
     # Primer Cuatrimestre
 
-    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit1.csv")
+    """ matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit1.csv")
     clases = gruposAsignatura("./jesus/horariosgiit1.csv", matHor.combinaciones, matHor.datos)
 
-    clases.getResults()
+    clases.getResults() """
 
     ###
     # Segundo Cuatrimestre
 
-    #matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit2.csv")
-    #clases = gruposAsignatura("./jesus/horariosgiit2.csv")
+    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit2.csv")
+    clases = gruposAsignatura("./jesus/horariosgiit2.csv", matHor.combinaciones, matHor.datos)
 
-    #clases.getAulasRellenas(matHor.combinaciones)
+    clases.getResults()
 
 ##########
 
 main()
+
+# 296: Info
+# 297: InfoMates
+# 216: InfoAde
+# 221: Teleco 

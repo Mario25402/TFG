@@ -30,7 +30,6 @@ class MatriculaHorario():
         self.sinAsignar = {}    # Datos de subgrupos posibles
         self.asignados = {}     # Datos de subgrupos asignados
         self.combinaciones = {} # Combinaciones de subgrupos posibles
-        self.incombinable = []  # Alumnos sin combinaciones factibles
 
         for alumno in dnis:
             self.datos[alumno] = []
@@ -44,6 +43,11 @@ class MatriculaHorario():
         for i in range(len(dnis)):
             patronSgn = f"{carreras[i]}..{codigos[i]}"
             patronSgp = f"{grupos[i]}."
+
+            cambio = False
+            if patronSgn == '216..3B':
+                cambio = True
+                patronSgn = '297..32'
 
             for j in range(len(codigosCompletos)):
                 if re.fullmatch(patronSgn, codigosCompletos[j]):
@@ -59,6 +63,10 @@ class MatriculaHorario():
                         })
 
                     elif re.fullmatch(patronSgp, gruposTP[j]):
+
+                        if codigosCompletos[j] == '2971132' and gruposTP[j] == 'A1' and not cambio:
+                            continue
+
                         if nombres[j] != "IES":
                             codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
 
@@ -115,6 +123,9 @@ class MatriculaHorario():
         # Eliminar IES
         if '2211115' in codTeoria:
             codTeoria.remove('2211115')
+
+        if '2961119' in codTeoria:
+            codTeoria.remove('2961119')
 
         ###
 
