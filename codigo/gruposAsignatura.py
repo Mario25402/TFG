@@ -3,6 +3,74 @@ import copy
 import statistics
 import pandas as pd
 
+###############
+
+ADE = [
+    ['2161116', '2161114', '2161115', '2161113'],
+    ['216111B', '216111C', '216111D'],
+    ['2161127', '2161125', '2161126'],
+    ['216112B', '216112C', '216112D'],
+    ['2161136', '2971133', '297113B'],
+    ['216113D', '2971132', '2971139', '297113A'],
+    ['2971145', '2971143', '2161146']
+]
+
+MATES = [
+    ['2971114', '2971112', '297111C'],
+    ['297111A', '2971113'],
+    ['2971124', '2971123', '2971125'],
+    ['2971116', '297112C', '2971129', '2971129'],
+    ['2971135', '2971133', '297113B', '2971131'],
+    ['2971132', '2971139', '297113A'],
+    ['2971145', '2971143']
+]
+
+INFO = [
+    ['2961112', '2961111', '2961114', '2961115', '2961113'],
+    ['2961116', '296111A', '2961118', '2961117'], # SIN IES
+    ['2961122', '2691125', '2961124', '2961123', '2961121'],
+    ['2961126', '2961127', '2961129', '296112A', '2961128'],
+    ['2961131', '2961134', '2961133', '2961135', '2961132'],
+    ['296113L', '296113P', '296113M', '296113N', '296113K'],
+    ['296113H', '296114E', '296113I', '296113F', '296113J'],
+    ['296113C', '296113B', '296113D', '296113E', '296113A'],
+    ['296113S', '296113R', '296113T', '296113Q', '296113U'],
+    ['296113X', '296113Z', '296113Y', '296113V', '296113W'],
+    ['29611CB', '29611CD', '296114I', '296114G', '296114H'],
+    ['29611CC', '29611CF'],
+    ['29611BA', '29611BB', '296114D', '296113G', '296114F', '29611BF'],
+    ['29611BD', '29611BE', '29611BC'],
+    ['29611AA', '29611AD', '29611AE', '296114A', '296114B', '296114C'],
+    ['29611AB', '29611AF', '29611AC'],
+    ['29611DC', '29611DE', '29611DA', '296114J', '296114L', '296114K'],
+    ['29611DB', '29611DD'],
+    ['29611FA', '29611FC', '296114M', '296114P', '296114N'],
+    ['29611FB', '29611FE', '29611FD']
+]
+
+TELECO = [
+    ['2211112', '2211111', '2211113', '2211114', '2211115'],
+    ['2211116', '2211117', '2211119', '221111A', '2211118'],
+    ['2211122', '2211124', '2211123', '2211121'],
+    ['2211126', '221112A', '2211127', '2211128', '2211129'],
+    ['2211134', '2211133', '2211132', '2211135', '2211131'],
+    ['2211138', '2211136', '2211137', '2211139', '221113A'],
+    ['221113B', '221113F', '221113D', '221113C', '221113E'],
+    ['221113J', '221113K', '221113H', '221113I', '221113G'],
+    ['2211143', '2211142', '2211141'],
+    ['2211144', '2211145', '2211146'],
+    ['2211147', '2211149', '2211148'],
+    ['22111A3', '22111BB', '22111CB', '22111AB', '22111A2']
+]
+
+CURSOSCOMPLETOS = []
+CURSOSCOMPLETOS.extend(TELECO)
+CURSOSCOMPLETOS.extend(INFO)
+CURSOSCOMPLETOS.extend(MATES)
+CURSOSCOMPLETOS.extend(ADE)
+
+###############
+
 class gruposAsignatura:
     def __init__(self, fileHor, combinaciones, matricula):
         self.combinaciones = combinaciones
@@ -112,13 +180,6 @@ class gruposAsignatura:
                         self.datos[clave]["alumnos"].append(alumno)
                         self.datos[clave]["capacidadActual"] += 1
 
-    ###
-
-    # Unificar asignaturas de dobles grados
-    def corregirFISDoblesGrados(self):
-        claveMates = ('FIS', 'A1')
-        claveAde = ('FIS', 'A1')
-
     ####################
 
     def getAulasRellenas(self, alumnos):
@@ -195,12 +256,47 @@ class gruposAsignatura:
             elif len(combinaciones) > 1:
                 alumnos_lista.append((alumno, combinaciones))
 
+        # Ordenar alumnos, antes los que tienen todas las asignaturas de un curso
+        #alumnos_lista.sort()
+        alumnos_lista = self.sort(alumnos_lista)
         # Ordenar alumnos por el número de combinaciones (menos a más)
-        alumnos_lista.sort(key = lambda x: len(x[1]), reverse=False)
+        #alumnos_lista.sort(key = lambda x: len(x[1]), reverse=False)
+
         self.explorarCombinacionesSubgrupos(alumnos_lista, copy.deepcopy(self.datos), soluciones, 0, len(alumnos) - asignados)
 
         return soluciones
     
+    ###
+
+    def completo(self, lista):
+        completo = {}
+
+        for datos in lista:
+            completo[datos[0]] = False
+            codigos = []
+            grupos = []
+
+            for asignatura in datos[1][0]:
+                codigos.append(asignatura["codigo"])
+                grupos.append(asignatura["grupo"][0])
+
+            repetidos = set(grupos)
+            if len(repetidos) > 1:
+                continue
+
+            for curso in CURSOSCOMPLETOS:
+                if sorted(codigos) == sorted(curso):
+                    completo[datos[0]] = True
+                    break
+
+        return completo
+
+    ###
+
+    def sort(self, lista):
+        cursosCompletos = self.completo(lista)
+        return sorted(lista, key=lambda x: (not cursosCompletos.get(x[0], False), len(x[1])), reverse=False)
+
     ###
     
     def explorarCombinacionesSubgrupos(self, alumnos, actual, soluciones, indice, stop):
