@@ -205,6 +205,9 @@ class gruposAsignatura:
         contador = 0
         anterior = ("", "W")
 
+        sumaEx = 0
+        sumaSob = 0
+
         for asignatura, datos in soluciones[0].items():
             if datos["capacidadActual"] <= datos["capacidadTotal"]:
                 resta = datos["capacidadTotal"] - datos["capacidadActual"]
@@ -216,6 +219,7 @@ class gruposAsignatura:
 
                 anterior = asignatura
                 contador += 1
+                sumaSob += resta
 
         print('\n\n\n\n\n')
 
@@ -232,6 +236,11 @@ class gruposAsignatura:
 
                 anterior = asignatura
                 contador += 1
+                sumaEx += resta
+
+        print('\n\n\n\n\n')
+        print(f"Suma sobrantes: {sumaSob}")
+        print(f"Suma excesos: {sumaEx}")
 
     # Añadir alumno a todos sus grupos de teoría
     def rellenarGruposTeoria(self, combinaciones):
@@ -257,10 +266,8 @@ class gruposAsignatura:
                 alumnos_lista.append((alumno, combinaciones))
 
         # Ordenar alumnos, antes los que tienen todas las asignaturas de un curso
-        #alumnos_lista.sort()
-        alumnos_lista = self.sort(alumnos_lista)
         # Ordenar alumnos por el número de combinaciones (menos a más)
-        #alumnos_lista.sort(key = lambda x: len(x[1]), reverse=False)
+        alumnos_lista = self.sort(alumnos_lista)
 
         self.explorarCombinacionesSubgrupos(alumnos_lista, copy.deepcopy(self.datos), soluciones, 0, len(alumnos) - asignados)
 
@@ -268,6 +275,7 @@ class gruposAsignatura:
     
     ###
 
+    # Comprueba las asignaturas de cada grado por curso
     def completo(self, lista):
         completo = {}
 
@@ -304,13 +312,17 @@ class gruposAsignatura:
             soluciones.append(copy.deepcopy(actual))
             return True
         
-        alumno, combinaciones = alumnos[indice]
+        diasBool = {}
         desviaciones = {}
+        combEliminadas = []
+
+        alumno, combinaciones = alumnos[indice]
 
         for i, combinacion in enumerate(combinaciones):
+            diasBool[i] = {}
             desviaciones[i] = self.desviaciones(alumno, copy.deepcopy(actual), combinacion)
 
-        # Seleccionar el grupo con mejor equilibrio
+        # Seleccionar el grupo con mejor equilibrio global de personas por aula
         mejor = [None, 1000] # indice, valor desviación
         for i, desv in desviaciones.items():
             desvTotal = sum(list(desv.values()))
@@ -320,15 +332,91 @@ class gruposAsignatura:
                 mejor[1] = desvTotal
                 
         for i in range(len(combinaciones)):
+            horas = set()
+            asignaturas = combinaciones[i]
+            
+            for asignatura in asignaturas:
+                horas.update(asignatura["horario"])
+
+            # Eliminar combinaciones con horas muy separadas
+            if self.separacionAltaHoras(horas, asignaturas, diasBool[i]):
+                combEliminadas.append(combinaciones[i])
+                break
+
             if i == mejor[0]:
                 self.rellenarSubgrupos(actual, alumno, combinaciones[i])
                 break
+
+        # Si ninguna combinación es válida, añadir la combinación con mejor equilibrio
+        if len(combEliminadas) == len(combinaciones):
+            print("Aqui")
+            self.rellenarSubgrupos(actual, alumno, mejor[0])
 
         # Seguir explorando
         if self.explorarCombinacionesSubgrupos(alumnos, copy.deepcopy(actual), soluciones, indice + 1, stop):
             return True
         
         return False
+
+    ###
+
+    # Comprueba si las horas de un alumno están muy separadas
+    def separacionAltaHoras(self, horas, asignaturas, resultado):
+
+        # Añadir horas de teoría
+        for asignatura in asignaturas:
+            clave = (asignatura["asignatura"], asignatura["grupo"][0])
+            if clave in self.datos:
+                horas.update(self.datos[clave]["horario"])
+
+        ###
+
+        separacion = {}
+        resultados = {}
+
+        for hora in horas:
+            dia = str(hora)[0]
+            separacion.setdefault(dia, set())
+            separacion[dia].add(hora)
+
+        for clave in separacion.keys():
+            separacion[clave] = sorted(list(separacion[clave]))
+
+        for dia, horas in separacion.items():
+            resultados[dia] = False
+
+            for i in range(len(horas) - 1):
+                if horas[i + 1] - horas[i] > 2:
+                    resultados[dia] = True
+                    break
+
+        # Comprobar que todos los días tienen el mismo resultado
+        todoFalse = set(resultados.values()) == {False}
+
+        if todoFalse:
+            return False
+        
+        resultado = resultados
+        return True
+
+    ###
+
+    def seleccionarMejorSeparadas(self, combEliminadas, diasBool, desviaciones):
+        mejor = 5
+        mejores = []
+
+        for i in range(len(combEliminadas)):
+            numTrue = sum(diasBool[i].values())
+
+            if numTrue < mejor:
+                mejor = numTrue
+                mejores = [i]
+                
+                
+            elif numTrue == mejor:
+                mejores.append(i)
+
+        return combEliminadas[mejores[0]]
 
     ###
 

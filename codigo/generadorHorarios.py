@@ -208,13 +208,13 @@ class ProcesadorHorarios:
     ###
 
     filasHora = {
-        4: "01", 36: "01",  # 8:30
-        6: "02", 38: "02",  # 9:30
-        8: "03", 40: "03",  # 10:30
-        10: "04", 42: "04", # 11:30
-        12: "05", 44: "05", # 12:30
-        14: "06", 46: "06", # 13:30
-        16: "07", 48: "07", # 14:30
+        3: "01", 4: "01", 36: "01", 37: "01",  # 8:30
+        5: "02", 6: "02", 38: "02", 39: "02", # 9:30
+        7: "03", 8: "03", 40: "03", 41: "03", # 10:30
+        9: "04", 10: "04", 42: "04", 43: "04", # 11:30
+        11: "05", 12: "05", 44: "05", 45: "05", # 12:30
+        13: "06", 14: "06", 46: "06", 46: "06", # 13:30
+        15: "07", 16: "07", 48: "07", # 14:30
         17: "08", 49: "08", # 15:30
         19: "09", 51: "09", # 16:30
         21: "10", 53: "10", # 17:30
@@ -254,6 +254,10 @@ class ProcesadorHorarios:
         
         for pagina, df in horarios.items():
             print(f"Procesando {pagina}...")
+
+            if pagina == '4GII(Com)':
+                pass
+
             iniDias = []
 
             # Registrar donde empieza cada día
@@ -283,6 +287,7 @@ class ProcesadorHorarios:
                             self.curso = texto[0]
                             break
 
+                # Asignaturas
                 elif numCol >= self.COL_CONTENIDO_INI and numCol < df.shape[1] -2:
 
                     # Primer Cuatrimestre
@@ -290,20 +295,28 @@ class ProcesadorHorarios:
                         celda = df.iat[numFila, numCol]
 
                         if pd.notna(celda):
-                            self.procesarCelda(celda, numFila, numCol, 1)
+                            self.procesarCelda(celda, numFila, numCol, df.iat[2,0][0], pagina)
 
                     # Segundo Cuatrimestre
                     for numFila in range(self.CONTENIDO2_INI, df.shape[0]):
                         celda = df.iat[numFila, numCol]
 
                         if pd.notna(celda):
-                            self.procesarCelda(celda, numFila, numCol, 2)
+                            if pd.notna(df.iat[34, 0]):
+                                cuatr = df.iat[34, 0][0]
+                            else:
+                                cuatr = df.iat[33, 0][0]
 
+                            self.procesarCelda(celda, numFila, numCol, cuatr, pagina)
+
+        for clave in self.datos.keys():
+            self.datos[clave]["horario"] = set(self.datos[clave]["horario"])
+            
         self.datos = dict(sorted(self.datos.items()))
 
     #####
 
-    def procesarCelda(self, celda, numFila, numCol, cuatrimestre):
+    def procesarCelda(self, celda, numFila, numCol, cuatrimestre, pagina):
 
         # Antes de mediodía
         if numFila < self.DESCANSO1 or (numFila > self.CONTENIDO2_INI and numFila < self.DESCANSO2):
@@ -337,30 +350,36 @@ class ProcesadorHorarios:
 
         # Guardar datos en el diccionario
         if self.asignatura and self.aula:
-            codigo = self.traducirCodigo(numFila-1, numCol)
-            clave = (self.asignatura, self.subgrupo or self.grupo) # Establecer subgrupo si lo hay
 
-            if 'SG' in clave[0]:
-                pass
+            # Intercambiar asignatura y aula por error de formato
+            if re.fullmatch(r"\d+\.\d+", self.asignatura):
+                tmp = self.asignatura
+                self.asignatura = self.aula
+                self.aula = tmp
 
-            # Si ya existe la clave, añadir la hora nueva
-            if self.datos.get(clave):
-                self.datos[clave]["horario"].append(codigo)
+            if (self.asignatura != "EISI" or self.asignatura != "CEGE" or self.asignatura != "DI") or \
+               (self.asignatura == "EISI" or self.asignatura == "CEGE" or self.asignatura == "DI") and pagina == '4GII(Com)':
+                codigo = self.traducirCodigo(numFila-1, numCol)
+                clave = (self.asignatura, self.subgrupo or self.grupo) # Establecer subgrupo si lo hay
 
-            else:
-                self.datos[clave] = {
-                    "codigo": self.codigosAsignaturas[self.asignatura],
-                    "asignatura": self.asignatura,
-                    "horario": [codigo],
-                    "aula": self.aula,
-                    "curso": self.curso,
-                    "grupo": self.subgrupo or self.grupo,
-                    "cuatrimestre": cuatrimestre
-                }
+                # Si ya existe la clave, añadir la hora nueva
+                if self.datos.get(clave):
+                    self.datos[clave]["horario"].append(codigo)
 
-            self.aula = None
-            self.subgrupo = None
-            self.asignatura = None
+                else:
+                    self.datos[clave] = {
+                        "codigo": self.codigosAsignaturas[self.asignatura],
+                        "asignatura": self.asignatura,
+                        "horario": [codigo],
+                        "aula": self.aula,
+                        "curso": self.curso,
+                        "grupo": self.subgrupo or self.grupo,
+                        "cuatrimestre": cuatrimestre
+                    }
+
+                self.aula = None
+                self.subgrupo = None
+                self.asignatura = None
 
     #####
 
