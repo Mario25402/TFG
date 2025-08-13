@@ -83,6 +83,7 @@ class gruposAsignatura:
         codigos = df["CODIGO"].tolist()
         nombres = df["ASIGNATURA"].tolist()
         grupos = df["GRUPO"].tolist()
+        #aulas = df["AULA"].tolist()
         horas = [df[f"HORA{i}"].tolist() for i in range(1, 6)]
 
         ###
@@ -96,6 +97,7 @@ class gruposAsignatura:
 
             self.datos[clave] = {
                 "codigo" : codigos[i],
+                "aula": None, #aulas[i],
                 "capacidadTotal" : 26,
                 "capacidadActual" : 0,
                 "alumnos": [],
@@ -110,6 +112,19 @@ class gruposAsignatura:
         # Ajustar capacidades a subgrupos y rellenar alumnos
         self.corregirSubgrupos(codigos, grupos)
         self.corregirIES()
+
+        # En primero de teleco hay una hora que se alterna entre AM y AL y tienen que coincidir si o si -> hacer bloques de asignaturas
+
+        # Los grupos de los dobles grados son asignaturas comunes, aunque sean diferentes carreras
+
+        # En los dobles grados hay unas asignaturas que se alternan una semana si y otra no (3INFOADE y 3INFOMATES),
+        # en el subgrupo de FIS A1 solo pueden ir estudiantes de ADE
+
+        # Priorizar las combinaciones que tienen las cinco asignaturas en el mismo subgrupo
+
+        # Evitar combinaciones donde las horas esten muy separadas temporalmente
+
+        # Hacer una lista ordenada de restricciones más o menos estrictas, si no dan buen resultado ir quitandolas.
 
     ####################
 
@@ -181,66 +196,53 @@ class gruposAsignatura:
     ###
 
     def getResults(self):
-        solucionesEnteras = self.getAulasRellenas(self.combinaciones)
-        solucionesSolapadas = self.setSolapados()
+        soluciones = self.getAulasRellenas(self.combinaciones)
+        soluciones = self.setSolapados()
 
-        soluciones = {}
-        soluciones.update(solucionesEnteras[0])
-        soluciones.update(solucionesSolapadas[0])
-
-        for asignatura, datos in soluciones.items():
+        for asignatura, datos in soluciones[0].items():
             print(f"Asignatura: {asignatura}:\n {datos}\n\n")
 
         print('\n\n\n\n\n')
 
+        contador = 0
+        anterior = ("", "W")
+
         sumaEx = 0
         sumaSob = 0
-        contador = 0
 
-        for asignatura, datos in soluciones.items():
+        for asignatura, datos in soluciones[0].items():
             if datos["capacidadActual"] <= datos["capacidadTotal"]:
                 resta = datos["capacidadTotal"] - datos["capacidadActual"]
 
+                if asignatura[1][0] != anterior[1][0]:
+                    print('\n')
+
                 print(f"Sobrante {contador}: {asignatura} - {resta} alumnos")
 
+                anterior = asignatura
                 contador += 1
                 sumaSob += resta
 
         print('\n\n\n\n\n')
 
         contador = 0
+        anterior = ("", "W")
 
-        for asignatura, datos in soluciones.items():
+        for asignatura, datos in soluciones[0].items():
             if datos["capacidadActual"] > datos["capacidadTotal"]:
                 resta = datos["capacidadActual"] - datos["capacidadTotal"]
                 print(f"Exceso {contador}: {asignatura} - {resta} alumnos")
 
+                if asignatura[1][0] != anterior[1][0]:
+                    print('\n')
+
+                anterior = asignatura
                 contador += 1
                 sumaEx += resta
 
         print('\n\n\n\n\n')
         print(f"Suma sobrantes: {sumaSob}")
         print(f"Suma excesos: {sumaEx}")
-
-        asignados = []
-        matriculados = []
-        
-        for alumno in self.matricula.keys():
-            if len(self.matricula[alumno]) > 0:
-                matriculados.append(alumno)
-
-            nextAlumno = False
-            for asignatura, datos in soluciones.items():
-                if alumno in datos["alumnos"]:
-                    asignados.append(alumno)
-                    nextAlumno = True
-                    break
-
-            if nextAlumno:
-                continue
-
-        print(f"Alumnos matriculados: {len(matriculados)}, Alumnos asignados: {len(asignados)}")
-        print('\n\n')
 
     # Añadir alumnos a todos sus grupos de teoría
     def rellenarGruposTeoria(self, combinaciones):
@@ -317,10 +319,11 @@ class gruposAsignatura:
         combEliminadas = []
 
         alumno, combinaciones = alumnos[indice]
+        print(indice)
 
         for i, combinacion in enumerate(combinaciones):
             diasBool[i] = {}
-            desviaciones[i] = self.desviaciones(alumno, actual, combinacion)
+            desviaciones[i] = self.desviaciones(alumno, copy.deepcopy(actual), combinacion)
 
         # Seleccionar el grupo con mejor equilibrio global de personas por aula
         mejor = [None, 1000] # indice, valor desviación
@@ -410,7 +413,7 @@ class gruposAsignatura:
             if numTrue < mejor:
                 mejor = numTrue
                 mejores = [i]
-                
+                        
             elif numTrue == mejor:
                 mejores.append(i)
 

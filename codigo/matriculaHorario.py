@@ -113,11 +113,11 @@ class MatriculaHorario():
                 subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
 
                 if subgrupos != []:
-                    self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno])
+                    self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], True)
                         
     ###
 
-    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones):
+    def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, solapar=False):
         codTeoria = {asignatura['codigo'] for asignatura in actual}
 
         # Eliminar IES
@@ -129,7 +129,7 @@ class MatriculaHorario():
 
         ###
 
-        def backtrack(index, combActual, usados):
+        def backtrack(index, combActual, usados, solapar=False):
             if usados == codTeoria:
                 orden = sorted(copy.deepcopy(combActual), key=lambda x: (x['codigo'], x['grupo']))
                 combinaciones.append(orden)
@@ -142,22 +142,22 @@ class MatriculaHorario():
             codigo = subgrupo['codigo']
 
             if codigo in codTeoria and codigo not in usados:
-                if self.factible(subgrupo, actual + combActual):
+                if self.factible(subgrupo, actual + combActual, solapar):
                     combActual.append(subgrupo)
                     usados.add(codigo)
 
-                    backtrack(index + 1, combActual, usados)
+                    backtrack(index + 1, combActual, usados, solapar)
                     
                     combActual.pop()
                     usados.remove(codigo)
                 
-            backtrack(index + 1, combActual, usados)
+            backtrack(index + 1, combActual, usados, solapar)
     
-        backtrack(0, [], set())
+        backtrack(0, [], set(), solapar)
 
     ###
 
-    def factible(self, nueva, actual):
+    def factible(self, nueva, actual, solapar=False):
         nuevoCod = nueva['codigo']
         nuevaHora = set(nueva['horario'])
 
@@ -172,15 +172,16 @@ class MatriculaHorario():
                     return False  
 
             # Verificar solapamiento de horarios
-            horarioActual = set(asignatura['horario'])
-            if nuevaHora & horarioActual:
-                # Ignorar solapamiento entre AL y AM del mismo subgrupo
-                if (asignatura['codigo'] == "2211111" and nuevoCod == "2211112") or (
-                    asignatura['codigo'] == "2211112" and nuevoCod == "2211111"):
-                    if (asignatura["grupo"] == nueva["grupo"]):
-                        return True
-                
-                return False  # Hay solapamiento
+            if (solapar == False):
+                horarioActual = set(asignatura['horario'])
+                if nuevaHora & horarioActual:
+                    # Ignorar solapamiento entre AL y AM del mismo subgrupo
+                    if (asignatura['codigo'] == "2211111" and nuevoCod == "2211112") or (
+                        asignatura['codigo'] == "2211112" and nuevoCod == "2211111"):
+                        if (asignatura["grupo"] == nueva["grupo"]):
+                            return True
+                    
+                    return False  # Hay solapamiento
 
         return True
 
@@ -205,6 +206,20 @@ class MatriculaHorario():
                 f.write(f"\nSubgrupos:\n")
                 for i, combinacion in enumerate(self.sinAsignar[alumno]):
                     f.write(f"Posibilidad {i}:\t{combinacion}\n")
+
+
+    def getSinAsignar(self):
+        res = {}
+        for alumno in self.sinAsignar.keys():
+            res[alumno] = []
+
+            if self.combinaciones[alumno] == []:    
+                subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
+
+                if subgrupos != []:
+                    self.combinarSubgrupos(subgrupos, self.datos[alumno], res[alumno], True)
+
+        return res
 
     ####################
 
