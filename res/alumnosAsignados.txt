@@ -1,0 +1,15269 @@
+
+37947823:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+75895646:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+13843469:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+51791292:
+ALG - B
+PLD - A
+SIBW - A
+
+89739115:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+27686938:
+LMD - E
+LMD - E1
+LMD - E2
+MP - E
+MP - E1
+MP - E2
+MP - E3
+PDM - A
+PDM - A1
+PDS - A
+PDS - A1
+SMM - A
+SMM - A1
+SMM - A2
+SMM - A3
+
+65634761:
+
+3582584:
+
+41530407:
+AC - C
+IA - C
+MP - E
+SCGC - A
+SMD - A
+
+79478230:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - D
+ES - D1
+ES - D2
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+17426053:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+55373876:
+ABD - A
+ALG - B
+ISI - A
+PW - A
+SIE - A
+
+93321699:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+31269522:
+
+69217345:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+7165168:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+45112991:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+83060814:
+AO - A
+AO - A1
+PLD - A
+PLD - A1
+PW - A
+PW - A1
+PW - A2
+RI - A
+RI - A1
+
+21008637:
+MEI - A
+MEI - A1
+
+58956460:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+96904283:
+IC - A
+SWAP - A
+
+34852106:
+AC - B
+ALG - A
+ES - D
+FBD - D
+IA - A
+LMD - A
+
+72799929:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+10747752:
+
+48695575:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+LMD - F
+
+86643398:
+AA - A
+CRIP - A
+SCGC - A
+
+24591221:
+MP - B
+SG - A
+
+62539044:
+DSD - A
+FIS - B
+IA - A
+TDRC - A
+TW - A
+
+486867:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+38434690:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - B
+MP - A
+
+76382513:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+14330336:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+52278159:
+DSE - A
+DSE - A1
+
+90225982:
+
+28173805:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+66121628:
+AC - A
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+4069451:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+MP - C
+
+42017274:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+79965097:
+AC - B
+ALG - B
+LMD - E
+
+17912920:
+
+55860743:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+MP - E
+
+93808566:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+31756389:
+ALG - D
+IA - D
+
+69704212:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+7652035:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+45599858:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+83547681:
+AC - A
+ALG - A
+FBD - A
+IA - A
+SWAP - A
+TDRC - A
+
+21495504:
+ES - C
+LMD - C
+MP - C
+
+59443327:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+97391150:
+AO - A
+AO - A1
+CEGE - A
+CEGE - A1
+PPR - A
+PPR - A1
+
+35338973:
+AA - A
+IC - A
+MH - A
+
+73286796:
+AO - A
+AO - A1
+
+11234619:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+49182442:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+87130265:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+25078088:
+ALG - B
+DHD - A
+TW - A
+
+63025911:
+ACAP - A
+ES - A
+FBD - B
+LMD - E
+SIBW - A
+
+973734:
+
+38921557:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+76869380:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+14817203:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+52765026:
+
+90712849:
+FBD - B
+FIS - B
+LMD - F
+MP - F
+
+28660672:
+ABD - A
+AC - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+66608495:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+MP - A
+MP - A1
+MP - A2
+
+4556318:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+42504141:
+DI - A
+DIU - A
+MEI - A
+SCGC - A
+SIBW - A
+
+80451964:
+AC - B
+ALG - B
+DS - A
+DSD - A
+
+18399787:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+MP - A
+MP - A1
+MP - A2
+PW - A
+PW - A1
+PW - A2
+PW - A3
+
+56347610:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+94295433:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+32243256:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+70191079:
+FBD - D
+FIS - D
+IA - D
+LMD - A
+MP - A
+
+8138902:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+46086725:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+84034548:
+MEI - A
+NTP - A
+SIBW - A
+
+21982371:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+59930194:
+AC - C
+FBD - A
+FIS - A
+IA - A
+LMD - E
+
+97878017:
+
+35825840:
+AC - D
+ALG - D
+FBD - D
+IA - D
+
+73773663:
+AC - D
+
+11721486:
+CRIP - A
+MAC - A
+MH - A
+RI - A
+TSI - A
+
+49669309:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+87617132:
+CUIA - A
+MH - A
+
+25564955:
+
+63512778:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+1460601:
+PDM - A
+SIE - A
+SMM - A
+
+39408424:
+
+77356247:
+DS - A
+IES - D
+SIBW - A
+
+15304070:
+AC - C
+ALG - C
+FBD - C
+FIS - D
+IA - C
+
+53251893:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+91199716:
+DSD - A
+FIS - A
+IA - B
+TDRC - A
+TW - A
+
+29147539:
+CEGE - A
+CEGE - A1
+CRIP - A
+CRIP - A1
+MEI - A
+MEI - A1
+
+67095362:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+5043185:
+CEGE - A
+CUIA - A
+EISI - A
+ISI - A
+SIE - A
+
+42991008:
+AA - A
+AA - A1
+AA - A2
+AA - A3
+AA - A4
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+IC - A
+IC - A1
+IC - A2
+MH - A
+MH - A1
+MH - A2
+MH - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+TSI - A
+TSI - A1
+TSI - A2
+TSI - A3
+
+80938831:
+
+18886654:
+AC - C
+FBD - B
+FIS - B
+IA - B
+LMD - D
+MP - D
+
+56834477:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+ES - E
+ES - E1
+ES - E2
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - D
+IA - D1
+IA - D2
+IA - D3
+
+94782300:
+AC - C
+EISI - A
+MEI - A
+PDM - A
+
+32730123:
+DIU - A
+
+70677946:
+ES - E
+LMD - E
+MP - E
+TOC - E
+
+8625769:
+ALG - A
+FBD - A
+MP - F
+SWAP - A
+
+46573592:
+
+84521415:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+22469238:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+60417061:
+CEGE - A
+CEGE - A1
+
+98364884:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+36312707:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+74260530:
+MP - E
+
+12208353:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+50156176:
+ALG - C
+DI - A
+
+88103999:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+26051822:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+63999645:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+1947468:
+
+39895291:
+AC - B
+IA - B
+IC - A
+ISI - A
+MP - E
+SIE - A
+
+77843114:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+15790937:
+DS - A
+DS - A1
+DS - A2
+DS - A3
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+LMD - C
+LMD - C1
+NTP - A
+NTP - A1
+PDS - A
+PDS - A1
+
+53738760:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+91686583:
+DS - A
+DS - A1
+DS - A2
+DS - A3
+ED  - B
+ED  - B1
+MAC - A
+MAC - A1
+MAC - A2
+MAC - A3
+PPR - A
+PPR - A1
+RI - A
+RI - A1
+
+29634406:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+67582229:
+ACAP - A
+ALG - B
+DSD - A
+SMM - A
+TDRC - A
+
+5530052:
+
+43477875:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+81425698:
+AA - A
+IC - A
+LMD - A
+MAC - A
+MH - A
+TSI - A
+
+19373521:
+DI - A
+DI - A1
+MEI - A
+MEI - A1
+PPR - A
+PPR - A1
+
+57321344:
+PDM - A
+PDM - A1
+RI - A
+RI - A1
+
+95269167:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+33216990:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+71164813:
+ALG - B
+MAC - A
+SG - A
+SMM - A
+
+9112636:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - C
+
+47060459:
+ABD - A
+SWAP - A
+
+85008282:
+ABD - A
+ALG - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+22956105:
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+LMD - F
+LMD - F1
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+60903928:
+ALG - B
+FBD - B
+FIS - B
+
+98851751:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+36799574:
+
+74747397:
+AA - A
+AA - A1
+AA - A2
+AA - A3
+AA - A4
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+IC - A
+IC - A1
+IC - A2
+SG - A
+SG - A1
+SG - A2
+SG - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+12695220:
+ES - E
+LMD - E
+MP - E
+
+50643043:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+88590866:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+26538689:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+64486512:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+2434335:
+ABD - A
+ALG - B
+FBD - B
+ISI - A
+SIE - A
+SMD - A
+
+40382158:
+
+78329981:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+16277804:
+ES - F
+LMD - F
+MP - F
+TOC - F
+
+54225627:
+
+92173450:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+30121273:
+LMD - E
+
+68069096:
+
+6016919:
+SG - A
+
+43964742:
+
+81912565:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+19860388:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+57808211:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+95756034:
+DS - A
+DSD - A
+FBD - A
+
+33703857:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+71651680:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+LMD - F
+LMD - F1
+
+9599503:
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+LMD - F
+LMD - F1
+PPR - A
+PPR - A1
+
+47547326:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+85495149:
+LMD - D
+MP - B
+
+23442972:
+
+61390795:
+AC - A
+
+99338618:
+CUIA - A
+SMM - A
+SWAP - A
+
+37286441:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+ES - E3
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+MP - F
+MP - F1
+
+75234264:
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+MP - C
+MP - C1
+SMM - A
+SMM - A1
+SMM - A2
+SMM - A3
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+13182087:
+DIU - A
+ISI - A
+
+51129910:
+
+89077733:
+
+27025556:
+
+64973379:
+ABD - A
+ABD - A1
+ABD - A2
+ABD - A3
+AC - C
+AC - C1
+AC - C2
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+PDIH - A
+PDIH - A1
+TW - A
+TW - A1
+TW - A2
+TW - A3
+
+2921202:
+CRIP - A
+MAC - A
+MP - D
+RI - A
+TSI - A
+
+40869025:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+78816848:
+SMM - A
+TDRC - A
+TW - A
+
+16764671:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+LMD - F
+LMD - F1
+NTP - A
+NTP - A1
+
+54712494:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+92660317:
+CEGE - A
+CEGE - A1
+PDM - A
+PDM - A1
+
+30608140:
+FBD - B
+FIS - B
+IA - B
+LMD - B
+MP - B
+
+68555963:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+6503786:
+CEGE - A
+CEGE - A1
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+44451609:
+ALG - B
+FBD - B
+IA - B
+LMD - F
+MP - F
+
+82399432:
+AC - B
+IC - A
+MH - A
+TSI - A
+
+20347255:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+58295078:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+96242901:
+AO - A
+AO - A1
+NTP - A
+NTP - A1
+PPR - A
+PPR - A1
+
+34190724:
+
+72138547:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+10086370:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+48034193:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+85982016:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+23929839:
+ES - D
+ES - D1
+ES - D2
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+61877662:
+AC - B
+ALG - B
+FBD - B
+IA - B
+
+99825485:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+37773308:
+
+75721131:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+13668954:
+ALG - C
+DS - A
+DSD - A
+IA - C
+LMD - E
+
+51616777:
+
+89564600:
+AC - C
+ALG - D
+FBD - A
+IA - B
+LMD - F
+
+27512423:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+65460246:
+ABD - A
+SIBW - A
+SWAP - A
+TDRC - A
+
+3408069:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+41355892:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - D
+ES - D1
+ES - D2
+ES - D3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+IES - A
+TOC - D
+TOC - D1
+TOC - D2
+
+79303715:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+17251538:
+PDS - A
+PDS - A1
+RMS - A
+RMS - A1
+SCGC - A
+SCGC - A1
+
+55199361:
+ES - F
+FBD - B
+FIS - B
+LMD - E
+MP - F
+
+93147184:
+FBD - B
+MAC - A
+
+31095007:
+ABD - A
+DIU - A
+
+69042830:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+6990653:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+44938476:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+82886299:
+MAC - A
+TDRC - A
+
+20834122:
+
+58781945:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+96729768:
+CUIA - A
+FBD - A
+MP - C
+SWAP - A
+TDRC - A
+TW - A
+
+34677591:
+
+72625414:
+ABD - A
+
+10573237:
+AC - C
+CUIA - A
+
+48521060:
+ACAP - A
+DSD - A
+LMD - B
+SIE - A
+
+86468883:
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+24416706:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+62364529:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+312352:
+CUIA - A
+TW - A
+
+38260175:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+76207998:
+
+14155821:
+IES - C
+
+52103644:
+AC - B
+CII - A
+LMD - F
+MP - F
+PW - A
+
+90051467:
+
+27999290:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+65947113:
+FBD - D
+FIS - B
+IA - D
+LMD - E
+MP - A
+
+3894936:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+41842759:
+
+79790582:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+17738405:
+AC - A
+FBD - A
+MP - D
+TOC - E
+
+55686228:
+SG - A
+
+93634051:
+MEI - A
+PDIH - A
+SWAP - A
+
+31581874:
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+CII - A
+CII - A1
+LMD - F
+LMD - F1
+MP - F
+MP - F1
+MP - F2
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+69529697:
+IA - C
+SIBW - A
+SMP - A
+
+7477520:
+ALG - B
+FBD - B
+
+45425343:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+83373166:
+DS - A
+DS - A1
+DS - A2
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+PW - A
+PW - A1
+PW - A2
+PW - A3
+SG - A
+SG - A1
+SG - A2
+SG - A3
+SIBW - A
+SIBW - A1
+SIBW - A2
+SIBW - A3
+
+21320989:
+AA - A
+DS - A
+SWAP - A
+TDRC - A
+
+59268812:
+DI - A
+DI - A1
+PDM - A
+PDM - A1
+PDS - A
+PDS - A1
+
+97216635:
+
+35164458:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+73112281:
+ABD - A
+
+11060104:
+CII - A
+CII - A1
+CRIP - A
+CRIP - A1
+MEI - A
+MEI - A1
+
+49007927:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+86955750:
+
+24903573:
+FBD - A
+IES - F
+LMD - F
+MP - F
+
+62851396:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+799219:
+
+38747042:
+FBD - D
+MP - B
+SIE - A
+
+76694865:
+
+14642688:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+52590511:
+
+90538334:
+
+28486157:
+AC - D
+ALG - D
+FBD - D
+FIS - B
+IA - D
+
+66433980:
+
+4381803:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+ES - E3
+FIS - C
+FIS - C1
+FIS - C2
+IES - F
+MP - F
+MP - F1
+
+42329626:
+
+80277449:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+18225272:
+AC - C
+ALG - C
+FBD - C
+IA - C
+
+56173095:
+MP - E
+
+94120918:
+AC - A
+ALG - A
+FBD - A
+FIS - B
+IA - A
+
+32068741:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+70016564:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+7964387:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - A
+LMD - A1
+LMD - A2
+MP - A
+MP - A1
+MP - A2
+MP - A3
+
+45912210:
+AC - A
+DS - A
+DSD - A
+NTP - A
+SG - A
+
+83860033:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+21807856:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+LMD - E
+LMD - E1
+LMD - E2
+MP - E
+MP - E1
+MP - E2
+MP - E3
+PDS - A
+PDS - A1
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+
+59755679:
+
+97703502:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+35651325:
+ALG - B
+FBD - B
+FIS - B
+IA - B
+MP - F
+
+73599148:
+AC - D
+ES - E
+FBD - B
+FIS - B
+MP - B
+
+11546971:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+49494794:
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+DSE - A
+DSE - A1
+FIS - C
+FIS - C1
+IES - F
+TSI - A
+TSI - A1
+TSI - A2
+TSI - A3
+TW - A
+TW - A1
+TW - A2
+TW - A3
+
+87442617:
+
+25390440:
+ALG - B
+DIU - A
+MP - D
+SIBW - A
+
+63338263:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+1286086:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+39233909:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+77181732:
+NTP - A
+NTP - A1
+PDIH - A
+PDIH - A1
+
+15129555:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+53077378:
+ES - C
+ES - C1
+ES - C2
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+MP - B
+MP - B1
+MP - B2
+
+91025201:
+DIU - A
+
+28973024:
+AA - A
+FBD - B
+FIS - B
+
+66920847:
+
+4868670:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+42816493:
+PLD - A
+PLD - A1
+SIBW - A
+SIBW - A1
+SIBW - A2
+SIBW - A3
+SMD - A
+SMD - A1
+SMD - A2
+SMD - A3
+TSI - A
+TSI - A1
+TSI - A2
+
+80764316:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+18712139:
+CUIA - A
+LMD - A
+MP - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+56659962:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+94607785:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+32555608:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+70503431:
+
+8451254:
+AC - D
+CUIA - A
+PDM - A
+SG - A
+SIBW - A
+
+46399077:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+LMD - F
+LMD - F1
+SMP - A
+SMP - A1
+
+84346900:
+ALG - B
+
+22294723:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+60242546:
+AC - B
+ALG - B
+FBD - B
+LMD - F
+MH - A
+
+98190369:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+36138192:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+74086015:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+12033838:
+
+49981661:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+87929484:
+PLD - A
+RI - A
+TSI - A
+
+25877307:
+
+63825130:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+1772953:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+39720776:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+77668599:
+ALG - D
+FBD - D
+IA - D
+LMD - A
+
+15616422:
+DIU - A
+NTP - A
+PDM - A
+RI - A
+RMS - A
+SIBW - A
+
+53564245:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+91512068:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+29459891:
+PDIH - A
+PDIH - A1
+RMS - A
+RMS - A1
+
+67407714:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+5355537:
+DSD - A
+
+43303360:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+81251183:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+19199006:
+AC - B
+ALG - D
+MP - D
+
+57146829:
+DS - A
+SCGC - A
+
+95094652:
+AC - A
+ALG - A
+FBD - A
+FIS - B
+IA - A
+MP - D
+
+33042475:
+AA - A
+
+70990298:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+8938121:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+46885944:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+84833767:
+NTP - A
+NTP - A1
+PLD - A
+PLD - A1
+
+22781590:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+60729413:
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+DIU - A
+DIU - A1
+DIU - A2
+DIU - A3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - C
+LMD - C1
+MP - E
+MP - E1
+MP - E2
+MP - E3
+
+98677236:
+ABD - A
+FBD - C
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+36625059:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+74572882:
+PDM - A
+PDM - A1
+RI - A
+RI - A1
+
+12520705:
+
+50468528:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+88416351:
+ALG - B
+ALG - B1
+ALG - B2
+DI - A
+DI - A1
+EISI - A
+EISI - A1
+NTP - A
+NTP - A1
+PDM - A
+PDM - A1
+
+26364174:
+AO - A
+AO - A1
+
+64311997:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+2259820:
+AC - C
+ALG - C
+ES - D
+IA - C
+
+40207643:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+78155466:
+AC - D
+ALG - D
+ES - C
+FIS - D
+IA - D
+
+16103289:
+ES - D
+IA - A
+LMD - D
+MP - D
+TOC - D
+
+54051112:
+AC - B
+DS - A
+SIBW - A
+
+91998935:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+29946758:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+67894581:
+ALG - D
+FBD - A
+IA - B
+MP - A
+TOC - E
+
+5842404:
+NTP - A
+NTP - A1
+PPR - A
+PPR - A1
+
+43790227:
+ABD - A
+DIU - A
+SWAP - A
+
+81738050:
+
+19685873:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+57633696:
+
+95581519:
+
+33529342:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+71477165:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+9424988:
+
+47372811:
+AC - B
+LMD - E
+TDRC - A
+
+85320634:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+23268457:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+61216280:
+AA - A
+FBD - D
+IA - B
+
+99164103:
+ALG - B
+FBD - B
+FIS - B
+IA - B
+MP - D
+
+37111926:
+
+75059749:
+ALG - B
+LMD - F
+
+13007572:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+50955395:
+AC - D
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+88903218:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+26851041:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+64798864:
+
+2746687:
+DI - A
+MP - E
+SCGC - A
+SIE - A
+
+40694510:
+CUIA - A
+MEI - A
+SMM - A
+SWAP - A
+TDRC - A
+
+78642333:
+FBD - D
+LMD - E
+MP - D
+
+16590156:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+54537979:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+92485802:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+30433625:
+
+68381448:
+
+6329271:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+44277094:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+82224917:
+
+20172740:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+58120563:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+96068386:
+
+34016209:
+AC - B
+ALG - B
+DI - A
+FBD - B
+IC - A
+ISI - A
+
+71964032:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+9911855:
+AC - B
+ALG - C
+MP - C
+RMS - A
+
+47859678:
+AC - A
+ALG - A
+FBD - A
+IA - A
+MP - D
+
+85807501:
+AC - C
+ALG - B
+ES - E
+FBD - B
+FIS - B
+IA - B
+
+23755324:
+
+61703147:
+DIU - A
+SG - A
+
+99650970:
+AC - A
+FBD - A
+FIS - A
+IA - A
+MP - A
+
+37598793:
+CUIA - A
+TW - A
+
+75546616:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+13494439:
+ALG - D
+FBD - D
+MP - E
+
+51442262:
+AA - A
+ALG - B
+DI - A
+MH - A
+
+89390085:
+
+27337908:
+ABD - A
+ISI - A
+MP - C
+PW - A
+SIE - A
+SMD - A
+
+65285731:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+3233554:
+
+41181377:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+79129200:
+
+17077023:
+CII - A
+CII - A1
+IC - A
+IC - A1
+IC - A2
+IC - A3
+LMD - F
+LMD - F1
+
+55024846:
+CII - A
+CII - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+MEI - A
+MEI - A1
+SMP - A
+SMP - A1
+
+92972669:
+
+30920492:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - A
+
+68868315:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+6816138:
+ES - E
+FBD - B
+FIS - B
+LMD - E
+MP - D
+
+44763961:
+ALG - B
+IA - B
+MP - E
+
+82711784:
+ABD - A
+FBD - B
+IA - A
+MP - E
+PW - A
+
+20659607:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+58607430:
+DSD - A
+NTP - A
+SIBW - A
+
+96555253:
+ALG - B
+FBD - B
+FIS - B
+IA - B
+IES - E
+
+34503076:
+AS - A
+AS - A1
+
+72450899:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+10398722:
+
+48346545:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+86294368:
+AA - A
+AC - A
+LMD - A
+MH - A
+TSI - A
+
+24242191:
+ALG - A
+LMD - B
+SIE - A
+
+62190014:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+137837:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+38085660:
+CII - A
+DS - A
+MP - F
+PDS - A
+RMS - A
+
+76033483:
+AC - A
+DI - A
+EISI - A
+SIBW - A
+
+13981306:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+51929129:
+
+89876952:
+AC - B
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+27824775:
+
+65772598:
+DSD - A
+SIBW - A
+
+3720421:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+41668244:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+79616067:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+17563890:
+
+55511713:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+93459536:
+CEGE - A
+CRIP - A
+DI - A
+IA - A
+
+31407359:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+69355182:
+AO - A
+AO - A1
+PLD - A
+PLD - A1
+
+7303005:
+
+45250828:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+83198651:
+
+21146474:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+59094297:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+97042120:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+34989943:
+CII - A
+CII - A1
+DHD - A
+DHD - A1
+
+72937766:
+ALG - B
+DHD - A
+FBD - B
+IA - B
+SMP - A
+
+10885589:
+ACAP - A
+DS - A
+
+48833412:
+AC - D
+SIBW - A
+TDRC - A
+
+86781235:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+24729058:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+62676881:
+AC - A
+ALG - B
+LMD - F
+PDS - A
+
+624704:
+
+38572527:
+
+76520350:
+AS - A
+AS - A1
+IC - A
+IC - A1
+IC - A2
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+
+14468173:
+AC - B
+MP - E
+
+52415996:
+DS - A
+ES - F
+FIS - B
+TDRC - A
+
+90363819:
+CII - A
+MP - C
+PDS - A
+RMS - A
+
+28311642:
+ES - D
+IC - A
+MAC - A
+TSI - A
+
+66259465:
+EA - A
+ED  - B
+FIS - A
+IE - A
+TDRC - A
+
+4207288:
+DSD - A
+DSD - A1
+DSD - A2
+NTP - A
+NTP - A1
+PDS - A
+PDS - A1
+PPR - A
+PPR - A1
+RMS - A
+RMS - A1
+
+42155111:
+PDM - A
+PDM - A1
+PDS - A
+PDS - A1
+RMS - A
+RMS - A1
+
+80102934:
+
+18050757:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+55998580:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+93946403:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+31894226:
+DS - A
+PDS - A
+RMS - A
+SCGC - A
+
+69842049:
+DS - A
+DSD - A
+SG - A
+
+7789872:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+45737695:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+83685518:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+21633341:
+EISI - A
+EISI - A1
+MEI - A
+MEI - A1
+SCGC - A
+SCGC - A1
+
+59581164:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+97528987:
+
+35476810:
+AC - B
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+73424633:
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - D
+FIS - D1
+FIS - D2
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - F
+LMD - F1
+MP - D
+MP - D1
+MP - D2
+MP - D3
+
+11372456:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+ES - E3
+LMD - E
+LMD - E1
+LMD - E2
+TOC - E
+TOC - E1
+TOC - E2
+TOC - E3
+
+49320279:
+ABD - A
+AC - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+87268102:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+25215925:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+63163748:
+AC - B
+ALG - B
+DIU - A
+FBD - B
+IA - B
+
+1111571:
+AA - A
+FBD - A
+IC - A
+MH - A
+TSI - A
+
+39059394:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+77007217:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+14955040:
+AC - A
+ALG - A
+FBD - A
+IA - A
+
+52902863:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+90850686:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+28798509:
+
+66746332:
+DI - A
+IA - B
+IES - D
+PW - A
+
+4694155:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+42641978:
+ALG - A
+DIU - A
+DSD - A
+IA - A
+SG - A
+
+80589801:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+18537624:
+CUIA - A
+DSD - A
+SWAP - A
+TDRC - A
+TW - A
+
+56485447:
+
+94433270:
+ALG - D
+FBD - B
+FIS - B
+IA - B
+MP - B
+
+32381093:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+70328916:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+8276739:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+46224562:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+84172385:
+
+22120208:
+CRIP - A
+CRIP - A1
+EISI - A
+EISI - A1
+PDIH - A
+PDIH - A1
+RI - A
+RI - A1
+
+60068031:
+
+98015854:
+ALG - A
+FIS - B
+IA - B
+LMD - F
+
+35963677:
+AC - A
+ALG - A
+FIS - A
+IA - A
+
+73911500:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+MP - E
+
+11859323:
+AC - B
+ALG - B
+MH - A
+TSI - A
+
+49807146:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+87754969:
+TW - A
+
+25702792:
+ISI - A
+
+63650615:
+PDIH - A
+PPR - A
+SCGC - A
+SIBW - A
+
+1598438:
+AO - A
+AO - A1
+RI - A
+RI - A1
+
+39546261:
+ES - F
+FBD - B
+
+77494084:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+15441907:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+53389730:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+91337553:
+ABD - A
+DS - A
+FIS - B
+SG - A
+
+29285376:
+ALG - D
+FBD - D
+FIS - D
+IA - D
+MP - D
+
+67233199:
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+5181022:
+
+43128845:
+AC - B
+ALG - D
+IA - D
+IC - A
+MP - E
+
+81076668:
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+19024491:
+
+56972314:
+
+94920137:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+32867960:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+70815783:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+8763606:
+DIU - A
+MH - A
+SG - A
+TSI - A
+
+46711429:
+
+84659252:
+
+22607075:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+60554898:
+AC - D
+TW - A
+
+98502721:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+36450544:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+74398367:
+DIU - A
+PDIH - A
+RIM - A
+RMS - A
+
+12346190:
+AC - B
+ALG - B
+FBD - B
+IA - B
+LMD - F
+
+50294013:
+AC - B
+ALG - B
+IA - B
+
+88241836:
+AC - D
+ALG - D
+FBD - C
+FIS - D
+IA - D
+LMD - A
+
+26189659:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+64137482:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+2085305:
+AC - B
+DSD - A
+NTP - A
+PPR - A
+
+40033128:
+DS - A
+PDS - A
+RMS - A
+TDRC - A
+TW - A
+
+77980951:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+15928774:
+AC - D
+CRIP - A
+NTP - A
+
+53876597:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+91824420:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+29772243:
+DCSE - A
+FIS - C
+IA - D
+SRC - A
+
+67720066:
+PDM - A
+PDS - A
+RMS - A
+SG - A
+SIBW - A
+
+5667889:
+AC - B
+ALG - B
+IA - B
+ISI - A
+PW - A
+
+43615712:
+AC - D
+IA - D
+
+81563535:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+19511358:
+
+57459181:
+ALG - C
+ALG - C1
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+95407004:
+ES - C
+MP - C
+
+33354827:
+
+71302650:
+EISI - A
+SMP - A
+SWAP - A
+
+9250473:
+ALG - A
+DHD - A
+IA - B
+SMP - A
+
+47198296:
+
+85146119:
+
+23093942:
+SCGC - A
+SCGC - A1
+
+61041765:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+98989588:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+36937411:
+CUIA - A
+IA - B
+SMM - A
+TDRC - A
+
+74885234:
+CUIA - A
+FBD - B
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+12833057:
+ALG - A
+FBD - A
+IA - A
+LMD - F
+
+50780880:
+
+88728703:
+ALG - C
+IC - A
+MP - B
+SIE - A
+TDRC - A
+
+26676526:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+64624349:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - F
+LMD - F1
+SIBW - A
+SIBW - A1
+SIBW - A2
+SIBW - A3
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+2572172:
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+MP - E
+MP - E1
+MP - E2
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+40519995:
+AC - B
+CUIA - A
+SMM - A
+SWAP - A
+
+78467818:
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - E
+
+16415641:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+54363464:
+
+92311287:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+30259110:
+AC - A
+ALG - A
+ES - D
+FBD - A
+FIS - A
+IA - A
+
+68206933:
+ALG - D
+FIS - A
+IA - B
+LMD - E
+
+6154756:
+DIU - A
+DIU - A1
+DIU - A2
+DIU - A3
+EISI - A
+EISI - A1
+PDIH - A
+PDIH - A1
+PDS - A
+PDS - A1
+SIE - A
+SIE - A1
+SIE - A2
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+44102579:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+82050402:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+19998225:
+
+57946048:
+
+95893871:
+CEGE - A
+CEGE - A1
+EISI - A
+EISI - A1
+PLD - A
+PLD - A1
+
+33841694:
+
+71789517:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+9737340:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+47685163:
+AA - A
+CEGE - A
+DI - A
+
+85632986:
+DSD - A
+IC - A
+MH - A
+TSI - A
+
+23580809:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+61528632:
+ES - F
+LMD - F
+MP - F
+TOC - F
+
+99476455:
+ES - F
+ES - F1
+ES - F2
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+LMD - F
+LMD - F1
+MP - F
+MP - F1
+MP - F2
+
+37424278:
+
+75372101:
+AC - A
+ALG - A
+IA - A
+
+13319924:
+LMD - E
+NTP - A
+PPR - A
+
+51267747:
+AC - A
+ALG - A
+IA - A
+LMD - A
+MP - E
+
+89215570:
+CUIA - A
+SIBW - A
+
+27163393:
+ISI - A
+SMD - A
+
+65111216:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+3059039:
+CEGE - A
+CEGE - A1
+DI - A
+DI - A1
+
+41006862:
+FBD - D
+FIS - B
+IA - D
+LMD - F
+MP - F
+
+78954685:
+
+16902508:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+54850331:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+MP - E
+MP - E1
+MP - E2
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+92798154:
+MAC - A
+PDM - A
+PDS - A
+
+30745977:
+DSE - A
+ISI - A
+SMM - A
+
+68693800:
+
+6641623:
+DSD - A
+SIBW - A
+
+44589446:
+ES - E
+FIS - B
+LMD - E
+MP - E
+TOC - E
+
+82537269:
+
+20485092:
+
+58432915:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+SMP - A
+SMP - A1
+
+96380738:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+34328561:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+72276384:
+
+10224207:
+
+48172030:
+ALG - A
+CII - A
+DSE - A
+
+86119853:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+24067676:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+MP - C
+
+62015499:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+99963322:
+
+37911145:
+TW - A
+
+75858968:
+AC - D
+ALG - D
+FBD - D
+FIS - B
+IA - D
+
+13806791:
+FBD - B
+IA - B
+MP - E
+
+51754614:
+LMD - B
+
+89702437:
+CII - A
+CII - A1
+PPR - A
+PPR - A1
+
+27650260:
+SG - A
+
+65598083:
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+SMP - A
+SMP - A1
+
+3545906:
+AC - D
+ALG - D
+FIS - D
+IA - D
+
+41493729:
+ABD - A
+ALG - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+79441552:
+
+17389375:
+CUIA - A
+
+55337198:
+
+93285021:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+31232844:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+69180667:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+7128490:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+45076313:
+
+83024136:
+ALG - B
+DIU - A
+DS - A
+SG - A
+SIBW - A
+
+20971959:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+58919782:
+IA - C
+IES - D
+MP - B
+
+96867605:
+ALG - B
+CRIP - A
+EISI - A
+SMM - A
+TDRC - A
+
+34815428:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+72763251:
+
+10711074:
+DI - A
+MAC - A
+PPR - A
+SMM - A
+TSI - A
+
+48658897:
+AC - A
+ALG - A
+MP - D
+TOC - D
+
+86606720:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+24554543:
+
+62502366:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+450189:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+38398012:
+AC - D
+
+76345835:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+14293658:
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - E
+MP - A
+
+52241481:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+90189304:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+28137127:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+66084950:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+4032773:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+41980596:
+
+79928419:
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+MP - B
+MP - B1
+MP - B2
+SCGC - A
+SCGC - A1
+
+17876242:
+ABD - A
+PPR - A
+PW - A
+
+55824065:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+93771888:
+
+31719711:
+
+69667534:
+
+7615357:
+
+45563180:
+
+83511003:
+
+21458826:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+59406649:
+
+97354472:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+35302295:
+
+73250118:
+
+11197941:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IES - F
+LMD - F
+
+49145764:
+DSD - A
+
+87093587:
+IA - D
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+25041410:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+62989233:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+SMP - A
+SMP - A1
+
+937056:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+38884879:
+
+76832702:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+14780525:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+52728348:
+AC - A
+ALG - A
+FBD - A
+FIS - B
+IA - A
+
+90676171:
+FBD - D
+
+28623994:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+66571817:
+
+4519640:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+42467463:
+ACAP - A
+AS - A
+DHD - A
+DSE - A
+ES - A
+SMP - A
+
+80415286:
+
+18363109:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+56310932:
+CUIA - A
+DSD - A
+SMM - A
+SWAP - A
+TDRC - A
+
+94258755:
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+CII - A
+CII - A1
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+LMD - C
+LMD - C1
+MEI - A
+MEI - A1
+SIBW - A
+SIBW - A1
+SIBW - A2
+SIBW - A3
+
+32206578:
+AC - D
+ALG - D
+FBD - D
+IA - D
+MP - C
+
+70154401:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+8102224:
+
+46050047:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+83997870:
+RMS - A
+SMM - A
+TDRC - A
+
+21945693:
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+59893516:
+ES - C
+FBD - D
+FIS - C
+IA - D
+
+97841339:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+35789162:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+73736985:
+AC - C
+FBD - A
+FIS - B
+IA - B
+
+11684808:
+ALG - B
+FBD - B
+LMD - E
+MP - E
+PW - A
+
+49632631:
+ALG - B
+DS - A
+DSD - A
+LMD - F
+
+87580454:
+AC - D
+FBD - B
+FIS - B
+IA - B
+MP - B
+
+25528277:
+ES - C
+LMD - C
+MP - C
+TOC - C
+
+63476100:
+MEI - A
+MEI - A1
+
+1423923:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+39371746:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+77319569:
+
+15267392:
+PDIH - A
+PDIH - A1
+RMS - A
+RMS - A1
+
+53215215:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+91163038:
+
+29110861:
+ES - F
+ES - F1
+ES - F2
+IES - E
+MP - F
+MP - F1
+
+67058684:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+5006507:
+AO - A
+AO - A1
+PDM - A
+PDM - A1
+
+42954330:
+AC - C
+IA - B
+MP - D
+
+80902153:
+
+18849976:
+ES - B
+FIS - B
+IA - B
+
+56797799:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+94745622:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+32693445:
+
+70641268:
+ES - D
+ES - D1
+ES - D2
+ES - D3
+IA - D
+IA - D1
+IA - D2
+IA - D3
+LMD - E
+LMD - E1
+LMD - E2
+MEI - A
+MEI - A1
+RMS - A
+RMS - A1
+
+8589091:
+AC - A
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+46536914:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+84484737:
+AC - D
+AO - A
+DSD - A
+NTP - A
+PPR - A
+
+22432560:
+FBD - D
+FIS - B
+IA - D
+MP - A
+
+60380383:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+98328206:
+ACAP - A
+DHD - A
+IC - A
+MAC - A
+SMP - A
+
+36276029:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - A
+FIS - A1
+FIS - A2
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - C
+LMD - C1
+MP - C
+MP - C1
+MP - C2
+
+74223852:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+12171675:
+CEGE - A
+CEGE - A1
+DI - A
+DI - A1
+PLD - A
+PLD - A1
+
+50119498:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+88067321:
+ALG - C
+FBD - C
+LMD - C
+SIE - A
+SMD - A
+
+26015144:
+AA - A
+CRIP - A
+IA - B
+MH - A
+RI - A
+SMP - A
+
+63962967:
+
+1910790:
+ABD - A
+ALG - A
+IA - B
+ISI - A
+PW - A
+SIE - A
+
+39858613:
+EISI - A
+EISI - A1
+
+77806436:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+15754259:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+53702082:
+IA - A
+LMD - C
+
+91649905:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+29597728:
+EISI - A
+EISI - A1
+NTP - A
+NTP - A1
+
+67545551:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+5493374:
+AC - B
+ALG - B
+FBD - B
+LMD - E
+MP - E
+
+43441197:
+
+81389020:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+19336843:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+57284666:
+CEGE - A
+CEGE - A1
+DI - A
+DI - A1
+RMS - A
+RMS - A1
+
+95232489:
+AC - B
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+
+33180312:
+FBD - A
+IA - B
+
+71128135:
+
+9075958:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+47023781:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+84971604:
+DIU - A
+DS - A
+DSD - A
+IA - B
+MP - C
+SG - A
+SIBW - A
+
+22919427:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+60867250:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+98815073:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+36762896:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+74710719:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+12658542:
+DIU - A
+DSD - A
+SIBW - A
+
+50606365:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - C
+LMD - C1
+
+88554188:
+DS - A
+EISI - A
+NTP - A
+
+26502011:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+64449834:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+2397657:
+ABD - A
+LMD - C
+
+40345480:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+78293303:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+16241126:
+
+54188949:
+
+92136772:
+CII - A
+EISI - A
+MEI - A
+PPR - A
+SG - A
+
+30084595:
+ES - C
+FBD - D
+FIS - D
+IA - D
+MP - A
+
+68032418:
+DS - A
+MAC - A
+MH - A
+RI - A
+SG - A
+
+5980241:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+FIS - C
+FIS - C1
+FIS - C2
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - C
+LMD - C1
+MP - F
+MP - F1
+MP - F2
+
+43928064:
+ABD - A
+AC - B
+FIS - B
+IA - B
+PW - A
+
+81875887:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+19823710:
+IA - C
+IA - C1
+IA - C2
+MP - E
+MP - E1
+MP - E2
+SCGC - A
+SCGC - A1
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+
+57771533:
+EISI - A
+SIE - A
+SMM - A
+SWAP - A
+
+95719356:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+LMD - F
+LMD - F1
+MP - F
+MP - F1
+MP - F2
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+33667179:
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - E
+MP - A
+
+71615002:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+9562825:
+
+47510648:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+85458471:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+23406294:
+FBD - B
+
+61354117:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+99301940:
+FBD - B
+FIS - B
+
+37249763:
+ABD - A
+IA - D
+MEI - A
+SWAP - A
+
+75197586:
+AC - B
+IA - B
+PW - A
+SIE - A
+
+13145409:
+ES - C
+FBD - D
+IA - D
+LMD - C
+MP - C
+
+51093232:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+
+89041055:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+26988878:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+MP - E
+
+64936701:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+2884524:
+ABD - A
+FBD - C
+ISI - A
+MP - E
+PW - A
+SIE - A
+
+40832347:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+78780170:
+
+16727993:
+AC - A
+FBD - A
+FIS - D
+IA - A
+MP - D
+
+54675816:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+92623639:
+
+30571462:
+FBD - B
+FIS - B
+IA - B
+LMD - F
+MP - F
+
+68519285:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+6467108:
+
+44414931:
+
+82362754:
+IC - A
+MAC - A
+MH - A
+
+20310577:
+AA - A
+IC - A
+MH - A
+PDM - A
+TSI - A
+
+58258400:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+96206223:
+ABD - A
+ALG - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+34154046:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+72101869:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+10049692:
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - D
+FIS - D1
+FIS - D2
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - C
+LMD - C1
+
+47997515:
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+85945338:
+ABD - A
+ES - C
+LMD - C
+PW - A
+SIE - A
+
+23893161:
+
+61840984:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+99788807:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+37736630:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+75684453:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+13632276:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+51580099:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+89527922:
+
+27475745:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+65423568:
+
+3371391:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+41319214:
+
+79267037:
+CII - A
+CII - A1
+DSE - A
+DSE - A1
+PLD - A
+PLD - A1
+RMS - A
+RMS - A1
+
+17214860:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+55162683:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+93110506:
+SMD - A
+SMM - A
+
+31058329:
+
+69006152:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+6953975:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+44901798:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+82849621:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+20797444:
+AC - B
+ALG - B
+ES - D
+PDIH - A
+PW - A
+
+58745267:
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+LMD - A
+LMD - A1
+LMD - A2
+MP - A
+MP - A1
+MP - A2
+MP - A3
+
+96693090:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+34640913:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+72588736:
+ACAP - A
+ALG - D
+LMD - C
+
+10536559:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+48484382:
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+IC - A
+IC - A1
+IC - A2
+IC - A3
+LMD - F
+LMD - F1
+MP - F
+MP - F1
+MP - F2
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+86432205:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+24380028:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+62327851:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+275674:
+AA - A
+ABD - A
+DS - A
+LMD - A
+SMM - A
+
+38223497:
+DIU - A
+DSD - A
+SIBW - A
+
+76171320:
+
+14119143:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+SMP - A
+SMP - A1
+
+52066966:
+AO - A
+AO - A1
+CRIP - A
+CRIP - A1
+PPR - A
+PPR - A1
+
+90014789:
+
+27962612:
+CUIA - A
+MP - C
+PDIH - A
+SWAP - A
+TDRC - A
+TW - A
+
+65910435:
+PDS - A
+PDS - A1
+
+3858258:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+DS - A
+DS - A1
+DS - A2
+DS - A3
+FIS - A
+FIS - A1
+IA - A
+IA - A1
+IA - A2
+IA - A3
+PPR - A
+PPR - A1
+PW - A
+PW - A1
+PW - A2
+PW - A3
+SIBW - A
+SIBW - A1
+SIBW - A2
+SIBW - A3
+
+41806081:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+79753904:
+SMP - A
+SMP - A1
+
+17701727:
+ABD - A
+ISI - A
+MP - A
+PW - A
+SIE - A
+SMD - A
+
+55649550:
+CII - A
+SG - A
+
+93597373:
+AC - D
+ALG - D
+FBD - D
+IA - D
+
+31545196:
+CRIP - A
+IA - A
+IC - A
+TDRC - A
+TW - A
+
+69493019:
+ALG - B
+FBD - B
+LMD - F
+MP - F
+
+7440842:
+AC - C
+FBD - D
+IA - A
+MP - F
+
+45388665:
+CRIP - A
+RI - A
+TSI - A
+
+83336488:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - A
+
+21284311:
+ACAP - A
+ACAP - A1
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+CII - A
+CII - A1
+DSE - A
+DSE - A1
+LMD - F
+LMD - F1
+
+59232134:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+
+97179957:
+ALG - B
+FBD - B
+FIS - B
+MP - D
+
+35127780:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+73075603:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+LMD - E
+
+11023426:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+48971249:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+86919072:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+24866895:
+ABD - A
+ALG - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+62814718:
+AO - A
+AO - A1
+FBD - B
+FBD - B1
+FBD - B2
+IA - A
+IA - A1
+IA - A2
+IA - A3
+SMM - A
+SMM - A1
+SMM - A2
+SMM - A3
+
+762541:
+ALG - C
+CUIA - A
+SMM - A
+TDRC - A
+TW - A
+
+38710364:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+76658187:
+ALG - B
+LMD - F
+
+14606010:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+52553833:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+90501656:
+
+28449479:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+66397302:
+FBD - D
+PW - A
+TDRC - A
+
+4345125:
+DIU - A
+DS - A
+LMD - C
+MP - C
+SIBW - A
+
+42292948:
+LMD - E
+PLD - A
+SG - A
+
+80240771:
+ACAP - A
+TSI - A
+
+18188594:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+56136417:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+94084240:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+32032063:
+ALG - B
+CUIA - A
+FBD - B
+ISI - A
+SIE - A
+SWAP - A
+
+69979886:
+
+7927709:
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+LMD - F
+LMD - F1
+SG - A
+SG - A1
+SG - A2
+SG - A3
+
+45875532:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - B
+IA - B1
+IA - B2
+IA - B3
+IC - A
+IC - A1
+IC - A2
+IC - A3
+PW - A
+PW - A1
+PW - A2
+PW - A3
+
+83823355:
+ABD - A
+ALG - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+21771178:
+AO - A
+AO - A1
+PDM - A
+PDM - A1
+
+59719001:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+97666824:
+
+35614647:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+73562470:
+AC - D
+ALG - D
+FBD - D
+FIS - C
+IA - D
+MP - C
+
+11510293:
+ABD - A
+FBD - B
+ISI - A
+PDS - A
+PW - A
+SIE - A
+
+49458116:
+AO - A
+AO - A1
+
+87405939:
+DHD - A
+FBD - B
+SCGC - A
+
+25353762:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+63301585:
+DI - A
+DI - A1
+EISI - A
+EISI - A1
+
+1249408:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+39197231:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+77145054:
+
+15092877:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+53040700:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+90988523:
+AC - B
+ALG - D
+FBD - D
+FIS - B
+IA - B
+
+28936346:
+ABD - A
+CII - A
+IC - A
+SMP - A
+
+66884169:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+4831992:
+
+42779815:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+80727638:
+AC - B
+CUIA - A
+FBD - B
+SWAP - A
+TDRC - A
+
+18675461:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+SMP - A
+SMP - A1
+
+56623284:
+DSD - A
+IA - B
+MP - C
+SG - A
+SIBW - A
+
+94571107:
+
+32518930:
+ALG - A
+FBD - D
+MP - F
+
+70466753:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+8414576:
+FBD - D
+FIS - D
+IA - D
+LMD - C
+MP - C
+
+46362399:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+84310222:
+AC - A
+ALG - A
+IA - A
+MP - E
+
+22258045:
+AC - B
+ALG - B
+FBD - B
+LMD - F
+TDRC - A
+
+60205868:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+98153691:
+ES - D
+LMD - D
+MP - D
+TOC - D
+
+36101514:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+74049337:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+11997160:
+ABD - A
+AC - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+49944983:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+87892806:
+
+25840629:
+
+63788452:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+1736275:
+IA - D
+PDS - A
+RMS - A
+
+39684098:
+FIS - B
+IA - B
+LMD - A
+
+77631921:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+15579744:
+
+53527567:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+MP - B
+
+91475390:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+29423213:
+
+67371036:
+
+5318859:
+
+43266682:
+
+81214505:
+
+19162328:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+57110151:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+95057974:
+AO - A
+AO - A1
+NTP - A
+NTP - A1
+PPR - A
+PPR - A1
+
+33005797:
+AO - A
+AO - A1
+
+70953620:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+8901443:
+
+46849266:
+ISI - A
+TW - A
+
+84797089:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+22744912:
+ABD - A
+PDS - A
+PW - A
+SIE - A
+
+60692735:
+
+98640558:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+36588381:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+74536204:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+12484027:
+
+50431850:
+AO - A
+AO - A1
+AS - A
+AS - A1
+CII - A
+CII - A1
+EISI - A
+EISI - A1
+SMP - A
+SMP - A1
+
+88379673:
+
+26327496:
+AC - D
+ALG - D
+FIS - D
+IA - D
+LMD - A
+
+64275319:
+
+2223142:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+LMD - E
+
+40170965:
+ALG - B
+ALG - B1
+ALG - B2
+DHD - A
+DHD - A1
+IC - A
+IC - A1
+IC - A2
+IC - A3
+RMS - A
+RMS - A1
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+78118788:
+ALG - D
+NTP - A
+PPR - A
+
+16066611:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+54014434:
+
+91962257:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+CII - A
+CII - A1
+DHD - A
+DHD - A1
+
+29910080:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+67857903:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+5805726:
+AO - A
+AO - A1
+PDIH - A
+PDIH - A1
+
+43753549:
+ALG - D
+ES - A
+FBD - D
+LMD - A
+MP - A
+
+81701372:
+
+19649195:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+57597018:
+
+95544841:
+
+33492664:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+71440487:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+ES - E3
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+MP - D
+MP - D1
+MP - D2
+
+9388310:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+47336133:
+ABD - A
+DIU - A
+
+85283956:
+ISI - A
+LMD - A
+TDRC - A
+
+23231779:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+61179602:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+99127425:
+AC - B
+CEGE - A
+FBD - B
+MP - E
+PW - A
+
+37075248:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+MP - E
+
+75023071:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+12970894:
+AA - A
+AC - B
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+50918717:
+AA - A
+FBD - B
+IC - A
+MAC - A
+MH - A
+SG - A
+
+88866540:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+26814363:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+64762186:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+2710009:
+SIE - A
+SMD - A
+SMM - A
+
+40657832:
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+
+78605655:
+AC - B
+ES - F
+LMD - F
+MP - F
+TOC - F
+
+16553478:
+
+54501301:
+ALG - A
+FBD - A
+FIS - B
+IA - A
+
+92449124:
+ABD - A
+IA - B
+SG - A
+SIE - A
+
+30396947:
+ABD - A
+IC - A
+ISI - A
+PW - A
+SIE - A
+
+68344770:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+6292593:
+AC - C
+ALG - C
+FIS - C
+IA - C
+LMD - E
+
+44240416:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+82188239:
+AO - A
+AO - A1
+EISI - A
+EISI - A1
+
+20136062:
+ES - F
+FIS - B
+IA - B
+LMD - F
+MP - F
+
+58083885:
+MEI - A
+MEI - A1
+PDM - A
+PDM - A1
+
+96031708:
+CEGE - A
+CEGE - A1
+EISI - A
+EISI - A1
+PDIH - A
+PDIH - A1
+
+33979531:
+AC - B
+ALG - A
+FBD - B
+IA - B
+MP - D
+
+71927354:
+DIU - A
+PW - A
+
+9875177:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+47823000:
+AC - D
+PLD - A
+TSI - A
+
+85770823:
+
+23718646:
+AA - A
+IC - A
+MH - A
+
+61666469:
+FBD - B
+
+99614292:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+37562115:
+CRIP - A
+DS - A
+DSD - A
+MEI - A
+SG - A
+SIBW - A
+
+75509938:
+
+13457761:
+ACAP - A
+LMD - A
+PW - A
+SIE - A
+
+51405584:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+89353407:
+AC - A
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+27301230:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+65249053:
+IA - C
+IES - F
+
+3196876:
+AC - D
+CII - A
+NTP - A
+PPR - A
+SG - A
+
+41144699:
+AO - A
+AO - A1
+CEGE - A
+CEGE - A1
+NTP - A
+NTP - A1
+
+79092522:
+DI - A
+DI - A1
+MEI - A
+MEI - A1
+SCGC - A
+SCGC - A1
+
+17040345:
+ACAP - A
+AS - A
+DHD - A
+DSE - A
+MP - A
+SMP - A
+
+54988168:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+92935991:
+ALG - C
+ES - D
+FBD - C
+FIS - C
+IA - C
+
+30883814:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+68831637:
+
+6779460:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+44727283:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+82675106:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+20622929:
+ABD - A
+AC - B
+FBD - B
+IA - B
+PW - A
+
+58570752:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+96518575:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+34466398:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+72414221:
+FBD - D
+FIS - D
+IA - D
+LMD - E
+MP - B
+
+10362044:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+48309867:
+SMP - A
+TW - A
+
+86257690:
+ALG - B
+DIU - A
+SIBW - A
+TSI - A
+
+24205513:
+DIU - A
+DS - A
+DSD - A
+FBD - B
+SG - A
+
+62153336:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+101159:
+ES - F
+ES - F1
+ES - F2
+LMD - E
+LMD - E1
+LMD - E2
+MP - F
+MP - F1
+MP - F2
+TOC - F
+TOC - F1
+TOC - F2
+
+38048982:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+75996805:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+13944628:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+51892451:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+89840274:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+27788097:
+FBD - D
+LMD - B
+
+65735920:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+3683743:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+41631566:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+79579389:
+
+17527212:
+MEI - A
+MEI - A1
+SCGC - A
+SCGC - A1
+
+55475035:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+93422858:
+
+31370681:
+
+69318504:
+AC - D
+FBD - D
+TDRC - A
+
+7266327:
+DSD - A
+FIS - B
+IA - D
+SMM - A
+TSI - A
+
+45214150:
+
+83161973:
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+ES - E
+ES - E1
+ES - E2
+ES - E3
+LMD - E
+LMD - E1
+LMD - E2
+MP - E
+MP - E1
+MP - E2
+MP - E3
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+
+21109796:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+59057619:
+AA - A
+DI - A
+MP - E
+PPR - A
+
+97005442:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+34953265:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+ALG - A
+ALG - A1
+ALG - A2
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+72901088:
+
+10848911:
+ABD - A
+ALG - B
+PW - A
+SIE - A
+
+48796734:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+86744557:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - C
+
+24692380:
+SG - A
+SWAP - A
+
+62640203:
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+588026:
+SMP - A
+SWAP - A
+
+38535849:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+76483672:
+AO - A
+AO - A1
+
+14431495:
+AC - D
+ALG - D
+ES - C
+FBD - D
+IA - D
+
+52379318:
+
+90327141:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+28274964:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+66222787:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+4170610:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+42118433:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+80066256:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - D
+ES - D1
+ES - D2
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - A
+FIS - A1
+FIS - A2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+
+18014079:
+
+55961902:
+ES - E
+LMD - F
+MP - F
+
+93909725:
+AC - D
+ALG - D
+FBD - D
+FIS - C
+IA - D
+
+31857548:
+AA - A
+AC - C
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+69805371:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+7753194:
+PDM - A
+PDM - A1
+RI - A
+RI - A1
+RMS - A
+RMS - A1
+
+45701017:
+CRIP - A
+MEI - A
+TDRC - A
+
+83648840:
+
+21596663:
+CEGE - A
+CEGE - A1
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+
+59544486:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+97492309:
+CII - A
+SG - A
+
+35440132:
+AC - D
+ALG - D
+ES - C
+FBD - D
+LMD - C
+MP - C
+
+73387955:
+DI - A
+DI - A1
+SCGC - A
+SCGC - A1
+
+11335778:
+ALG - C
+ALG - C1
+DS - A
+DS - A1
+DS - A2
+DS - A3
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+PW - A
+PW - A1
+PW - A2
+PW - A3
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+49283601:
+AC - B
+ALG - B
+IA - B
+
+87231424:
+
+25179247:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+63127070:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+1074893:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+39022716:
+
+76970539:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+14918362:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+52866185:
+SIE - A
+
+90814008:
+ABD - A
+IA - B
+ISI - A
+PW - A
+SIE - A
+
+28761831:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - D
+IA - D1
+IA - D2
+IA - D3
+MP - F
+MP - F1
+
+66709654:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+4657477:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+42605300:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+80553123:
+ALG - A
+CUIA - A
+ES - E
+MP - E
+
+18500946:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+56448769:
+DI - A
+IC - A
+
+94396592:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+32344415:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+LMD - C
+LMD - C1
+PW - A
+PW - A1
+PW - A2
+PW - A3
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+70292238:
+
+8240061:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+46187884:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+84135707:
+CUIA - A
+SG - A
+SMM - A
+TDRC - A
+TW - A
+
+22083530:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+60031353:
+AC - D
+
+97979176:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+ACAP - A
+ACAP - A1
+ALG - B
+ALG - B1
+ALG - B2
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+35926999:
+
+73874822:
+PDIH - A
+SWAP - A
+
+11822645:
+
+49770468:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+87718291:
+
+25666114:
+ISI - A
+
+63613937:
+PDM - A
+PPR - A
+TSI - A
+
+1561760:
+SCGC - A
+SIBW - A
+
+39509583:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+77457406:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+15405229:
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+LMD - F
+LMD - F1
+SMM - A
+SMM - A1
+SMM - A2
+SMM - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+53353052:
+MEI - A
+MP - E
+SMM - A
+TW - A
+
+91300875:
+FBD - A
+PDS - A
+SMM - A
+TW - A
+
+29248698:
+AA - A
+IC - A
+ISI - A
+MAC - A
+SIE - A
+
+67196521:
+
+5144344:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+43092167:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+81039990:
+
+18987813:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+56935636:
+
+94883459:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+32831282:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+70779105:
+
+8726928:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+FBD - C
+FBD - C1
+FBD - C2
+MP - C
+MP - C1
+
+46674751:
+ES - C
+LMD - C
+MP - C
+
+84622574:
+IA - B
+
+22570397:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+60518220:
+ABD - A
+AC - B
+FBD - B
+LMD - F
+
+98466043:
+CRIP - A
+DSD - A
+IA - C
+ISI - A
+PDM - A
+
+36413866:
+AC - D
+ALG - D
+FBD - D
+FIS - C
+IA - D
+
+74361689:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+12309512:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+50257335:
+ABD - A
+AC - B
+IA - B
+ISI - A
+PW - A
+SIE - A
+
+88205158:
+AC - B
+ALG - B
+CUIA - A
+SWAP - A
+
+26152981:
+
+64100804:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+2048627:
+
+39996450:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+77944273:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+IA - D
+IA - D1
+IA - D2
+IA - D3
+LMD - F
+LMD - F1
+
+15892096:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+53839919:
+
+91787742:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+29735565:
+AO - A
+AO - A1
+
+67683388:
+
+5631211:
+TDRC - A
+
+43579034:
+CEGE - A
+CRIP - A
+EISI - A
+IA - D
+
+81526857:
+ABD - A
+PDIH - A
+SCGC - A
+SG - A
+SIBW - A
+
+19474680:
+AO - A
+FBD - A
+FIS - D
+IA - C
+TOC - D
+
+57422503:
+ALG - B
+
+95370326:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+33318149:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+71265972:
+PDM - A
+PLD - A
+SG - A
+
+9213795:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+47161618:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+85109441:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+23057264:
+ABD - A
+AC - C
+ALG - B
+FIS - D
+PW - A
+
+61005087:
+
+98952910:
+EISI - A
+LMD - E
+NTP - A
+
+36900733:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+74848556:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+12796379:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+50744202:
+AC - A
+ALG - A
+ES - D
+FBD - A
+IA - A
+
+88692025:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+26639848:
+ABD - A
+AC - D
+ALG - A
+ISI - A
+
+64587671:
+IA - D
+
+2535494:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+40483317:
+ABD - A
+AC - B
+LMD - D
+PW - A
+SIE - A
+
+78431140:
+FBD - A
+IA - C
+IC - A
+MAC - A
+MH - A
+
+16378963:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+54326786:
+DIU - A
+DS - A
+DSD - A
+RMS - A
+SG - A
+SIBW - A
+
+92274609:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+30222432:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+68170255:
+
+6118078:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+44065901:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+DIU - A
+DIU - A1
+DIU - A2
+DIU - A3
+FBD - C
+FBD - C1
+FBD - C2
+LMD - C
+LMD - C1
+MP - C
+MP - C1
+MP - C2
+SG - A
+SG - A1
+SG - A2
+SG - A3
+
+82013724:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+19961547:
+NTP - A
+NTP - A1
+PDM - A
+PDM - A1
+
+57909370:
+ACAP - A
+CUIA - A
+MEI - A
+SIE - A
+
+95857193:
+AO - A
+PDIH - A
+PDM - A
+TW - A
+
+33805016:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+71752839:
+ALG - B
+ISI - A
+SIE - A
+SMD - A
+
+9700662:
+MAC - A
+MH - A
+
+47648485:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+85596308:
+CEGE - A
+MH - A
+SCGC - A
+TSI - A
+
+23544131:
+IES - C
+MP - C
+TOC - C
+
+61491954:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+99439777:
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+37387600:
+ES - C
+ES - C1
+ES - C2
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+LMD - C
+LMD - C1
+MP - C
+MP - C1
+MP - C2
+TOC - C
+TOC - C1
+TOC - C2
+
+75335423:
+ALG - B
+ALG - B1
+ALG - B2
+CII - A
+CII - A1
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+DI - A
+DI - A1
+DS - A
+DS - A1
+DS - A2
+DS - A3
+PDS - A
+PDS - A1
+SG - A
+SG - A1
+SG - A2
+SG - A3
+
+13283246:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+51231069:
+AC - C
+AC - C1
+AC - C2
+AC - C3
+ALG - A
+ALG - A1
+ALG - A2
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+89178892:
+AC - A
+ALG - A
+FIS - A
+IA - A
+MP - E
+
+27126715:
+
+65074538:
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+3022361:
+MEI - A
+MEI - A1
+PDIH - A
+PDIH - A1
+
+40970184:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+78918007:
+
+16865830:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+54813653:
+AC - B
+CUIA - A
+RI - A
+SG - A
+SMM - A
+
+92761476:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+30709299:
+AA - A
+IC - A
+LMD - C
+MAC - A
+MH - A
+TSI - A
+
+68657122:
+ALG - D
+ES - A
+IA - B
+MP - A
+
+6604945:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+44552768:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+82500591:
+
+20448414:
+ACAP - A
+ACAP - A1
+ALG - A
+ALG - A1
+ALG - A2
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+TW - A
+TW - A1
+TW - A2
+TW - A3
+
+58396237:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+MP - E
+
+96344060:
+ALG - C
+LMD - F
+MAC - A
+TSI - A
+
+34291883:
+
+72239706:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+10187529:
+FBD - B
+FIS - B
+IA - B
+LMD - B
+MP - B
+
+48135352:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+86083175:
+ABD - A
+AC - B
+ISI - A
+PW - A
+SIE - A
+
+24030998:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+61978821:
+ES - F
+FBD - D
+FIS - B
+IA - D
+LMD - F
+MP - A
+
+99926644:
+FBD - A
+FIS - B
+IA - B
+LMD - B
+MP - D
+
+37874467:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+75822290:
+
+13770113:
+ES - E
+ES - E1
+ES - E2
+ES - E3
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+LMD - A
+LMD - A1
+LMD - A2
+MP - A
+MP - A1
+MP - A2
+MP - A3
+
+51717936:
+
+89665759:
+RMS - A
+RMS - A1
+
+27613582:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+65561405:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+3509228:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+MP - A
+
+41457051:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+79404874:
+AC - A
+AC - A1
+AC - A2
+AC - A3
+ALG - A
+ALG - A1
+ALG - A2
+ALG - A3
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - A
+IA - A1
+IA - A2
+IA - A3
+LMD - A
+LMD - A1
+LMD - A2
+MP - A
+MP - A1
+MP - A2
+MP - A3
+
+17352697:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+55300520:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+93248343:
+
+31196166:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+69143989:
+
+7091812:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+45039635:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+82987458:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+20935281:
+CII - A
+CII - A1
+EISI - A
+EISI - A1
+
+58883104:
+AC - D
+ALG - A
+DI - A
+ES - E
+LMD - E
+MP - E
+TOC - E
+
+96830927:
+ALG - B
+ES - F
+FBD - B
+FIS - B
+IA - B
+MP - F
+
+34778750:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+72726573:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+10674396:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+MP - F
+MP - F1
+
+48622219:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+86570042:
+
+24517865:
+
+62465688:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+413511:
+
+38361334:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+76309157:
+AC - B
+IA - B
+MP - E
+TW - A
+
+14256980:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+52204803:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+90152626:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+28100449:
+
+66048272:
+AC - A
+ALG - A
+ES - D
+FBD - A
+FIS - B
+IA - A
+
+3996095:
+DIU - A
+EISI - A
+
+41943918:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+79891741:
+CEGE - A
+CEGE - A1
+CRIP - A
+CRIP - A1
+PLD - A
+PLD - A1
+
+17839564:
+
+55787387:
+
+93735210:
+PPR - A
+PPR - A1
+
+31683033:
+ALG - B
+ALG - B1
+ALG - B2
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+RMS - A
+RMS - A1
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+69630856:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+7578679:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+45526502:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+83474325:
+DS - A
+
+21422148:
+CEGE - A
+CEGE - A1
+DI - A
+DI - A1
+EISI - A
+EISI - A1
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+59369971:
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - A
+
+97317794:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+35265617:
+AO - A
+AO - A1
+NTP - A
+NTP - A1
+
+73213440:
+ACAP - A
+CUIA - A
+SMP - A
+
+11161263:
+DIU - A
+DSE - A
+IC - A
+ISI - A
+MAC - A
+SMD - A
+SMM - A
+TDRC - A
+TW - A
+
+49109086:
+DSD - A
+TDRC - A
+TW - A
+
+87056909:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+25004732:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - B
+
+62952555:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+900378:
+
+38848201:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+76796024:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+14743847:
+ALG - B
+ALG - B1
+ALG - B2
+AS - A
+AS - A1
+SCGC - A
+SCGC - A1
+
+52691670:
+DS - A
+PDS - A
+RMS - A
+
+90639493:
+AC - B
+ALG - A
+LMD - B
+
+28587316:
+CII - A
+CII - A1
+PDS - A
+PDS - A1
+RMS - A
+RMS - A1
+
+66535139:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+4482962:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+42430785:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+80378608:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+18326431:
+AC - A
+ALG - A
+FBD - A
+IA - A
+LMD - F
+
+56274254:
+
+94222077:
+DSE - A
+DSE - A1
+
+32169900:
+AO - A
+NTP - A
+SG - A
+
+70117723:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+8065546:
+
+46013369:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+83961192:
+DIU - A
+SIBW - A
+
+21909015:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+59856838:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+97804661:
+SWAP - A
+
+35752484:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+73700307:
+MAC - A
+MH - A
+PDM - A
+PDS - A
+RMS - A
+TSI - A
+
+11648130:
+
+49595953:
+
+87543776:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+25491599:
+AC - C
+ALG - C
+IA - C
+LMD - F
+
+63439422:
+ES - C
+FBD - D
+LMD - C
+MP - C
+
+1387245:
+
+39335068:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+77282891:
+AC - D
+
+15230714:
+AC - B
+ALG - B
+DIU - A
+DS - A
+DSD - A
+SIBW - A
+
+53178537:
+AC - B
+ALG - B
+MP - E
+SIBW - A
+
+91126360:
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+ES - E
+ES - E1
+ES - E2
+FBD - B
+FBD - B1
+FBD - B2
+FBD - B3
+FIS - B
+FIS - B1
+FIS - B2
+FIS - B3
+IA - B
+IA - B1
+IA - B2
+IA - B3
+
+29074183:
+
+67022006:
+AO - A
+AO - A1
+CEGE - A
+CEGE - A1
+PDIH - A
+PDIH - A1
+
+4969829:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+42917652:
+
+80865475:
+ABD - A
+FBD - B
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+18813298:
+FBD - A
+FBD - A1
+FBD - A2
+FBD - A3
+FIS - A
+FIS - A1
+FIS - A2
+LMD - A
+LMD - A1
+LMD - A2
+MP - A
+MP - A1
+MP - A2
+MP - A3
+
+56761121:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+94708944:
+ALG - B
+CUIA - A
+SG - A
+SMM - A
+
+32656767:
+AC - D
+
+70604590:
+AC - C
+CEGE - A
+CUIA - A
+DSD - A
+MP - B
+
+8552413:
+
+46500236:
+
+84448059:
+AC - B
+ALG - B
+FBD - B
+FIS - B
+IA - B
+
+22395882:
+ALG - C
+FBD - C
+FIS - C
+IA - C
+LMD - E
+MP - D
+
+60343705:
+
+98291528:
+AC - B
+FBD - B
+FIS - B
+IA - B
+LMD - D
+
+36239351:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+
+74187174:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+12134997:
+SCGC - A
+SCGC - A1
+
+50082820:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+88030643:
+
+25978466:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+63926289:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+1874112:
+PDM - A
+PDM - A1
+
+39821935:
+
+77769758:
+AC - B
+ALG - B
+IA - D
+SG - A
+
+15717581:
+SIBW - A
+
+53665404:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+91613227:
+
+29561050:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+67508873:
+
+5456696:
+DI - A
+DI - A1
+PDIH - A
+PDIH - A1
+
+43404519:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+81352342:
+
+19300165:
+ACAP - A
+IC - A
+LMD - C
+SG - A
+SIE - A
+SMM - A
+
+57247988:
+LMD - A
+SG - A
+SIE - A
+
+95195811:
+AC - D
+AC - D1
+AC - D2
+AC - D3
+ALG - D
+ALG - D1
+ALG - D2
+ALG - D3
+FBD - D
+FBD - D1
+FBD - D2
+FBD - D3
+FIS - D
+FIS - D1
+FIS - D2
+IA - D
+IA - D1
+IA - D2
+IA - D3
+LMD - F
+LMD - F1
+MP - F
+MP - F1
+MP - F2
+
+33143634:
+AC - B
+ALG - B
+ISI - A
+
+71091457:
+AA - A
+ES - A
+FIS - A
+
+9039280:
+ABD - A
+PW - A
+
+46987103:
+AC - D
+ALG - D
+FBD - D
+LMD - A
+MP - A
+
+84934926:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+MP - E
+
+22882749:
+DS - A
+RI - A
+RMS - A
+SCGC - A
+
+60830572:
+
+98778395:
+DHD - A
+SIBW - A
+
+36726218:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+74674041:
+
+12621864:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+50569687:
+
+88517510:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+26465333:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+64413156:
+CUIA - A
+IA - B
+SMM - A
+TDRC - A
+
+2360979:
+
+40308802:
+
+78256625:
+
+16204448:
+AC - A
+
+54152271:
+SWAP - A
+TW - A
+
+92100094:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+30047917:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+ALG - B
+ALG - B1
+ALG - B2
+AS - A
+AS - A1
+CII - A
+CII - A1
+DIU - A
+DIU - A1
+DIU - A2
+DIU - A3
+
+67995740:
+AA - A
+DS - A
+DSD - A
+IC - A
+MAC - A
+
+5943563:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+43891386:
+AC - A
+ALG - A
+FIS - B
+IA - A
+MP - F
+
+81839209:
+
+19787032:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+57734855:
+AS - A
+FBD - D
+LMD - E
+MP - E
+
+95682678:
+
+33630501:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+71578324:
+IC - A
+MAC - A
+MH - A
+
+9526147:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+47473970:
+AC - D
+ALG - D
+CEGE - A
+DI - A
+FBD - A
+
+85421793:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+23369616:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+61317439:
+ES - F
+IES - F
+LMD - F
+MP - F
+TOC - F
+
+99265262:
+DCSE - A
+FIS - C
+IA - D
+SRC - A
+
+37213085:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+75160908:
+
+13108731:
+CII - A
+SG - A
+
+51056554:
+AA - A
+DSD - A
+IC - A
+MAC - A
+SG - A
+
+89004377:
+AC - B
+AC - B1
+AC - B2
+AC - B3
+ALG - B
+ALG - B1
+ALG - B2
+ALG - B3
+DHD - A
+DHD - A1
+LMD - C
+LMD - C1
+
+26952200:
+AA - A
+IC - A
+MAC - A
+RI - A
+
+64900023:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+2847846:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+40795669:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+78743492:
+
+16691315:
+ALG - D
+FBD - D
+FIS - B
+IA - D
+MP - E
+
+54639138:
+
+92586961:
+AP - A
+EA - B
+FIS - A
+RI - A
+
+30534784:
+ACAP - A
+ACAP - A1
+ALG - B
+ALG - B1
+ALG - B2
+CII - A
+CII - A1
+IA - D
+IA - D1
+IA - D2
+IA - D3
+MEI - A
+MEI - A1
+PDIH - A
+PDIH - A1
+PPR - A
+PPR - A1
+
+68482607:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+6430430:
+AC - C
+ALG - C
+FBD - C
+IA - C
+
+44378253:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+82326076:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+20273899:
+DIU - A
+DS - A
+SIBW - A
+
+58221722:
+
+96169545:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+34117368:
+ABD - A
+AO - A
+DI - A
+DIU - A
+PPR - A
+SWAP - A
+
+72065191:
+ES - F
+ES - F1
+ES - F2
+LMD - E
+LMD - E1
+LMD - E2
+MP - F
+MP - F1
+MP - F2
+TOC - F
+TOC - F1
+TOC - F2
+
+10013014:
+AC - B
+ALG - D
+MP - C
+
+47960837:
+AO - A
+AO - A1
+PDIH - A
+PDIH - A1
+PLD - A
+PLD - A1
+
+85908660:
+CUIA - A
+SMM - A
+SWAP - A
+
+23856483:
+
+61804306:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+99752129:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+37699952:
+ES - E
+IES - E
+LMD - E
+MP - E
+TOC - E
+
+75647775:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+13595598:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+51543421:
+CEGE - A
+CEGE - A1
+PDIH - A
+PDIH - A1
+SCGC - A
+SCGC - A1
+
+89491244:
+AC - A
+ALG - A
+FBD - A
+FIS - A
+IA - A
+MP - F
+
+27439067:
+AC - C
+
+65386890:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - C
+
+3334713:
+AA - A
+LMD - E
+
+41282536:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+79230359:
+AA - A
+IC - A
+MAC - A
+MH - A
+
+17178182:
+DIU - A
+DS - A
+DSD - A
+SG - A
+SIBW - A
+
+55126005:
+CEGE - A
+CEGE - A1
+EISI - A
+EISI - A1
+NTP - A
+NTP - A1
+PLD - A
+PLD - A1
+
+93073828:
+PDS - A
+PDS - A1
+RMS - A
+RMS - A1
+
+31021651:
+
+68969474:
+AC - C
+ALG - C
+FBD - C
+FIS - C
+IA - C
+
+6917297:
+FBD - D
+IES - E
+
+44865120:
+
+82812943:
+
+20760766:
+AC - A
+DIU - A
+IA - A
+MP - C
+TSI - A
+
+58708589:
+CUIA - A
+FIS - B
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+96656412:
+
+34604235:
+ES - D
+IES - D
+LMD - D
+MP - D
+TOC - D
+
+72552058:
+ES - A
+IES - A
+LMD - A
+MP - A
+TOC - A
+
+10499881:
+MEI - A
+MEI - A1
+
+48447704:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+
+86395527:
+PLD - A
+PLD - A1
+RI - A
+RI - A1
+
+24343350:
+CEGE - A
+DI - A
+EISI - A
+ISI - A
+MEI - A
+
+62291173:
+ES - B
+IES - B
+LMD - B
+MP - B
+TOC - B
+
+238996:
+AC - D
+ALG - D
+FBD - D
+FIS - D
+IA - D
+LMD - B
+
+38186819:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+76134642:
+LMD - B
+
+14082465:
+AA - A
+IC - A
+MAC - A
+MH - A
+TSI - A
+
+52030288:
+ES - C
+IES - C
+LMD - C
+MP - C
+TOC - C
+
+89978111:
+
+27925934:
+
+65873757:
+FS(M) - A
+MP(M) - A
+
+3821580:
+FS(M) - A
+MP(M) - A
+
+41769403:
+LMD(M) - A
+MP(M) - A
+
+79717226:
+
+17665049:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+55612872:
+
+93560695:
+
+31508518:
+FS(M) - A
+MP(M) - A
+
+69456341:
+FS(M) - A
+MP(M) - A
+
+7404164:
+IES(M) - A
+MAC - A
+TSI - A
+
+45351987:
+IES(M) - A
+MAC - A
+TSI - A
+
+83299810:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+21247633:
+MAC - A
+MH - A
+TSI - A
+
+59195456:
+FS(M) - A
+MP(M) - A
+
+97143279:
+FS(M) - A
+MP(M) - A
+
+35091102:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+73038925:
+IC - A
+ISE(MA) - A
+MAC - A
+
+10986748:
+IC - A
+IES(M) - A
+MH - A
+TSI - A
+
+48934571:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+86882394:
+AA - A
+MH - A
+
+24830217:
+FS(M) - A
+MP(M) - A
+
+62778040:
+AA - A
+MH - A
+TSI - A
+
+725863:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+38673686:
+FIS(MA) - A
+ISE(MA) - A
+
+76621509:
+FS(M) - A
+MP(M) - A
+
+14569332:
+AS - A
+AS - A1
+IES(M) - A
+IES(M) - A1
+
+52517155:
+IES(M) - A
+IES(M) - A1
+
+90464978:
+IES(M) - A
+PW - A
+
+28412801:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+66360624:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+4308447:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+42256270:
+
+80204093:
+DIU - A
+DSD - A
+IES(M) - A
+
+18151916:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+56099739:
+
+94047562:
+FS(M) - A
+MP(M) - A
+
+31995385:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+69943208:
+FS(M) - A
+MP(M) - A
+
+7891031:
+FS(M) - A
+MP(M) - A
+
+45838854:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+83786677:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+21734500:
+FS(M) - A
+MP(M) - A
+
+59682323:
+IES(M) - A
+MAC - A
+MH - A
+
+97630146:
+FS(M) - A
+MP(M) - A
+
+35577969:
+FS(M) - A
+MP(M) - A
+
+73525792:
+AA - A
+IA(MA) - A
+SMM - A
+TDRC - A
+
+11473615:
+ABD - A
+IC - A
+
+49421438:
+
+87369261:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+25317084:
+AA - A
+IA(MA) - A
+ISE(MA) - A
+MAC - A
+MH - A
+
+63264907:
+IA(MA) - A
+ISE(MA) - A
+
+1212730:
+FS(M) - A
+MP(M) - A
+
+39160553:
+AA - A
+IC - A
+IES(M) - A
+MH - A
+TSI - A
+
+77108376:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+15056199:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+53004022:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+90951845:
+AC(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+28899668:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+66847491:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+4795314:
+IC - A
+
+42743137:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+80690960:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+18638783:
+
+56586606:
+ABD - A
+IES(M) - A
+ISI - A
+PW - A
+
+94534429:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+32482252:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+70430075:
+DS - A
+SG - A
+SIBW - A
+
+8377898:
+
+46325721:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+84273544:
+FS(M) - A
+MP(M) - A
+
+22221367:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+60169190:
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+98117013:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+36064836:
+FS(M) - A
+MP(M) - A
+
+74012659:
+
+11960482:
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+49908305:
+
+87856128:
+FIS(MA) - A
+ISE(MA) - A
+
+25803951:
+
+63751774:
+FS(M) - A
+MP(M) - A
+
+1699597:
+
+39647420:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+77595243:
+AC(M) - A
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+15543066:
+AA - A
+MH - A
+TSI - A
+
+53490889:
+FIS(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+91438712:
+ABD - A
+IES(M) - A
+SWAP - A
+
+29386535:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+67334358:
+AA - A
+MH - A
+TSI - A
+
+5282181:
+IC - A
+IES(M) - A
+MAC - A
+
+43230004:
+
+81177827:
+IES(M) - A
+MAC - A
+TSI - A
+
+19125650:
+
+57073473:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+95021296:
+
+32969119:
+DIU - A
+DS - A
+SG - A
+
+70916942:
+ALG(M) - A
+LMD(M) - A
+MP(M) - A
+PDOO(M) - A
+
+8864765:
+FS(M) - A
+MP(M) - A
+
+46812588:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+84760411:
+IES(M) - A
+IES(M) - A1
+SMP - A
+SMP - A1
+
+22708234:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+60656057:
+
+98603880:
+
+36551703:
+FS(M) - A
+MP(M) - A
+
+74499526:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+12447349:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+50395172:
+
+88342995:
+
+26290818:
+AA - A
+MH - A
+TSI - A
+
+64238641:
+FS(M) - A
+MP(M) - A
+
+2186464:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+40134287:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+78082110:
+IES(M) - A
+MAC - A
+MH - A
+
+16029933:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+53977756:
+AC(M) - A
+FIS(MA) - A
+
+91925579:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+29873402:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+67821225:
+IES(M) - A
+IES(M) - A1
+
+5769048:
+AA - A
+MAC - A
+MH - A
+
+43716871:
+FS(M) - A
+MP(M) - A
+
+81664694:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+19612517:
+DS - A
+MH - A
+
+57560340:
+IES(M) - A
+MAC - A
+MH - A
+
+95508163:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+33455986:
+AA - A
+MH - A
+TSI - A
+
+71403809:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+9351632:
+FS(M) - A
+MP(M) - A
+
+47299455:
+FS(M) - A
+MP(M) - A
+
+85247278:
+ACAP - A
+DHD - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+SMP - A
+
+23195101:
+AA - A
+IC - A
+MH - A
+
+61142924:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+99090747:
+AS - A
+IES(M) - A
+PW - A
+
+37038570:
+
+74986393:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+12934216:
+MH - A
+TDRC - A
+
+50882039:
+IES(M) - A
+IES(M) - A1
+
+88829862:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+26777685:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+64725508:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+2673331:
+AA - A
+MH - A
+TSI - A
+
+40621154:
+AA - A
+IES(M) - A
+TSI - A
+
+78568977:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+16516800:
+
+54464623:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+92412446:
+TDRC - A
+
+30360269:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+68308092:
+
+6255915:
+FS(M) - A
+MP(M) - A
+
+44203738:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+82151561:
+AC(M) - A
+FIS(MA) - A
+
+20099384:
+FS(M) - A
+MP(M) - A
+
+58047207:
+FS(M) - A
+MP(M) - A
+
+95995030:
+AA - A
+MH - A
+PW - A
+
+33942853:
+AA - A
+MH - A
+TSI - A
+
+71890676:
+
+9838499:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+47786322:
+AA - A
+ABD - A
+IC - A
+ISE(MA) - A
+TSI - A
+
+85734145:
+
+23681968:
+FS(M) - A
+MP(M) - A
+
+61629791:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+99577614:
+
+37525437:
+FS(M) - A
+MP(M) - A
+
+75473260:
+PW - A
+
+13421083:
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+51368906:
+IES(M) - A
+MH - A
+
+89316729:
+ABD - A
+IES(M) - A
+SWAP - A
+
+27264552:
+AS - A
+IES(M) - A
+SWAP - A
+
+65212375:
+DS - A
+DS - A1
+DS - A2
+DS - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+TSI - A
+TSI - A1
+TSI - A2
+
+3160198:
+AS - A
+IES(M) - A
+PW - A
+
+41108021:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+79055844:
+AC(M) - A
+ALG(M) - A
+PDOO(M) - A
+
+17003667:
+AA - A
+DS - A
+DSD - A
+IC - A
+
+54951490:
+IES(M) - A
+PDOO(M) - A
+
+92899313:
+ISE(MA) - A
+
+30847136:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+68794959:
+FS(M) - A
+MP(M) - A
+
+6742782:
+
+44690605:
+
+82638428:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+20586251:
+MH - A
+
+58534074:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+
+96481897:
+AA - A
+MH - A
+TSI - A
+
+34429720:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+72377543:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+10325366:
+
+48273189:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+86221012:
+FS(M) - A
+MP(M) - A
+
+24168835:
+AS - A
+FIS(MA) - A
+
+62116658:
+FS(M) - A
+MP(M) - A
+
+64481:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+38012304:
+
+75960127:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+13907950:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+51855773:
+FS(M) - A
+LMD(M) - A
+MP(M) - A
+PDOO(M) - A
+
+89803596:
+AA - A
+MH - A
+TSI - A
+
+27751419:
+IES(M) - A
+ISI - A
+PW - A
+
+65699242:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+3647065:
+FS(M) - A
+MP(M) - A
+
+41594888:
+
+79542711:
+FS(M) - A
+MP(M) - A
+
+17490534:
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+MP(M) - A
+
+55438357:
+ABD - A
+ABD - A1
+ABD - A2
+ABD - A3
+DS - A
+DS - A1
+DS - A2
+DSD - A
+DSD - A1
+DSD - A2
+DSD - A3
+IES(M) - A
+IES(M) - A1
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+93386180:
+
+31334003:
+PW - A
+
+69281826:
+FIS(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+7229649:
+
+45177472:
+AA - A
+ISE(MA) - A
+MH - A
+
+83125295:
+FS(M) - A
+MP(M) - A
+
+21073118:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+59020941:
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+96968764:
+FS(M) - A
+MP(M) - A
+
+34916587:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+72864410:
+DIU - A
+ISE(MA) - A
+
+10812233:
+IES(M) - A
+IES(M) - A1
+
+48760056:
+FS(M) - A
+MP(M) - A
+
+86707879:
+FS(M) - A
+MP(M) - A
+
+24655702:
+ABD - A
+
+62603525:
+FS(M) - A
+MP(M) - A
+
+551348:
+
+38499171:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+76446994:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+14394817:
+AA - A
+MH - A
+TSI - A
+
+52342640:
+FS(M) - A
+MP(M) - A
+
+90290463:
+ABD - A
+IES(M) - A
+SWAP - A
+
+28238286:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+66186109:
+
+4133932:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+42081755:
+SMM - A
+TDRC - A
+
+80029578:
+IES(M) - A
+MH - A
+
+17977401:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+55925224:
+
+93873047:
+
+31820870:
+
+69768693:
+IES(M) - A
+ISE(MA) - A
+TW - A
+
+7716516:
+
+45664339:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+83612162:
+CUIA - A
+
+21559985:
+IES(M) - A
+MAC - A
+
+59507808:
+
+97455631:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+35403454:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+73351277:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+11299100:
+FS(M) - A
+MP(M) - A
+
+49246923:
+FS(M) - A
+MP(M) - A
+
+87194746:
+FS(M) - A
+MP(M) - A
+
+25142569:
+ISE(MA) - A
+MH - A
+
+63090392:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+1038215:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+38986038:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+PDOO(M) - A
+
+76933861:
+IA(MA) - A
+ISE(MA) - A
+
+14881684:
+FS(M) - A
+MP(M) - A
+
+52829507:
+FS(M) - A
+MP(M) - A
+
+90777330:
+FS(M) - A
+MP(M) - A
+
+28725153:
+
+66672976:
+
+4620799:
+ALG(M) - A
+FIS(MA) - A
+IA(MA) - A
+
+42568622:
+FS(M) - A
+MP(M) - A
+
+80516445:
+
+18464268:
+FS(M) - A
+MP(M) - A
+
+56412091:
+FS(M) - A
+MP(M) - A
+
+94359914:
+
+32307737:
+IC - A
+IES(M) - A
+MAC - A
+TSI - A
+
+70255560:
+FS(M) - A
+MP(M) - A
+
+8203383:
+IA(MA) - A
+IES(M) - A
+ISE(MA) - A
+
+46151206:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+84099029:
+DIU - A
+SG - A
+SIBW - A
+
+22046852:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+59994675:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+97942498:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+35890321:
+DS - A
+SIBW - A
+
+73838144:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+11785967:
+FIS(MA) - A
+IA(MA) - A
+ISE(MA) - A
+
+49733790:
+LMD(M) - A
+MP(M) - A
+
+87681613:
+AC(M) - A
+ALG(M) - A
+LMD(M) - A
+PDOO(M) - A
+
+25629436:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+63577259:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+1525082:
+ABD - A
+DS - A
+ISI - A
+SIBW - A
+SMM - A
+
+39472905:
+CUIA - A
+TW - A
+
+77420728:
+ALEM(A) - A
+MP(A) - A
+PW - A
+
+15368551:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+53316374:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+91264197:
+ISI - A
+MP(A) - A
+
+29212020:
+ALG(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+67159843:
+ALEM(A) - A
+ALEM(A) - A1
+ALEM(A) - A2
+FS(A) - A
+FS(A) - A1
+FS(A) - A2
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+MP(A) - A
+MP(A) - A1
+
+5107666:
+
+43055489:
+FBD(A) - A
+FIS(MA) - A
+
+81003312:
+ACAP - A
+ACAP - A1
+AS - A
+AS - A1
+DHD - A
+DHD - A1
+DSE - A
+DSE - A1
+FIS(MA) - A
+FIS(MA) - A1
+FIS(MA) - A2
+SMP - A
+SMP - A1
+
+18951135:
+PW - A
+SMD - A
+
+56898958:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+94846781:
+
+32794604:
+FBD(A) - A
+FIS(MA) - A
+
+70742427:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+8690250:
+ABD - A
+SIE - A
+
+46638073:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+84585896:
+
+22533719:
+ALEM(A) - A
+MP(A) - A
+
+60481542:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+98429365:
+
+36377188:
+ABD - A
+AS - A
+SWAP - A
+
+74325011:
+FBD(A) - A
+FIS(MA) - A
+
+12272834:
+DIU - A
+MH - A
+PW - A
+
+50220657:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+88168480:
+MP(A) - A
+SMM - A
+SWAP - A
+
+26116303:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+64064126:
+AC(A) - A
+
+2011949:
+FBD(A) - A
+FIS(MA) - A
+
+39959772:
+CUIA - A
+FBD(A) - A
+LMD(A) - A
+
+77907595:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+15855418:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+53803241:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+91751064:
+ABD - A
+PW - A
+SIE - A
+
+29698887:
+ABD - A
+FBD(A) - A
+ISI - A
+SIE - A
+SMD - A
+
+67646710:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALEM(A) - A2
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+MP(A) - A
+MP(A) - A1
+
+5594533:
+
+43542356:
+ALG(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+81490179:
+
+19438002:
+ABD - A
+SIE - A
+
+57385825:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+95333648:
+PW - A
+SIE - A
+SMM - A
+SWAP - A
+
+33281471:
+
+71229294:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+9177117:
+
+47124940:
+ISI - A
+MH - A
+TSI - A
+
+85072763:
+FBD(A) - A
+FIS(MA) - A
+MP(A) - A
+
+23020586:
+PW - A
+SWAP - A
+
+60968409:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+98916232:
+DIU - A
+TSI - A
+
+36864055:
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+FS(A) - A
+FS(A) - A1
+FS(A) - A2
+MP(A) - A
+MP(A) - A1
+
+74811878:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+12759701:
+FBD(A) - A
+FIS(MA) - A
+MP(A) - A
+
+50707524:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+88655347:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+26603170:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+64550993:
+
+2498816:
+AC(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+40446639:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+78394462:
+
+16342285:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+54290108:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+92237931:
+
+30185754:
+ACAP - A
+ACAP - A1
+SMP - A
+SMP - A1
+
+68133577:
+FBD(A) - A
+FIS(MA) - A
+
+6081400:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+44029223:
+FBD(A) - A
+FIS(MA) - A
+FS(A) - A
+MP(A) - A
+
+81977046:
+AC(A) - A
+ALG(A) - A
+FBD(A) - A
+LMD(A) - A
+MP(A) - A
+
+19924869:
+FBD(A) - A
+FIS(MA) - A
+
+57872692:
+FBD(A) - A
+FIS(MA) - A
+
+95820515:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+33768338:
+SWAP - A
+
+71716161:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+9663984:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+47611807:
+FBD(A) - A
+LMD(A) - A
+
+85559630:
+ALEM(A) - A
+ALEM(A) - A1
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+
+23507453:
+
+61455276:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+99403099:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+37350922:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+75298745:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+13246568:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+51194391:
+
+89142214:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+FS(A) - A
+FS(A) - A1
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+27090037:
+
+65037860:
+AC(A) - A
+AC(A) - A1
+AS - A
+AS - A1
+CUIA - A
+CUIA - A1
+CUIA - A2
+CUIA - A3
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+
+2985683:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+40933506:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+78881329:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+16829152:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+54776975:
+ALG(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+92724798:
+
+30672621:
+
+68620444:
+AS - A
+SWAP - A
+
+6568267:
+ALEM(A) - A
+ALG(A) - A
+
+44516090:
+DIU - A
+SIBW - A
+
+82463913:
+
+20411736:
+AC(A) - A
+ALEM(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+58359559:
+
+96307382:
+
+34255205:
+
+72203028:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+FBD(A) - A
+FBD(A) - A1
+FIS(MA) - A
+FIS(MA) - A1
+FIS(MA) - A2
+FIS(MA) - A3
+FS(A) - A
+FS(A) - A1
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+10150851:
+
+48098674:
+
+86046497:
+AS - A
+AS - A1
+
+23994320:
+
+61942143:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+99889966:
+ALG(A) - A
+
+37837789:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+75785612:
+
+13733435:
+FBD(A) - A
+FIS(MA) - A
+
+51681258:
+
+89629081:
+TW - A
+
+27576904:
+
+65524727:
+FBD(A) - A
+FIS(MA) - A
+
+3472550:
+CUIA - A
+SMM - A
+SWAP - A
+TDRC - A
+TW - A
+
+41420373:
+FBD(A) - A
+FIS(MA) - A
+
+79368196:
+
+17316019:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+55263842:
+ISI - A
+SWAP - A
+TDRC - A
+
+93211665:
+AC(A) - A
+MP(A) - A
+
+31159488:
+FBD(A) - A
+FIS(MA) - A
+
+69107311:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+7055134:
+
+45002957:
+AS - A
+DHD - A
+ISI - A
+
+82950780:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+20898603:
+ABD - A
+ISI - A
+PW - A
+
+58846426:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALEM(A) - A2
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+FS(A) - A
+FS(A) - A1
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+96794249:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALEM(A) - A2
+FS(A) - A
+FS(A) - A1
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+34742072:
+
+72689895:
+DIU - A
+
+10637718:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+48585541:
+DIU - A
+DSD - A
+SIBW - A
+
+86533364:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+FS(A) - A
+FS(A) - A1
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+24481187:
+
+62429010:
+
+376833:
+DIU - A
+LMD(A) - A
+
+38324656:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+76272479:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+14220302:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+52168125:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+90115948:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+28063771:
+FBD(A) - A
+MP(A) - A
+
+66011594:
+DIU - A
+SIBW - A
+
+3959417:
+
+41907240:
+FBD(A) - A
+FIS(MA) - A
+
+79855063:
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+DIU - A
+DIU - A1
+DIU - A2
+DIU - A3
+ISI - A
+ISI - A1
+ISI - A2
+ISI - A3
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+MP(A) - A
+MP(A) - A1
+SIE - A
+SIE - A1
+SIE - A2
+SIE - A3
+TDRC - A
+TDRC - A1
+TDRC - A2
+TDRC - A3
+
+17802886:
+
+55750709:
+
+93698532:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+31646355:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+69594178:
+
+7542001:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+45489824:
+SMM - A
+SWAP - A
+
+83437647:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+21385470:
+AC(A) - A
+LMD(A) - A
+
+59333293:
+AC(A) - A
+ALG(A) - A
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+97281116:
+ABD - A
+PW - A
+SIE - A
+
+35228939:
+ISI - A
+LMD(A) - A
+SMD - A
+
+73176762:
+PW - A
+SWAP - A
+
+11124585:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+49072408:
+ABD - A
+ISI - A
+PW - A
+
+87020231:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+24968054:
+ABD - A
+AS - A
+SWAP - A
+
+62915877:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+863700:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+38811523:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALEM(A) - A2
+FS(A) - A
+FS(A) - A1
+
+76759346:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+14707169:
+AC(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+52654992:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+90602815:
+
+28550638:
+AS - A
+AS - A1
+CUIA - A
+CUIA - A1
+CUIA - A2
+SWAP - A
+SWAP - A1
+SWAP - A2
+SWAP - A3
+
+66498461:
+AS - A
+DIU - A
+ISI - A
+SWAP - A
+
+4446284:
+AS - A
+ISI - A
+SWAP - A
+
+42394107:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+80341930:
+AC(A) - A
+AC(A) - A1
+AC(A) - A2
+ALEM(A) - A
+ALEM(A) - A1
+ALG(A) - A
+ALG(A) - A1
+ALG(A) - A2
+LMD(A) - A
+LMD(A) - A1
+LMD(A) - A2
+
+18289753:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+56237576:
+FBD(A) - A
+FIS(MA) - A
+LMD(A) - A
+
+94185399:
+ABD - A
+ISI - A
+PW - A
+
+32133222:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+70081045:
+FBD(A) - A
+FIS(MA) - A
+
+8028868:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+45976691:
+SMM - A
+SWAP - A
+
+83924514:
+AS - A
+DIU - A
+PW - A
+SWAP - A
+
+21872337:
+ALG(A) - A
+FBD(A) - A
+FIS(MA) - A
+
+59820160:
+CUIA - A
+DS - A
+SIE - A
+TDRC - A
+TW - A
+
+97767983:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+MP(A) - A
+
+35715806:
+
+73663629:
+ACAP - A
+AS - A
+ISI - A
+SMP - A
+
+11611452:
+FBD(A) - A
+FIS(MA) - A
+MP(A) - A
+
+49559275:
+
+87507098:
+FBD(A) - A
+FIS(MA) - A
+
+25454921:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+63402744:
+
+1350567:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+39298390:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+77246213:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+15194036:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+53141859:
+FBD(A) - A
+FIS(MA) - A
+
+91089682:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+29037505:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+66985328:
+ALEM(A) - A
+FS(A) - A
+
+4933151:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+42880974:
+
+80828797:
+
+18776620:
+CUIA - A
+LMD(A) - A
+SWAP - A
+TDRC - A
+
+56724443:
+
+94672266:
+IC - A
+MAC - A
+
+32620089:
+SWAP - A
+
+70567912:
+ALG(A) - A
+ISI - A
+SWAP - A
+TDRC - A
+
+8515735:
+ISI - A
+MP(A) - A
+PW - A
+SWAP - A
+
+46463558:
+ABD - A
+ISI - A
+PW - A
+SMD - A
+
+84411381:
+ALEM(A) - A
+FS(A) - A
+MP(A) - A
+
+22359204:
+AC(A) - A
+ALG(A) - A
+LMD(A) - A
+
+60307027:
+ISI - A
+MH - A
+TSI - A
+
+98254850:
+AC(A) - A
+ALG(A) - A
+
+36202673:
+ABD - A
+ISI - A
+PW - A
+SIE - A
+SMD - A
+
+74150496:
+EA - B
+EA - B1
+EA - B2
+EO - B
+EO - B1
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+SD - B
+SD - B1
+SD - B2
+
+12098319:
+AET - A
+AET - A1
+
+50046142:
+C1 - A
+CCE - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+87993965:
+FAT - A
+MCO - A
+PSETR - A
+
+25941788:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+63889611:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+SL - B
+
+1837434:
+ED  - B
+ED  - B1
+ED  - B2
+EDCN - A
+EDCN - A1
+EDCN - A2
+EO - B
+EO - B1
+EO - B2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+SL - B
+SL - B1
+SL - B2
+SL - B3
+
+39785257:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+77733080:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+EA - A
+EA - A1
+EA - A2
+EA - A3
+EO - A
+EO - A1
+EO - A2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+15680903:
+CP - A
+DAR - A
+FFI - B
+GR - A
+RIM - A
+SL - B
+SRC - A
+
+53628726:
+CAM - A
+FAT - A
+SD - B
+
+91576549:
+AET - A
+C1 - B
+FAT - A
+
+29524372:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+67472195:
+AET - A
+FAT - A
+PSETR - A
+PVD - A
+
+5420018:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+43367841:
+ED  - B
+IRC - B
+SD - B
+
+81315664:
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+19263487:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+57211310:
+
+95159133:
+C1 - A
+ED  - A
+IRC - A
+SD - A
+
+33106956:
+FFI - B
+
+71054779:
+
+9002602:
+CAM - A
+CAM - A1
+FAT - A
+FAT - A1
+PVD - A
+PVD - A1
+
+46950425:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+CCE - A
+CCE - A1
+CCE - A2
+CCE - A3
+EDCN - A
+EDCN - A1
+EDCN - A2
+SL - B
+SL - B1
+SL - B2
+SL - B3
+
+84898248:
+EM - A
+FFI - A
+
+22846071:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+ED  - A
+ED  - A1
+ED  - A2
+EDCN - A
+EDCN - A1
+EDCN - A2
+EO - A
+EO - A1
+EO - A2
+EO - A3
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+60793894:
+DAR - A
+DAR - A1
+DAR - A2
+FFI - B
+FFI - B1
+FFI - B2
+IRC - B
+IRC - B1
+IRC - B2
+SRC - A
+SRC - A1
+SRC - A2
+
+98741717:
+CERF - A
+IE - A
+IRC - B
+
+36689540:
+CP - A
+CP - A1
+CP - A2
+DAR - A
+DAR - A1
+DAR - A2
+EO - A
+EO - A1
+EO - A2
+FFI - A
+FFI - A1
+FFI - A2
+FFI - A3
+SD - B
+SD - B1
+SD - B2
+
+74637363:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+12585186:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+50533009:
+AP - A
+EA - A
+MCO - A
+TDS - A
+
+88480832:
+
+26428655:
+AP - A
+AP - A1
+AP - A2
+FFI - A
+FFI - A1
+FFI - A2
+
+64376478:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+2324301:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+40272124:
+C1 - B
+CP - A
+EA - B
+
+78219947:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+16167770:
+
+54115593:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+92063416:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+30011239:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+67959062:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+5906885:
+FAT - A
+FAT - A1
+GR - A
+GR - A1
+GR - A2
+PSETR - A
+PSETR - A1
+PSETR - A2
+SRC - A
+SRC - A1
+
+43854708:
+
+81802531:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+19750354:
+C1 - A
+
+57698177:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+95646000:
+C1 - A
+EA - A
+SRC - A
+
+33593823:
+
+71541646:
+AP - A
+ED  - B
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+9489469:
+AET - A
+AET - A1
+CAM - A
+CAM - A1
+GR - A
+GR - A1
+
+47437292:
+
+85385115:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+23332938:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+61280761:
+AA - A
+FBD - D
+IA(MA) - A
+
+99228584:
+AP - A
+TDS - A
+
+37176407:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+75124230:
+CP - A
+DAR - A
+GR - A
+IRC - B
+RIM - A
+SRC - A
+
+13072053:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SD - B
+SRC - A
+
+51019876:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+88967699:
+CP - A
+DAR - A
+RIM - A
+SL - B
+SRC - A
+
+26915522:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+64863345:
+C1 - B
+C1 - B1
+PDM - A
+PDM - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+
+2811168:
+C1 - B
+EO - A
+FFI - B
+GR - A
+IRC - A
+SRC - A
+
+40758991:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+78706814:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+16654637:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+54602460:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+92550283:
+
+30498106:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+68445929:
+CCE - A
+ED  - B
+EDCN - A
+FFI - A
+SL - A
+
+6393752:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+44341575:
+CCE - A
+ED  - B
+EDCN - A
+EO - A
+
+82289398:
+C1 - A
+EA - A
+IRC - A
+SD - A
+
+20237221:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+58185044:
+AET - A
+FAT - A
+PSETR - A
+
+96132867:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+34080690:
+PSETR - A
+PSETR - A1
+PSETR - A2
+SCA - A
+SCA - A1
+SCA - A2
+TDS - A
+TDS - A1
+
+72028513:
+AET - A
+AET - A1
+PVD - A
+PVD - A1
+
+9976336:
+EA - A
+FFI - B
+IRC - A
+SD - A
+SL - B
+
+47924159:
+CP - A
+DAR - A
+FFI - B
+RIM - A
+SD - B
+
+85871982:
+CP - A
+EO - B
+
+23819805:
+
+61767628:
+AP - A
+AP - A1
+AP - A2
+FFI - A
+FFI - A1
+FFI - A2
+MCO - A
+MCO - A1
+MCO - A2
+SCA - A
+SCA - A1
+SCA - A2
+SD - B
+SD - B1
+SD - B2
+SR - A
+SR - A1
+SR - A2
+TDS - A
+TDS - A1
+TDS - A2
+
+99715451:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+37663274:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+75611097:
+C1 - A
+EA - A
+FFI - A
+IRC - A
+SD - A
+
+13558920:
+C1 - B
+CERF - A
+FFI - B
+IE - A
+SAL - A
+SD - A
+
+51506743:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+ED  - A
+ED  - A1
+ED  - A2
+FFI - A
+FFI - A1
+FFI - A2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+SCA - A
+SCA - A1
+SCA - A2
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+89454566:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+27402389:
+AP - A
+AP - A1
+FAT - A
+FAT - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+
+65350212:
+C1 - B
+C1 - B1
+C1 - B2
+EA - B
+EA - B1
+EA - B2
+ED  - B
+ED  - B1
+ED  - B2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+SD - A
+SD - A1
+SD - A2
+SD - A3
+SL - B
+SL - B1
+SL - B2
+
+3298035:
+FBD - C
+IA - A
+IES - D
+PW - A
+
+41245858:
+DAR - A
+SD - A
+SRC - A
+
+79193681:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+17141504:
+CERF - A
+EM - A
+SAL - A
+
+55089327:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+93037150:
+
+30984973:
+C1 - B
+CP - A
+GR - A
+RIM - A
+SRC - A
+
+68932796:
+
+6880619:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+44828442:
+
+82776265:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+20724088:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+58671911:
+CAM - A
+GR - A
+IRC - A
+
+96619734:
+C1 - B
+EM - A
+SAL - A
+
+34567557:
+C1 - B
+CCE - A
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+72515380:
+
+10463203:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+48411026:
+
+86358849:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+24306672:
+PSETR - A
+
+62254495:
+SR - A
+
+202318:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+38150141:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+76097964:
+
+14045787:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+51993610:
+
+89941433:
+ED  - A
+EDCN - B
+EO - B
+FFI - B
+IRC - A
+SL - B
+
+27889256:
+C1 - B
+EA - B
+SD - A
+
+65837079:
+DAR - A
+EO - B
+GR - A
+SD - A
+
+3784902:
+CCE - B
+EA - B
+
+41732725:
+AP - A
+C1 - B
+MCO - A
+SD - B
+SR - A
+TDS - A
+
+79680548:
+ED  - A
+FFI - A
+IRC - A
+SD - A
+SL - A
+
+17628371:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+55576194:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+93524017:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+31471840:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+69419663:
+EO - B
+EO - B1
+SD - B
+SD - B1
+SD - B2
+
+7367486:
+C1 - B
+CERF - A
+FFI - B
+IE - A
+SAL - A
+SD - A
+
+45315309:
+
+83263132:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+21210955:
+
+59158778:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+97106601:
+
+35054424:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+73002247:
+
+10950070:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+48897893:
+
+86845716:
+
+24793539:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+62741362:
+CCE - B
+ED  - B
+EO - A
+FFI - B
+SL - B
+
+689185:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+38637008:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+76584831:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+14532654:
+C1 - A
+EA - A
+IRC - A
+SD - A
+
+52480477:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+90428300:
+DAR - A
+EA - B
+GR - A
+RIM - A
+SRC - A
+
+28376123:
+
+66323946:
+C1 - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+4271769:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SL - B
+
+42219592:
+C1 - B
+CCE - B
+ED  - B
+IRC - A
+SD - B
+
+80167415:
+CP - A
+DAR - A
+GR - A
+IRC - B
+RIM - A
+SRC - A
+
+18115238:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+56063061:
+AET - A
+FAT - A
+PSETR - A
+PVD - A
+
+94010884:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+31958707:
+
+69906530:
+FAT - A
+SL - B
+
+7854353:
+C1 - B
+CCE - A
+DAR - A
+ED  - B
+IRC - B
+
+45802176:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+83749999:
+CERF - A
+EM - A
+FFI - B
+IE - A
+SAL - A
+
+21697822:
+EDCN - A
+EO - A
+FFI - A
+IRC - B
+SL - A
+
+59645645:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+97593468:
+
+35541291:
+
+73489114:
+EA - A
+FFI - A
+IRC - A
+SD - A
+
+11436937:
+EA - B
+MCO - A
+SR - A
+
+49384760:
+CP - A
+EA - B
+RIM - A
+SRC - A
+
+87332583:
+TDS - A
+
+25280406:
+C1 - B
+C1 - B1
+C1 - B2
+EA - A
+EA - A1
+EA - A2
+EA - A3
+EO - A
+EO - A1
+EO - A2
+FFI - A
+FFI - A1
+FFI - A2
+FFI - A3
+PSETR - A
+PSETR - A1
+PSETR - A2
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+63228229:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+1176052:
+CCE - A
+EO - A
+FFI - B
+
+39123875:
+CCE - B
+EA - A
+EO - B
+SL - B
+
+77071698:
+AP - A
+FFI - B
+MCO - A
+SD - A
+SR - A
+
+15019521:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+52967344:
+CP - A
+SL - B
+
+90915167:
+C1 - B
+GR - A
+RIM - A
+SD - B
+SRC - A
+
+28862990:
+C1 - A
+C1 - A1
+C1 - A2
+EA - A
+EA - A1
+EA - A2
+EA - A3
+MCO - A
+MCO - A1
+MCO - A2
+SD - A
+SD - A1
+SD - A2
+SD - A3
+SR - A
+SR - A1
+SR - A2
+
+66810813:
+C1 - A
+EA - A
+IRC - A
+SD - A
+
+4758636:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+42706459:
+DAR - A
+GR - A
+RIM - A
+SD - A
+SRC - A
+
+80654282:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+18602105:
+CAM - A
+CAM - A1
+
+56549928:
+
+94497751:
+CAM - A
+PSETR - A
+
+32445574:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+70393397:
+AET - A
+AET - A1
+PVD - A
+PVD - A1
+
+8341220:
+AP - A
+MCO - A
+TDS - A
+
+46289043:
+CP - A
+CP - A1
+CP - A2
+DAR - A
+DAR - A1
+DAR - A2
+EA - A
+EA - A1
+EA - A2
+EA - A3
+FFI - A
+FFI - A1
+FFI - A2
+SRC - A
+SRC - A1
+SRC - A2
+
+84236866:
+CCE - A
+CP - A
+DAR - A
+FFI - B
+GR - A
+SRC - A
+
+22184689:
+C1 - A
+EA - A
+EO - B
+IRC - B
+SD - A
+
+60132512:
+ED  - A
+EDCN - A
+EO - A
+FFI - B
+SD - A
+
+98080335:
+CEGE - A
+CEGE - A1
+CERF - A
+CERF - A1
+DAR - A
+DAR - A1
+EISI - A
+EISI - A1
+IE - A
+IE - A1
+
+36028158:
+CAM - A
+CAM - A1
+FAT - A
+FAT - A1
+PVD - A
+PVD - A1
+
+73975981:
+DAR - A
+IRC - A
+
+11923804:
+AET - A
+AET - A1
+CAM - A
+CAM - A1
+FAT - A
+FAT - A1
+
+49871627:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+87819450:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+25767273:
+
+63715096:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+1662919:
+
+39610742:
+EA - B
+EA - B1
+EA - B2
+ED  - B
+ED  - B1
+ED  - B2
+EDCN - B
+EDCN - B1
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+IRC - B
+IRC - B1
+IRC - B2
+
+77558565:
+
+15506388:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+53454211:
+
+91402034:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+29349857:
+CP - A
+DAR - A
+GR - A
+SD - A
+SRC - A
+
+67297680:
+
+5245503:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+43193326:
+C1 - B
+CCE - A
+ED  - B
+IRC - B
+SD - B
+
+81141149:
+FAT - A
+SD - B
+
+19088972:
+C1 - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+57036795:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+94984618:
+
+32932441:
+AP - A
+
+70880264:
+
+8828087:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+46775910:
+
+84723733:
+C1 - A
+EA - A
+ED  - A
+FFI - B
+IRC - A
+
+22671556:
+C1 - B
+C1 - B1
+C1 - B2
+FFI - A
+FFI - A1
+FFI - A2
+GR - A
+GR - A1
+GR - A2
+PSETR - A
+PSETR - A1
+PSETR - A2
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+60619379:
+PSETR - A
+
+98567202:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+36515025:
+C1 - A
+EA - A
+ED  - A
+FFI - A
+SD - A
+
+74462848:
+C1 - A
+EA - A
+ED  - A
+FFI - A
+IRC - B
+
+12410671:
+
+50358494:
+SD - B
+SL - B
+
+88306317:
+AET - A
+FAT - A
+PSETR - A
+
+26254140:
+GR - A
+GR - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+
+64201963:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+2149786:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+40097609:
+EM - A
+
+78045432:
+
+15993255:
+
+53941078:
+AET - A
+AET - A1
+FAT - A
+FAT - A1
+PVD - A
+PVD - A1
+
+91888901:
+
+29836724:
+
+67784547:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+CAM - A
+CAM - A1
+EO - A
+EO - A1
+EO - A2
+RIM - A
+RIM - A1
+RIM - A2
+SD - B
+SD - B1
+SD - B2
+
+5732370:
+EA - A
+EA - A1
+EA - A2
+EA - A3
+ED  - B
+ED  - B1
+ED  - B2
+EDCN - A
+EDCN - A1
+EDCN - A2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+
+43680193:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+81628016:
+GR - A
+RIM - A
+SRC - A
+
+19575839:
+CAM - A
+FAT - A
+PSETR - A
+
+57523662:
+FFI - B
+TDS - A
+
+95471485:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+33419308:
+CCE - A
+EDCN - B
+EO - A
+FFI - B
+
+71367131:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SD - B
+SRC - A
+
+9314954:
+GR - A
+
+47262777:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+85210600:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+23158423:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+61106246:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+99054069:
+PVD - A
+PVD - A1
+
+37001892:
+DCSE - A
+EA - A
+FFI - A
+SAL - A
+SD - A
+
+74949715:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+12897538:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+50845361:
+C1 - A
+CCE - A
+EA - A
+FFI - A
+IRC - A
+SD - B
+
+88793184:
+PSETR - A
+SD - A
+
+26741007:
+C1 - B
+CCE - A
+ED  - B
+EDCN - A
+IRC - B
+
+64688830:
+C1 - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+2636653:
+C1 - A
+PSETR - A
+RIM - A
+SRC - A
+
+40584476:
+C1 - A
+EM - A
+SD - A
+
+78532299:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+16480122:
+
+54427945:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+92375768:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+30323591:
+EA - B
+FFI - A
+MCO - A
+SCA - A
+TDS - A
+
+68271414:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+6219237:
+AP - A
+FFI - B
+MCO - A
+SCA - A
+SR - A
+
+44167060:
+
+82114883:
+
+20062706:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+58010529:
+CERF - A
+EM - A
+
+95958352:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+33906175:
+AC - C
+FBD - C
+IA - C
+
+71853998:
+EDCN - B
+SL - B
+
+9801821:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+47749644:
+
+85697467:
+C1 - A
+FAT - A
+SD - A
+SRC - A
+
+23645290:
+EDCN - B
+EDCN - B1
+ES - B
+ES - B1
+ES - B2
+ES - B3
+SD - B
+SD - B1
+SD - B2
+SL - A
+SL - A1
+SL - A2
+SL - A3
+SR - A
+SR - A1
+SR - A2
+
+61593113:
+CAM - A
+PSETR - A
+PVD - A
+
+99540936:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+37488759:
+C1 - B
+C1 - B1
+C1 - B2
+CP - A
+CP - A1
+CP - A2
+EA - B
+EA - B1
+EA - B2
+EO - B
+EO - B1
+SD - B
+SD - B1
+SD - B2
+SRC - A
+SRC - A1
+SRC - A2
+
+75436582:
+
+13384405:
+
+51332228:
+
+89280051:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+27227874:
+
+65175697:
+AP - A
+FFI - B
+IRC - A
+SR - A
+
+3123520:
+
+41071343:
+
+79019166:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+16966989:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+54914812:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+92862635:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+30810458:
+PSETR - A
+PVD - A
+
+68758281:
+
+6706104:
+
+44653927:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+82601750:
+
+20549573:
+AP - A
+C1 - B
+FFI - B
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+58497396:
+TDS - A
+
+96445219:
+C1 - B
+EA - B
+ED  - B
+FFI - B
+SD - B
+
+34393042:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+72340865:
+AP - A
+IRC - B
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+10288688:
+C1 - A
+EA - A
+FFI - A
+IRC - A
+SD - A
+
+48236511:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+86184334:
+CP - A
+DAR - A
+GR - A
+RIM - A
+SL - B
+SRC - A
+
+24132157:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+62079980:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+27803:
+CCE - B
+ED  - A
+EDCN - B
+EO - B
+FFI - B
+
+37975626:
+CP - A
+CP - A1
+CP - A2
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+GR - A
+GR - A1
+GR - A2
+IRC - B
+IRC - B1
+IRC - B2
+SL - B
+SL - B1
+SL - B2
+SRC - A
+SRC - A1
+SRC - A2
+
+75923449:
+
+13871272:
+
+51819095:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+89766918:
+C1 - A
+ED  - A
+FFI - A
+
+27714741:
+C1 - A
+EA - A
+GR - A
+SD - A
+SL - B
+
+65662564:
+AET - A
+CAM - A
+FAT - A
+PSETR - A
+PVD - A
+
+3610387:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+41558210:
+
+79506033:
+
+17453856:
+AP - A
+DAR - A
+EA - B
+TDS - A
+
+55401679:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+93349502:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+31297325:
+CCE - A
+EA - B
+ED  - B
+EO - B
+FFI - B
+
+69245148:
+GR - A
+GR - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+
+7192971:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+45140794:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+83088617:
+DCSE - A
+EM - A
+FFI - B
+IE - A
+SD - B
+
+21036440:
+CERF - A
+FFI - B
+IE - A
+SAL - A
+SD - B
+
+58984263:
+AET - A
+AET - A1
+AP - A
+AP - A1
+AP - A2
+EA - A
+EA - A1
+EA - A2
+FAT - A
+FAT - A1
+TDS - A
+TDS - A1
+TDS - A2
+
+96932086:
+C1 - B
+C1 - B1
+C1 - B2
+ED  - B
+ED  - B1
+ED  - B2
+EO - B
+EO - B1
+IRC - B
+IRC - B1
+IRC - B2
+SD - B
+SD - B1
+SD - B2
+
+34879909:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+72827732:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+10775555:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+48723378:
+C1 - B
+
+86671201:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+24619024:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+62566847:
+PVD - A
+PVD - A1
+RIM - A
+RIM - A1
+RIM - A2
+SRC - A
+SRC - A1
+
+514670:
+C1 - B
+GR - A
+RIM - A
+SD - A
+SRC - A
+
+38462493:
+
+76410316:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+14358139:
+C1 - B
+DCSE - A
+EM - A
+SAL - A
+SD - B
+
+52305962:
+AET - A
+AET - A1
+EO - A
+EO - A1
+EO - A2
+FFI - A
+FFI - A1
+FFI - A2
+FFI - A3
+
+90253785:
+
+28201608:
+PSETR - A
+PSETR - A1
+PSETR - A2
+TDS - A
+TDS - A1
+
+66149431:
+C1 - B
+CCE - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+4097254:
+CCE - A
+ED  - B
+EDCN - A
+EO - A
+FFI - A
+SL - B
+
+42045077:
+SD - B
+
+79992900:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+17940723:
+AP - A
+CERF - A
+DAR - A
+EM - A
+TDS - A
+
+55888546:
+C1 - B
+CP - A
+DAR - A
+GR - A
+RIM - A
+SRC - A
+
+93836369:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+31784192:
+
+69732015:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+7679838:
+C1 - B
+C1 - B1
+C1 - B2
+ED  - B
+ED  - B1
+ED  - B2
+IRC - B
+IRC - B1
+IRC - B2
+SD - B
+SD - B1
+SD - B2
+SL - B
+SL - B1
+SL - B2
+
+45627661:
+AET - A
+PSETR - A
+PVD - A
+
+83575484:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+21523307:
+FFI - B
+PSETR - A
+SL - B
+
+59471130:
+C1 - B
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+97418953:
+AET - A
+AET - A1
+PVD - A
+PVD - A1
+
+35366776:
+C1 - B
+DCSE - A
+EO - A
+IRC - B
+SD - B
+SL - A
+
+73314599:
+C1 - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+11262422:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+49210245:
+AP - A
+MCO - A
+SCA - A
+SL - B
+SR - A
+TDS - A
+
+87158068:
+C1 - B
+EA - B
+ED  - B
+IRC - B
+SD - B
+
+25105891:
+IRC - A
+SR - A
+
+63053714:
+AP - A
+AP - A1
+AP - A2
+CAM - A
+CAM - A1
+MCO - A
+MCO - A1
+MCO - A2
+SCA - A
+SCA - A1
+SCA - A2
+SR - A
+SR - A1
+SR - A2
+TDS - A
+TDS - A1
+
+1001537:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+38949360:
+EA - A
+IRC - A
+SD - A
+SL - B
+
+76897183:
+CAM - A
+FAT - A
+PSETR - A
+
+14845006:
+
+52792829:
+
+90740652:
+AP - A
+C1 - A
+EA - A
+IRC - B
+SD - A
+
+28688475:
+CCE - B
+IRC - A
+
+66636298:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+4584121:
+CP - A
+DAR - A
+GR - A
+IRC - B
+RIM - A
+SRC - A
+
+42531944:
+CERF - A
+CERF - A1
+DCSE - A
+DCSE - A1
+IE - A
+IE - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+
+80479767:
+DAR - A
+EA - A
+IRC - B
+RIM - A
+SRC - A
+
+18427590:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+56375413:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+94323236:
+C1 - B
+C1 - B1
+GR - A
+GR - A1
+GR - A2
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+
+32271059:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+70218882:
+DCSE - A
+PSETR - A
+PVD - A
+
+8166705:
+SCA - A
+SCA - A1
+SCA - A2
+SD - A
+SD - A1
+SD - A2
+TDS - A
+TDS - A1
+TDS - A2
+
+46114528:
+
+84062351:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+22010174:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+59957997:
+C1 - B
+MCO - A
+TDS - A
+
+97905820:
+AP - A
+CAM - A
+FAT - A
+FFI - B
+SR - A
+
+35853643:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+73801466:
+C1 - B
+DAR - A
+EA - B
+SD - B
+SRC - A
+
+11749289:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+49697112:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+87644935:
+FFI - A
+FFI - A1
+FFI - A2
+GR - A
+GR - A1
+GR - A2
+PVD - A
+PVD - A1
+SD - A
+SD - A1
+SD - A2
+SD - A3
+
+25592758:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+63540581:
+FFI - B
+
+1488404:
+SD - A
+
+39436227:
+AET - A
+AET - A1
+AP - A
+AP - A1
+AP - A2
+FFI - B
+FFI - B1
+FFI - B2
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+SR - A
+SR - A1
+SR - A2
+TDS - A
+TDS - A1
+TDS - A2
+
+77384050:
+PSETR - A
+
+15331873:
+
+53279696:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+91227519:
+CCE - B
+ED  - B
+FFI - B
+IRC - A
+
+29175342:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - B
+
+67123165:
+AP - A
+EA - B
+IRC - A
+TDS - A
+
+5070988:
+CAM - A
+CP - A
+
+43018811:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+80966634:
+C1 - B
+GR - A
+RIM - A
+SD - A
+SRC - A
+
+18914457:
+GR - A
+
+56862280:
+AET - A
+PSETR - A
+PVD - A
+
+94810103:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+ED  - B
+ED  - B1
+ED  - B2
+EDCN - A
+EDCN - A1
+EDCN - A2
+SL - B
+SL - B1
+SL - B2
+SL - B3
+
+32757926:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+SL - B
+
+70705749:
+CERF - A
+DCSE - A
+EM - A
+IE - A
+SAL - A
+
+8653572:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+46601395:
+CCE - B
+EDCN - B
+EO - A
+FFI - B
+SL - B
+
+84549218:
+AET - A
+AET - A1
+PVD - A
+PVD - A1
+
+22497041:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+60444864:
+CCE - A
+EA - B
+ED  - B
+EDCN - A
+IRC - B
+
+98392687:
+
+36340510:
+AET - A
+FAT - A
+PSETR - A
+
+74288333:
+
+12236156:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+50183979:
+GR - A
+SD - A
+
+88131802:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+26079625:
+GR - A
+IRC - A
+RIM - A
+
+64027448:
+C1 - B
+EA - B
+ED  - B
+EO - B
+IRC - B
+
+1975271:
+C1 - A
+C1 - A1
+C1 - A2
+C1 - A3
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+IRC - B
+IRC - B1
+IRC - B2
+SL - B
+SL - B1
+SL - B2
+
+39923094:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+77870917:
+CERF - A
+CERF - A1
+FFI - B
+FFI - B1
+FFI - B2
+SCA - A
+SCA - A1
+SCA - A2
+SR - A
+SR - A1
+SR - A2
+
+15818740:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+53766563:
+C1 - A
+FFI - A
+PSETR - A
+SD - A
+
+91714386:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+29662209:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+67610032:
+SR - A
+
+5557855:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+43505678:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+81453501:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+19401324:
+C1 - B
+C1 - B1
+C1 - B2
+ED  - B
+ED  - B1
+ED  - B2
+EO - B
+EO - B1
+IRC - B
+IRC - B1
+IRC - B2
+SD - B
+SD - B1
+SD - B2
+
+57349147:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+95296970:
+FFI - A
+GR - A
+RIM - A
+SD - A
+
+33244793:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+71192616:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+9140439:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+47088262:
+AP - A
+AP - A1
+AP - A2
+CAM - A
+CAM - A1
+EO - B
+EO - B1
+FAT - A
+FAT - A1
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+PSETR - A
+PSETR - A1
+PSETR - A2
+TDS - A
+TDS - A1
+TDS - A2
+
+85036085:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+22983908:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+60931731:
+AET - A
+AET - A1
+PVD - A
+PVD - A1
+
+98879554:
+CCE - B
+FFI - B
+SL - B
+
+36827377:
+GR - A
+
+74775200:
+AET - A
+AET - A1
+FAT - A
+FAT - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+PVD - A
+PVD - A1
+SRC - A
+SRC - A1
+
+12723023:
+EO - B
+FFI - B
+GR - A
+IRC - A
+SRC - A
+
+50670846:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+88618669:
+AP - A
+C1 - A
+EA - B
+SD - A
+TDS - A
+
+26566492:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+SL - B
+
+64514315:
+
+2462138:
+AP - A
+MCO - A
+
+40409961:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+78357784:
+
+16305607:
+
+54253430:
+GR - A
+GR - A1
+GR - A2
+PSETR - A
+PSETR - A1
+PSETR - A2
+RIM - A
+RIM - A1
+RIM - A2
+SRC - A
+SRC - A1
+
+92201253:
+C1 - B
+CCE - B
+DCSE - A
+EA - B
+IRC - B
+SD - B
+
+30149076:
+
+68096899:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+6044722:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+43992545:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+81940368:
+EDCN - B
+IRC - A
+
+19888191:
+CCE - B
+DAR - A
+EA - B
+FFI - B
+GR - A
+SRC - A
+
+57836014:
+
+95783837:
+CCE - A
+EO - A
+SL - A
+
+33731660:
+CP - A
+GR - A
+RIM - A
+SD - B
+SRC - A
+
+71679483:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+9627306:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+47575129:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+85522952:
+C1 - B
+C1 - B1
+C1 - B2
+EA - B
+EA - B1
+EA - B2
+ED  - B
+ED  - B1
+ED  - B2
+FFI - B
+FFI - B1
+FFI - B2
+FFI - B3
+SD - B
+SD - B1
+SD - B2
+SL - B
+SL - B1
+SL - B2
+
+23470775:
+CCE - A
+EA - B
+ED  - B
+EDCN - A
+SL - B
+
+61418598:
+
+99366421:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+37314244:
+AP - A
+C1 - A
+SD - A
+SR - A
+TDS - A
+
+75262067:
+SD - B
+SRC - A
+
+13209890:
+EA - A
+ED  - B
+EDCN - A
+EO - A
+SL - B
+
+51157713:
+C1 - A
+EA - A
+ED  - A
+IRC - A
+SD - A
+
+89105536:
+C1 - A
+ED  - A
+FFI - B
+GR - A
+SD - A
+SL - B
+
+27053359:
+
+65001182:
+
+2949005:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+40896828:
+
+78844651:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+16792474:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+54740297:
+C1 - B
+GR - A
+
+92688120:
+AP - A
+MCO - A
+SCA - A
+SR - A
+TDS - A
+
+30635943:
+EDCN - B
+EO - A
+IRC - A
+
+68583766:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+6531589:
+CP - A
+DAR - A
+GR - A
+SD - B
+SRC - A
+
+44479412:
+AET - A
+AET - A1
+AP - A
+AP - A1
+AP - A2
+FAT - A
+FAT - A1
+SCA - A
+SCA - A1
+SCA - A2
+TDS - A
+TDS - A1
+
+82427235:
+
+20375058:
+C1 - B
+C1 - B1
+EM - A
+EM - A1
+EM - A2
+FAT - A
+FAT - A1
+IE - A
+IE - A1
+PSETR - A
+PSETR - A1
+PSETR - A2
+SD - B
+SD - B1
+SD - B2
+
+58322881:
+CCE - B
+EDCN - B
+EO - B
+FFI - B
+SL - B
+
+96270704:
+AET - A
+SR - A
+
+34218527:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+72166350:
+EA - B
+ED  - B
+EDCN - A
+EO - A
+IRC - B
+
+10114173:
+EA - A
+EA - A1
+EA - A2
+EA - A3
+EO - A
+EO - A1
+EO - A2
+FAT - A
+FAT - A1
+GR - A
+GR - A1
+GR - A2
+IRC - A
+IRC - A1
+IRC - A2
+IRC - A3
+PSETR - A
+PSETR - A1
+PSETR - A2
+SRC - A
+SRC - A1
+SRC - A2
+
+48061996:
+CCE - A
+EDCN - A
+EO - A
+FFI - A
+SL - A
+
+86009819:
+C1 - A
+EA - A
+EDCN - B
+IRC - A
+
+23957642:
+AET - A
+PVD - A
+SD - B
+
+61905465:
+
+Alumnos sin asignaturas: 0
