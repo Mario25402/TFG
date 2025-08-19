@@ -3,6 +3,12 @@ import copy
 import pandas as pd
 
 class MatriculaHorario():
+
+    ###################################
+    # Constructor
+    # Órden 0, llamada desde Main
+    # Inicializa todo lo necesario
+
     def __init__(self, fileMat, fileHor):
         # Cargar matrículas
         df = pd.read_csv(fileMat)
@@ -90,7 +96,49 @@ class MatriculaHorario():
         self.getCombinacionSubgrupos()
         self.sinCombinaciones()
 
-    ####################
+    ###################################
+    # Get Combinacion Subgrupos
+    # Órden 1, llamada desde órden 0
+    # Asigna los subgrupos de alumnos con y sin combinaciones
+
+    def getCombinacionSubgrupos(self):
+        for alumno in self.datos.keys():
+
+            # No explorar subgrupos si ya hay solapamiento en teoría
+            if not self.solapamientoTeoria(alumno):
+                subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
+
+                if subgrupos != []:
+                    self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], False)
+
+    ###################################
+    # Sin Combinaciones
+    # Órden 2, llamada desde órden 0
+    # Rellena los alumnos que no tienen combinaciones posibles
+
+    def sinCombinaciones(self):
+        alumnos = []
+
+        for alumno, matriculas in self.datos.items():
+            if matriculas != [] and self.combinaciones[alumno] == []:
+                alumnos.append(alumno)
+
+        # Fichero de alumnos sin combinaciones
+        with open("./res/sinComb.txt", "w") as f:            
+            for i, alumno in enumerate(alumnos):
+                f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
+
+                f.write(f"\nTeoría: {self.datos[alumno]}\n")
+                f.write(f"\nHoras Teoría: {[hora for asignatura in self.datos[alumno] for hora in asignatura['horario']]}\n")
+
+                f.write(f"\nSubgrupos:\n")
+                for i, combinacion in enumerate(self.sinAsignar[alumno]):
+                    f.write(f"Posibilidad {i}:\t{combinacion}\n")
+
+    ###################################
+    # Solapamiento Teoría
+    # Órden 3, llamada desde órden 1
+    # Comprueba si hay horas de teoría que se solapan
 
     def solapamientoTeoria(self, alumno):
         horas = []
@@ -103,19 +151,11 @@ class MatriculaHorario():
             return True
 
         return False
-
-
-    def getCombinacionSubgrupos(self):
-        for alumno in self.datos.keys():
-
-            # No explorar subgrupos si ya hay solapamiento en teoría
-            if not self.solapamientoTeoria(alumno):
-                subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
-
-                if subgrupos != []:
-                    self.combinarSubgrupos(subgrupos, self.datos[alumno], self.combinaciones[alumno], True)
-                        
-    ###
+    
+    ###################################
+    # Combinar Subgrupos
+    # Órden 4, llamada desde órden 1
+    # Devuelve las combinaciones de subgrupos de cada alumno 
 
     def combinarSubgrupos(self, subgruposAlumno, actual, combinaciones, solapar=False):
         codTeoria = {asignatura['codigo'] for asignatura in actual}
@@ -127,7 +167,10 @@ class MatriculaHorario():
         if '2961119' in codTeoria:
             codTeoria.remove('2961119')
 
-        ###
+        ###################################
+        # Backtrack
+        # Órden 5, llamada desde órden 4
+        # Explora las combinaciones de subgrupos de cada alumno
 
         def backtrack(index, combActual, usados, solapar=False):
             if usados == codTeoria:
@@ -155,7 +198,10 @@ class MatriculaHorario():
     
         backtrack(0, [], set(), solapar)
 
-    ###
+    ###################################
+    # Factible
+    # Órden 6, llamada desde órden 5
+    # Decide si un grupo es añadido a una combinación
 
     def factible(self, nueva, actual, solapar=False):
         nuevoCod = nueva['codigo']
@@ -185,28 +231,10 @@ class MatriculaHorario():
 
         return True
 
-    
-    ####################
-
-    def sinCombinaciones(self):
-        alumnos = []
-
-        for alumno, matriculas in self.datos.items():
-            if matriculas != [] and self.combinaciones[alumno] == []:
-                alumnos.append(alumno)
-
-        # Fichero de alumnos sin combinaciones
-        with open("./res/sinComb.txt", "w") as f:            
-            for i, alumno in enumerate(alumnos):
-                f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
-
-                f.write(f"\nTeoría: {self.datos[alumno]}\n")
-                f.write(f"\nHoras Teoría: {[hora for asignatura in self.datos[alumno] for hora in asignatura['horario']]}\n")
-
-                f.write(f"\nSubgrupos:\n")
-                for i, combinacion in enumerate(self.sinAsignar[alumno]):
-                    f.write(f"Posibilidad {i}:\t{combinacion}\n")
-
+    ###################################
+    # Get Sin Asignar
+    # Órden 7, llamada desde Main
+    # Devuelve los alumnos con solapamientos
 
     def getSinAsignar(self):
         res = {}
@@ -220,14 +248,3 @@ class MatriculaHorario():
                     self.combinarSubgrupos(subgrupos, self.datos[alumno], res[alumno], True)
 
         return res
-
-    ####################
-
-    def combinacionesToString(self):
-        for alumno in self.combinaciones.keys():
-            print(f"Alumno: {alumno}")
-            for i, combinacion in enumerate(self.combinaciones[alumno]):
-                print(f"Combinación {i+1}:")
-                for subgrupo in combinacion:
-                    print(f"  - {subgrupo['asignatura']} ({subgrupo['grupo']})")
-            print()
