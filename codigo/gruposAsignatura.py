@@ -182,15 +182,19 @@ class gruposAsignatura:
         solucionesEnteras = self.getAulasRellenas(self.combinaciones)
         solucionesSolapadas = self.setSolapados()
 
-        self.solAsignaturas = {}
-        self.solAsignaturas.update(solucionesEnteras[0])
-        self.solAsignaturas.update(solucionesSolapadas[0])
+        self.solAsignaturas = self.fusionarSoluciones(solucionesEnteras[0], solucionesSolapadas[0])
+
+        ###
+        # Rellenar documento
 
         with open("./res/asignaturasAsignadas.txt", "w") as f:
             for asignatura, datos in self.solAsignaturas.items():
                 f.write(f"Asignatura: {asignatura}:\n {datos}\n\n")
 
             f.write('\n\n\n\n\n')
+
+            ###
+            # Recuento de plazas que sobran en una asignatura
 
             sumaEx = 0
             sumaSob = 0
@@ -207,6 +211,9 @@ class gruposAsignatura:
 
             f.write('\n\n\n\n\n')
 
+            ###
+            # Recuento de plazas que faltan en una asignatura
+
             contador = 0
 
             for asignatura, datos in self.solAsignaturas.items():
@@ -221,17 +228,20 @@ class gruposAsignatura:
             f.write(f"Suma sobrantes: {sumaSob}\n")
             f.write(f"Suma excesos: {sumaEx}\n")
 
+            ###
+            # Recuento de alumnos matriculados y alumnos asignados
+
             asignados = []
             matriculados = []
             
             for alumno in self.matricula.keys():
                 if len(self.matricula[alumno]) > 0:
-                    matriculados.append(alumno)
+                    matriculados.append(alumno) # Matriculados
 
                 nextAlumno = False
                 for asignatura, datos in self.solAsignaturas.items():
                     if alumno in datos["alumnos"]:
-                        asignados.append(alumno)
+                        asignados.append(alumno) # Asignados
                         nextAlumno = True
                         break
 
@@ -278,7 +288,7 @@ class gruposAsignatura:
     ###################################
     # Filtrar Grupos Teoría
     # Órden 6, llamada desde órden 5
-    # Añade los grupos eliminados de IES
+    # Añade los grupos y subgrupos eliminados de IES
 
     def __addIES(self, matricula, resultado):
         for clave in matricula:
@@ -417,20 +427,27 @@ class gruposAsignatura:
         combEliminadas = []
 
         alumno, combinaciones = alumnos[indice]
+        #if alumno == 64863345:
+        #    pass
 
         for i, combinacion in enumerate(combinaciones):
             diasBool[i] = {}
-            desviaciones[i] = self.desviaciones(alumno, actual, combinacion)
+            desviaciones[i] = self.desviaciones(alumno, copy.deepcopy(actual), combinacion)
 
-        # Seleccionar el grupo con mejor equilibrio global de personas por aula
+        # Calcular desviaciones de cada asignatura por grupo perteneciente
         mejor = [None, 1000] # indice, valor desviación
+        #desviaciones = self.sortDesviaciones(desviaciones)
+
         for i, desv in desviaciones.items():
             desvTotal = sum(list(desv.values()))
 
             if desvTotal < mejor[1]:
                 mejor[0] = i
                 mejor[1] = desvTotal
+
+            mejorCopia = mejor
                 
+        # Seleccionar o descartar las combinaciones y elegir la resultante de menor desviación
         for i in range(len(combinaciones)):
             horas = set()
             asignaturas = combinaciones[i]
@@ -440,16 +457,27 @@ class gruposAsignatura:
 
             # Eliminar combinaciones con horas muy separadas
             if self.separacionAltaHoras(horas, asignaturas, diasBool[i]):
-                combEliminadas.append(combinaciones[i])
-                break
+                combEliminadas.append((i, combinaciones[i]))
+                continue
 
-            if i == mejor[0]:
-                self.rellenarSubgrupos(actual, alumno, combinaciones[i])
-                break
-
-        # Si ninguna combinación es válida, añadir la combinación con mejor equilibrio
+        # Si ninguna es válida, añadir la mejor
+        asignada = False
         if len(combEliminadas) == len(combinaciones):
-            self.rellenarSubgrupos(actual, alumno, mejor[0])
+            self.rellenarSubgrupos(actual, alumno, combinaciones[mejor[0]])
+            asignada = True
+
+        else:
+            for index, eliminada in combEliminadas:
+                if eliminada == combinaciones[mejor[0]]:
+                    if len(desviaciones) > 0:
+                        desviaciones.pop(index)
+
+        # Añadir la combinación con mejor equilibrio
+        if not asignada:
+            if len(desviaciones) == 0:
+                mejor = mejorCopia
+
+            self.rellenarSubgrupos(actual, alumno, combinaciones[mejor[0]])
 
         # Seguir explorando
         if self.explorarCombinacionesSubgrupos(alumnos, copy.deepcopy(actual), soluciones, indice + 1, stop):
@@ -491,11 +519,32 @@ class gruposAsignatura:
                 capacidades[clave[0]].append(configuracion[clave]["capacidadActual"])
 
         # Calcular desviaciones estándar de los subgrupos de cada asignatura
-        for clave in capacidades:
+        for clave in capacidades.keys():
             if len(capacidades[clave]) > 1:
                 desviaciones[clave] = statistics.stdev(capacidades[clave])
+            else:
+                desviaciones[clave] = 0
 
         return desviaciones
+    
+    ###################################
+    # Sort Desviaciones
+    # Órden 13.1, llamada desde órden 13
+    # Ordena las desviaciones de menor a mayor
+    
+    def sortDesviaciones(self, desviaciones):
+        ordenado = {}
+        sumas = {}
+
+        for indice, asignaturas in desviaciones.items():
+            sumas[indice] = 0
+
+            for desviacion in asignaturas.values():
+                sumas[indice] += desviacion
+
+        ordenado = dict(sorted(sumas.items(), key=lambda x: x[1]))
+
+        return ordenado
     
    ###################################
     # Rellenar Subgrupos
@@ -566,14 +615,14 @@ class gruposAsignatura:
 
         # Añadir alumnos a los grupos de teoría
         for alumno, posibilidades in self.sinAsignar.items():
-            teoria[alumno] = []
-            horasTeoria[alumno] = []
+            teoria[alumno] = set()
+            horasTeoria[alumno] = set()
 
             for posibilidad in posibilidades:
                 for asignatura in posibilidad:
                     clave = (asignatura['asignatura'], asignatura['grupo'][0])
-                    teoria[alumno].append(clave)
-                    horasTeoria[alumno].extend(self.datos[clave]["horario"])
+                    teoria[alumno].add(clave)
+                    horasTeoria[alumno].update(self.datos[clave]["horario"])
 
         self.rellenarGruposTeoria(teoria)
 
@@ -606,7 +655,7 @@ class gruposAsignatura:
 
                 # Recopilar horas de cada combinacion y calcular cuantas se solapan
                 for i, combinacion in enumerate(combinaciones):
-                    horas[i] = horasTeoria[alumno]
+                    horas[i] = list(horasTeoria[alumno])
                     
                     for asignatura in combinacion:
                         horas[i].extend(asignatura["horario"])
@@ -642,8 +691,30 @@ class gruposAsignatura:
     # Explora las combinaciones de subgrupos para asignar a los alumnos
 
     ###################################
+    # Fusionar Soluciones
+    # Órden 23, llamada desde órden 3
+    # Unifica los datos de las soluciones completas y las solapadas
+
+    def fusionarSoluciones(self, primeraParte, segundaParte):
+        parteCompleta = primeraParte
+
+        for asignatura, datos in segundaParte.items():
+
+            # Si no existe, añadirla completamente
+            if asignatura not in parteCompleta:
+                parteCompleta[asignatura] = datos
+
+            # Si ya existe, añadir los alumnos
+            else:
+                parteCompleta[asignatura]["alumnos"].extend(datos["alumnos"])
+                parteCompleta[asignatura]["alumnos"] = list(set(parteCompleta[asignatura]["alumnos"]))
+                parteCompleta[asignatura]["capacidadActual"] = len(parteCompleta[asignatura]["alumnos"])
+
+        return parteCompleta
+
+    ###################################
     # Get Results Alumno
-    # Órden 23, llamada desde Main
+    # Órden 24, llamada desde Main
     # Rellena los resultados por alumno
 
     def getResultsAlumno(self):
@@ -666,11 +737,11 @@ class gruposAsignatura:
             for alumno, asignaturas in self.solAlumno.items():
                 f.write(f"\n{alumno}:\n")
 
-                for asignatura in sorted(asignaturas):
-                    if (len(asignatura) == 0):
+                if (len(asignaturas) == 0):
                         vacios += 1
-
-                    abrv, grupo = asignatura
-                    f.write(f"{abrv} - {grupo}\n")
+                else:
+                    for asignatura in sorted(asignaturas):
+                        abrv, grupo = asignatura
+                        f.write(f"{abrv} - {grupo}\n")
 
             f.write(f"\nAlumnos sin asignaturas: {vacios}\n")

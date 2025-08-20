@@ -123,7 +123,7 @@ class MatriculaHorario():
             if matriculas != [] and self.combinaciones[alumno] == []:
                 alumnos.append(alumno)
 
-        # Fichero de alumnos sin combinaciones
+        """ # Fichero de alumnos sin combinaciones
         with open("./res/sinComb.txt", "w") as f:            
             for i, alumno in enumerate(alumnos):
                 f.write(f"\n\nAlumno Nº {i}: {alumno}\n")
@@ -133,7 +133,7 @@ class MatriculaHorario():
 
                 f.write(f"\nSubgrupos:\n")
                 for i, combinacion in enumerate(self.sinAsignar[alumno]):
-                    f.write(f"Posibilidad {i}:\t{combinacion}\n")
+                    f.write(f"Posibilidad {i}:\t{combinacion}\n") """
 
     ###################################
     # Solapamiento Teoría

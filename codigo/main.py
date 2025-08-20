@@ -10,20 +10,20 @@ def main():
     ###
     # Primer Cuatrimestre
 
-    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit1.csv")
-    clases = gruposAsignatura("./jesus/horariosgiit1.csv", matHor.combinaciones, matHor.datos, matHor.getSinAsignar())
+    matHor1 = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit1.csv")
+    clases1 = gruposAsignatura("./jesus/horariosgiit1.csv", matHor1.combinaciones, matHor1.datos, matHor1.getSinAsignar())
 
-    clases.getResultsAsignaturas()
-    clases.getResultsAlumno()
+    clases1.getResultsAsignaturas()
+    clases1.getResultsAlumno()
 
     ###
     # Segundo Cuatrimestre
 
-    matHor = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit2.csv")
-    clases = gruposAsignatura("./jesus/horariosgiit2.csv", matHor.combinaciones, matHor.datos, matHor.getSinAsignar())
+    matHor2 = MatriculaHorario("./jesus/matricula.csv", "./jesus/horariosgiit2.csv")
+    clases2 = gruposAsignatura("./jesus/horariosgiit2.csv", matHor2.combinaciones, matHor2.datos, matHor2.getSinAsignar())
 
-    clases.getResultsAsignaturas()
-    clases.getResultsAlumno()
+    clases2.getResultsAsignaturas()
+    clases2.getResultsAlumno()
 
 ##########
 
