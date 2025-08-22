@@ -105,8 +105,7 @@ class gruposAsignatura:
                 "codigo" : codigos[i],
                 "capacidadActual" : 0,
                 "alumnos": [],
-                "horario": codigoHoras,
-                "subgrupos": None
+                "horario": codigoHoras
             }
 
         # Unificar Teoria y Subgrupos
@@ -134,7 +133,6 @@ class gruposAsignatura:
         # Asignar horas al grupo de teoría
         for clave, valor in horas.items():
             self.datos[('IES', clave)]["horario"] = set(valor)
-            self.datos[('IES', clave)]["subgrupos"] = None
 
         # Eliminar subgrupos de IES
         for clave, valor in self.datos.items():
@@ -506,7 +504,9 @@ class gruposAsignatura:
             resultados[dia] = False
 
             for i in range(len(horas) - 1):
-                if horas[i + 1] - horas[i] > 2:
+                diff = self.diferenciaHoras(horas[i+1], horas[i])
+
+                if diff > 2:
                     resultados[dia] = True
                     break
 
@@ -522,18 +522,32 @@ class gruposAsignatura:
         return True
     
     ###################################
-    # Rellenar Subgrupos
-    # Órden 17, llamada desde órden 13
-    # Añade un alumno a un subgrupo
+    # Diferencia Horas
+    # Órden 17, llamada desde órden 16
+    # Calcula la diferencia de horas sin contar la hora de comer
+
+    def diferenciaHoras(self, horaMayor, horaMenor):
+        resta = horaMayor - horaMenor
+        horaComer = int(f"{str(horaMenor)[0]}07")
+
+        if horaMenor < horaComer <= horaMayor:
+            resta -= 1
+
+        return resta
 
     ###################################
     # Rellenar Subgrupos
     # Órden 18, llamada desde órden 13
     # Añade un alumno a un subgrupo
+
+    ###################################
+    # Rellenar Subgrupos
+    # Órden 19, llamada desde órden 13
+    # Añade un alumno a un subgrupo
                             
     ###################################
     # Set Solapados
-    # Órden 19, llamada desde órden 3
+    # Órden 20, llamada desde órden 3
     # Rellena los alumnos con horas solapadas
 
     def setSolapados(self):
@@ -562,12 +576,12 @@ class gruposAsignatura:
     
     ###################################
     # Rellenar Grupos Teoria
-    # Órden 20, llamada desde órden 19
+    # Órden 21, llamada desde órden 20
     # Rellena los grupos de teoría de los alumnos
 
     ###################################
     # Filtrar Solapadas
-    # Órden 21, llamada desde órden 19
+    # Órden 22, llamada desde órden 20
     # Reduce el número de combinaciones solapadas
 
     def filtrarSolapadas(self, datos, horasTeoria):
@@ -619,12 +633,12 @@ class gruposAsignatura:
     
      ###################################
     # Explorar Grupos Prácticas
-    # Órden 22, llamada desde órden 19
+    # Órden 23, llamada desde órden 20
     # Explora las combinaciones de subgrupos para asignar a los alumnos
 
     ###################################
     # Fusionar Soluciones
-    # Órden 23, llamada desde órden 3
+    # Órden 24, llamada desde órden 3
     # Unifica los datos de las soluciones completas y las solapadas
 
     def fusionarSoluciones(self, primeraParte, segundaParte):
@@ -646,7 +660,7 @@ class gruposAsignatura:
 
     ###################################
     # Get Results Alumno
-    # Órden 24, llamada desde Main
+    # Órden 25, llamada desde Main
     # Rellena los resultados por alumno
 
     def getResultsAlumno(self):
