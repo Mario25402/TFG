@@ -157,7 +157,7 @@ class gruposAsignatura:
     # Rellena las asignaturas tanto de teoría como de prácticas
 
     def getResultsAsignaturas(self):
-        solucionesEnteras = []#self.getAulasRellenas(self.combinaciones)
+        solucionesEnteras = self.getAulasRellenas(self.combinaciones)
         solucionesSolapadas = self.setSolapados()
 
         self.solAsignaturas = self.fusionarSoluciones(solucionesEnteras[0], solucionesSolapadas[0])

@@ -34,13 +34,11 @@ class MatriculaHorario():
 
         self.datos = {}         # Datos trascritos de los archivos
         self.sinAsignar = {}    # Datos de subgrupos posibles
-        self.asignados = {}     # Datos de subgrupos asignados
         self.combinaciones = {} # Combinaciones de subgrupos posibles
 
         for alumno in dnis:
             self.datos[alumno] = []
             self.sinAsignar[alumno] = []
-            self.asignados[alumno] = []
             self.combinaciones[alumno] = []
 
         ###
@@ -73,7 +71,7 @@ class MatriculaHorario():
                         if codigosCompletos[j] == '2971132' and gruposTP[j] == 'A1' and not cambio:
                             continue
 
-                        if nombres[j] != "IES":
+                        if nombres[j] != "IES": # No añadir subgrupos de IES
                             codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
 
                             self.sinAsignar[dnis[i]].append({
@@ -241,6 +239,7 @@ class MatriculaHorario():
         for alumno in self.sinAsignar.keys():
             res[alumno] = []
 
+            # Si no tiene combinaciones, coger subgrupos
             if self.combinaciones[alumno] == []:    
                 subgrupos = sorted(self.sinAsignar[alumno], key=lambda x: (x['codigo'], x['grupo']))
 
