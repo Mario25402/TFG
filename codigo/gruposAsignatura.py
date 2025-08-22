@@ -83,7 +83,8 @@ class gruposAsignatura:
         self.matricula = matricula
         self.sinAsignar = sinAsignar
 
-        # Procesar archivo 
+        # Procesar archivo
+        self.cuatrimestre = fileHor[-5]
         df = pd.read_csv(fileHor)
 
         codigos = df["CODIGO"].tolist()
@@ -102,40 +103,19 @@ class gruposAsignatura:
 
             self.datos[clave] = {
                 "codigo" : codigos[i],
-                "capacidadTotal" : 26,
                 "capacidadActual" : 0,
                 "alumnos": [],
                 "horario": codigoHoras,
                 "subgrupos": None
             }
-        
-        ###
-        # Ajustar capacidades a subgrupos y rellenar alumnos
-        self.corregirSubgrupos(codigos, grupos)
+
+        # Unificar Teoria y Subgrupos
         self.corregirIES()
-
-    ###################################
-    # Corregir Subgrupos
-    # Órden 1, llamada desde órden 0
-    # Ajusta la capacidad de los grupos a la unión de la de los subgrupos
-
-    def corregirSubgrupos(self, codigos, grupos):
-        for clave in self.datos.keys():
-            if len(clave[1]) == 1:
-                subgrupos = []
-                patron = f"{clave[1]}."
-
-                for i in range(len(codigos)):
-                    if codigos[i] == self.datos[clave]["codigo"] and re.fullmatch(patron, grupos[i]):
-                        subgrupos.append(grupos[i])
-
-                self.datos[clave]["subgrupos"] = subgrupos
-                self.datos[clave]["capacidadTotal"] *= len(self.datos[clave]["subgrupos"]) 
 
     ###################################
     # Corregir IES
     # Órden 2, llamada desde órden 0
-    # Eliminar subgrupos y corregir horas de IES
+    # Eliminar subgrupos y corregir horas de teoría
 
     def corregirIES(self):
         horas = {}
@@ -179,7 +159,7 @@ class gruposAsignatura:
     # Rellena las asignaturas tanto de teoría como de prácticas
 
     def getResultsAsignaturas(self):
-        solucionesEnteras = self.getAulasRellenas(self.combinaciones)
+        solucionesEnteras = []#self.getAulasRellenas(self.combinaciones)
         solucionesSolapadas = self.setSolapados()
 
         self.solAsignaturas = self.fusionarSoluciones(solucionesEnteras[0], solucionesSolapadas[0])
@@ -187,46 +167,9 @@ class gruposAsignatura:
         ###
         # Rellenar documento
 
-        with open("./res/asignaturasAsignadas.txt", "w") as f:
+        with open(f"./res/asignaturasAsignadas{self.cuatrimestre}.txt", "w") as f:
             for asignatura, datos in self.solAsignaturas.items():
                 f.write(f"Asignatura: {asignatura}:\n {datos}\n\n")
-
-            f.write('\n\n\n\n\n')
-
-            ###
-            # Recuento de plazas que sobran en una asignatura
-
-            sumaEx = 0
-            sumaSob = 0
-            contador = 0
-
-            for asignatura, datos in self.solAsignaturas.items():
-                if datos["capacidadActual"] <= datos["capacidadTotal"]:
-                    resta = datos["capacidadTotal"] - datos["capacidadActual"]
-
-                    f.write(f"Sobrante {contador}: {asignatura} - {resta} alumnos\n")
-
-                    contador += 1
-                    sumaSob += resta
-
-            f.write('\n\n\n\n\n')
-
-            ###
-            # Recuento de plazas que faltan en una asignatura
-
-            contador = 0
-
-            for asignatura, datos in self.solAsignaturas.items():
-                if datos["capacidadActual"] > datos["capacidadTotal"]:
-                    resta = datos["capacidadActual"] - datos["capacidadTotal"]
-                    f.write(f"Exceso {contador}: {asignatura} - {resta} alumnos\n")
-
-                    contador += 1
-                    sumaEx += resta
-
-            f.write('\n\n\n\n\n')
-            f.write(f"Suma sobrantes: {sumaSob}\n")
-            f.write(f"Suma excesos: {sumaEx}\n")
 
             ###
             # Recuento de alumnos matriculados y alumnos asignados
@@ -248,6 +191,7 @@ class gruposAsignatura:
                 if nextAlumno:
                     continue
 
+            f.write('\n\n')
             f.write(f"Alumnos matriculados: {len(matriculados)}, Alumnos asignados: {len(asignados)}\n")
             f.write('\n\n')
 
@@ -288,12 +232,12 @@ class gruposAsignatura:
     ###################################
     # Filtrar Grupos Teoría
     # Órden 6, llamada desde órden 5
-    # Añade los grupos y subgrupos eliminados de IES
+    # Añade los grupos de teoría de IES que no estan en 'alumnos'
 
     def __addIES(self, matricula, resultado):
         for clave in matricula:
             if clave[0] == 'IES':
-                resultado.append(("IES", clave["grupo"]))
+                resultado.append(("IES", clave[1]))
                 break
 
     ###################################
@@ -432,11 +376,11 @@ class gruposAsignatura:
 
         for i, combinacion in enumerate(combinaciones):
             diasBool[i] = {}
-            desviaciones[i] = self.desviaciones(alumno, copy.deepcopy(actual), combinacion)
+            desviaciones[i] = self.desviaciones(alumno, copy.deepcopy(actual), combinacion)            
 
         # Calcular desviaciones de cada asignatura por grupo perteneciente
         mejor = [None, 1000] # indice, valor desviación
-        #desviaciones = self.sortDesviaciones(desviaciones)
+        desviaciones = dict(sorted(desviaciones.items(), key=lambda item: sum(item[1].values()) / len(item[1])))
 
         for i, desv in desviaciones.items():
             desvTotal = sum(list(desv.values()))
@@ -521,30 +465,11 @@ class gruposAsignatura:
         # Calcular desviaciones estándar de los subgrupos de cada asignatura
         for clave in capacidades.keys():
             if len(capacidades[clave]) > 1:
-                desviaciones[clave] = statistics.stdev(capacidades[clave])
+                desviaciones[clave] = statistics.variance(capacidades[clave])
             else:
                 desviaciones[clave] = 0
 
         return desviaciones
-    
-    ###################################
-    # Sort Desviaciones
-    # Órden 13.1, llamada desde órden 13
-    # Ordena las desviaciones de menor a mayor
-    
-    def sortDesviaciones(self, desviaciones):
-        ordenado = {}
-        sumas = {}
-
-        for indice, asignaturas in desviaciones.items():
-            sumas[indice] = 0
-
-            for desviacion in asignaturas.values():
-                sumas[indice] += desviacion
-
-        ordenado = dict(sorted(sumas.items(), key=lambda x: x[1]))
-
-        return ordenado
     
    ###################################
     # Rellenar Subgrupos
@@ -587,6 +512,8 @@ class gruposAsignatura:
 
         # Comprobar que todos los días tienen el mismo resultado
         todoFalse = set(resultados.values()) == {False}
+
+        # Eliminar hora de comer
 
         if todoFalse:
             return False
@@ -634,9 +561,9 @@ class gruposAsignatura:
         return practicas
     
     ###################################
-    # Get Aulas Rellenas
+    # Rellenar Grupos Teoria
     # Órden 20, llamada desde órden 19
-    # Rellena los grupos de teoría y prácticas
+    # Rellena los grupos de teoría de los alumnos
 
     ###################################
     # Filtrar Solapadas
@@ -662,12 +589,17 @@ class gruposAsignatura:
 
                     colisiones[i] = len(horas[i]) - len(set(horas[i]))
 
-                # Calcular la media y seleccionar las que están por debajo
-                mediaColisiones = statistics.mean(list(colisiones.values()))
-                for i in range(len(colisiones)):
-                    if colisiones[i] <= mediaColisiones:
-                        seleccionadas[alumno].append(combinaciones[i])
-                
+                # Agrupar las combinaciones por número de colisiones
+                agrupColisiones = {}
+                for indexComb, colisiones in colisiones.items():
+                    agrupColisiones.setdefault(colisiones, []).append(indexComb)
+
+                # Seleccionar los dos grupos de menores colisiones
+                menoresColisiones = sorted(agrupColisiones.items(), key=lambda x: x[0])[:2]
+                for _, indices in menoresColisiones:
+                    for index in indices:
+                        seleccionadas[alumno].append(combinaciones[index])
+
                 copia[alumno] = seleccionadas[alumno]
 
         combinacionesSelec = 0
@@ -681,7 +613,7 @@ class gruposAsignatura:
             for combinacion in combinaciones:
                 combinacionesOriginales += 1
 
-        print(f"Combinaciones seleccionadas: {combinacionesSelec} de {combinacionesOriginales}")
+        #print(f"Combinaciones seleccionadas: {combinacionesSelec} de {combinacionesOriginales}")
 
         return seleccionadas
     
@@ -731,7 +663,7 @@ class gruposAsignatura:
                     self.solAlumno[alumno].add(asignatura)
 
         # Rellenar documento 
-        with open("./res/alumnosAsignados.txt", "w") as f:
+        with open(f"./res/alumnosAsignados{self.cuatrimestre}.txt", "w") as f:
             vacios = 0
 
             for alumno, asignaturas in self.solAlumno.items():
