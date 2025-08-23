@@ -44,17 +44,33 @@ class MatriculaHorario():
         ###
         # Rellenar "datos" y "sinAsignar"
 
+        # Recorrer matricula por cada alumno
         for i in range(len(dnis)):
             patronSgn = f"{carreras[i]}..{codigos[i]}"
             patronSgp = f"{grupos[i]}."
 
+            # FIS(A1) solo ADE
             cambio = False
             if patronSgn == '216..3B':
                 cambio = True
                 patronSgn = '297..32'
 
+
+            # Unificar grupos donde los dobles grados van juntos
+            sustituciones = {
+                '216..34': '297..3B', # SCD
+                '216..35': '297..33', # FR
+                '216..44': '297..45', # IG
+                '216..45': '297..43', # DDSI
+                                      # FIS
+                '216..3C': '297..39', # ISE
+                '216..3A': '297..3A'  # IA
+            }
+            patronSgn = sustituciones.get(patronSgn, patronSgn)
+
+            # Buscar en horarios la asignatura
             for j in range(len(codigosCompletos)):
-                if re.fullmatch(patronSgn, codigosCompletos[j]):
+                if re.fullmatch(patronSgn, codigosCompletos[j]): # Teoría
 
                     if grupos[i] == gruposTP[j]:
                         codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
@@ -66,8 +82,9 @@ class MatriculaHorario():
                             "horario": codigoHoras
                         })
 
-                    elif re.fullmatch(patronSgp, gruposTP[j]):
+                    elif re.fullmatch(patronSgp, gruposTP[j]): # Prácticas
 
+                        # Solo asignar FIS(A1) a alumnos de ADE
                         if codigosCompletos[j] == '2971132' and gruposTP[j] == 'A1' and not cambio:
                             continue
 
@@ -81,6 +98,7 @@ class MatriculaHorario():
                                 "horario": codigoHoras
                             })
 
+                        # Ajustar horas de teoría y prácticas de ISE
                         else:
                             codigoHoras = [int(x) for lista in horas for x in [lista[j]] if pd.notna(x)]
                             self.datos[dnis[i]][len(self.datos[dnis[i]])-1]["horario"].extend(codigoHoras)
