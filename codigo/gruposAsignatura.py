@@ -103,7 +103,7 @@ class gruposAsignatura:
 
             self.datos[clave] = {
                 "codigo" : codigos[i],
-                "capacidadActual" : 0,
+                "capacidad" : 0,
                 "alumnos": [],
                 "horario": codigoHoras
             }
@@ -149,7 +149,7 @@ class gruposAsignatura:
                     if asignatura["asignatura"] == 'IES':
                         clave = (asignatura["asignatura"], asignatura["grupo"])
                         self.datos[clave]["alumnos"].append(alumno)
-                        self.datos[clave]["capacidadActual"] += 1
+                        self.datos[clave]["capacidad"] += 1
 
     ###################################
     # Get Results Asignaturas
@@ -190,8 +190,7 @@ class gruposAsignatura:
                     continue
 
             f.write('\n\n')
-            f.write(f"Alumnos matriculados: {len(matriculados)}, Alumnos asignados: {len(asignados)}\n")
-            f.write('\n\n')
+            print(f"Alumnos matriculados: {len(matriculados)}, Alumnos asignados: {len(asignados)}\n")
 
     ###################################
     # Get Aulas Rellenas
@@ -249,7 +248,7 @@ class gruposAsignatura:
                 for clave in claves:
                     if alumno not in self.datos[clave]["alumnos"]:
                         self.datos[clave]["alumnos"].append(alumno)
-                        self.datos[clave]["capacidadActual"] += 1
+                        self.datos[clave]["capacidad"] += 1
 
     ###################################
     # Filtrar Subgrupos
@@ -315,7 +314,7 @@ class gruposAsignatura:
 
             if alumno not in configuracion[clave]["alumnos"]:
                 configuracion[clave]["alumnos"].append(alumno)
-                configuracion[clave]["capacidadActual"] += 1
+                configuracion[clave]["capacidad"] += 1
 
     ###################################
     # Sort
@@ -458,7 +457,7 @@ class gruposAsignatura:
 
             # Añadir capacidad actual de cada subgrupo
             for clave in clavesSubgrupos:
-                capacidades[clave[0]].append(configuracion[clave]["capacidadActual"])
+                capacidades[clave[0]].append(configuracion[clave]["capacidad"])
 
         # Calcular desviaciones estándar de los subgrupos de cada asignatura
         for clave in capacidades.keys():
@@ -654,7 +653,7 @@ class gruposAsignatura:
             else:
                 parteCompleta[asignatura]["alumnos"].extend(datos["alumnos"])
                 parteCompleta[asignatura]["alumnos"] = list(set(parteCompleta[asignatura]["alumnos"]))
-                parteCompleta[asignatura]["capacidadActual"] = len(parteCompleta[asignatura]["alumnos"])
+                parteCompleta[asignatura]["capacidad"] = len(parteCompleta[asignatura]["alumnos"])
 
         return parteCompleta
 
@@ -688,6 +687,8 @@ class gruposAsignatura:
                 else:
                     for asignatura in sorted(asignaturas):
                         abrv, grupo = asignatura
-                        f.write(f"{abrv} - {grupo}\n")
+                        horas = self.datos[asignatura]["horario"]
 
-            f.write(f"\nAlumnos sin asignaturas: {vacios}\n")
+                        f.write(f"{abrv} - {grupo} - [{', '.join(map(str, horas))}]\n")
+
+            print(f"\nAlumnos sin asignaturas: {vacios}\n")

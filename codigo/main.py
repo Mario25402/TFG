@@ -1,4 +1,5 @@
 import sys
+import consultaAsignatura
 from matriculaHorario import *
 from gruposAsignatura import *
 
@@ -24,6 +25,11 @@ def main():
 
     clases2.getResultsAsignaturas()
     clases2.getResultsAlumno()
+
+    ###
+    # PDF
+    
+    consultaAsignatura.execute()
 
 ##########
 
