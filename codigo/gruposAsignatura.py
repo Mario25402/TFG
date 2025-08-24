@@ -338,16 +338,19 @@ class gruposAsignatura:
             codigos = []
             grupos = []
 
+            # Reunir asignaturas del alumno
             for asignatura in datos[1][0]:
                 codigos.append(asignatura["codigo"])
                 grupos.append(asignatura["grupo"][0])
 
+            # Comprobar que solo hay un grupo
             repetidos = set(grupos)
             if len(repetidos) > 1:
                 continue
 
+            # Comprobar que las asignaturas pertenecen a un mismo curso
             for curso in CURSOSCOMPLETOS:
-                if sorted(codigos) == sorted(curso):
+                if sorted(codigos) in sorted(curso):
                     completo[datos[0]] = True
                     break
 

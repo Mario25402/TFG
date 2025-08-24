@@ -49,8 +49,6 @@ def exportPDF(objeto, nombrePDF="salida.pdf"):
     # Titulo
     titulo = Paragraph("Reparto de Alumnos por Asignatura y Grupo", getSampleStyleSheet()["Title"])
     contenido.append(titulo)
-
-    # Espacio debajo del título
     contenido.append(Spacer(1, 20))
 
     ###
