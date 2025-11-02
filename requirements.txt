@@ -1,0 +1,9 @@
+charset-normalizer==3.4.4
+numpy==2.2.6
+pandas==2.3.3
+pillow==12.0.0
+python-dateutil==2.9.0.post0
+pytz==2025.2
+reportlab==4.4.4
+six==1.17.0
+tzdata==2025.2

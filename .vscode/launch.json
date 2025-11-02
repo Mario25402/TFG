@@ -8,7 +8,7 @@
             "name": "Main",
             "type": "debugpy",
             "request": "launch",
-            "program": "codigo/main.py",
+            "program": "src/main.py",
             "console": "integratedTerminal"
         }
     ]

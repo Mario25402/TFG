@@ -1,5 +1,6 @@
 import ast
 import statistics
+from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
@@ -8,8 +9,10 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Spacer, Par
 ########################################
 # Rutas de los archivos
 
-PRIMERCUATRI = './res/asignaturasAsignadas1.txt'
-SEGUNDOCUATRI = './res/asignaturasAsignadas2.txt'
+DIR_PATH = Path(__file__).parent.resolve()
+
+PRIMERCUATRI = DIR_PATH / ".." / "output" / "asignaturasAsignadas1.txt"
+SEGUNDOCUATRI = DIR_PATH / ".." / "output" / "asignaturasAsignadas2.txt"
 
 ###
 # Convierte el texto en información estructurada
@@ -139,4 +142,5 @@ def execute():
     ###
     # Salida
 
-    exportPDF(res, "./res/repartoAsignaturas.pdf")
+    ruta = DIR_PATH / ".." / "output" / "repartoAsignaturas.pdf"
+    exportPDF(res, str(ruta))

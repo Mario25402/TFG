@@ -1,3 +1,4 @@
+from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import letter, landscape
@@ -6,8 +7,10 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Spacer, Par
 ########################################
 # Rutas de los archivos
 
-PRIMERCUATRI = './res/alumnosAsignados1.txt'
-SEGUNDOCUATRI = './res/alumnosAsignados2.txt'
+DIR_PATH = Path(__file__).parent.resolve()
+
+PRIMERCUATRI = DIR_PATH / ".." / "output" / "alumnosAsignados1.txt"
+SEGUNDOCUATRI = DIR_PATH / ".." / "output" / "alumnosAsignados2.txt"
 
 ###
 # Convierte el texto en información estructurada
@@ -53,9 +56,9 @@ def procesarTexto(ruta):
 
 ###
 
-def exportPDF(primerCuatri, segundoCuatri, alumno, nombrePDF="salida.pdf"):
+def exportPDF(primerCuatri, segundoCuatri, alumno, ruta="salida.pdf"):
     # Crear documento
-    doc = SimpleDocTemplate(nombrePDF, pagesize=landscape(letter))
+    doc = SimpleDocTemplate(ruta, pagesize=landscape(letter))
     contenido = []
 
     ###
@@ -197,5 +200,6 @@ dni = input("\nIntroduzca su identificador de alumno: ")
 ###
 # Salida
 
-exportPDF(datos1[dni], datos2[dni], dni, f"./res/alumnos/{dni}.pdf")
+ruta = DIR_PATH / ".." / "output" / "alumnos" / f"{dni}.pdf"
+exportPDF(datos1[dni], datos2[dni], dni, str(ruta))
 

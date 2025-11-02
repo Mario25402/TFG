@@ -2,6 +2,7 @@ import re
 import copy
 import statistics
 import pandas as pd
+from pathlib import Path
 
 ###############################################################################
 
@@ -69,6 +70,8 @@ CURSOSCOMPLETOS.extend(INFO)
 CURSOSCOMPLETOS.extend(MATES)
 CURSOSCOMPLETOS.extend(ADE)
 
+DIR_PATH = Path(__file__).parent.resolve()
+
 ###############################################################################
 
 class gruposAsignatura:
@@ -84,7 +87,7 @@ class gruposAsignatura:
         self.sinAsignar = sinAsignar
 
         # Procesar archivo
-        self.cuatrimestre = fileHor[-5]
+        self.cuatrimestre = str(fileHor)[-5]
         df = pd.read_csv(fileHor)
 
         codigos = df["CODIGO"].tolist()
@@ -166,7 +169,8 @@ class gruposAsignatura:
         ###
         # Rellenar documento
 
-        with open(f"./res/asignaturasAsignadas{self.cuatrimestre}.txt", "w") as f:
+        ruta = DIR_PATH / ".." / "output" / f"asignaturasAsignadas{self.cuatrimestre}.txt"
+        with open(str(ruta), "w") as f:
             for asignatura, datos in self.solAsignaturasFinal.items():
                 f.write(f"Asignatura: {asignatura}:\n {datos}\n\n")
 
@@ -752,8 +756,9 @@ class gruposAsignatura:
                 if asignatura not in self.solAlumno[alumno]:
                     self.solAlumno[alumno].add(asignatura)
 
-        # Rellenar documento 
-        with open(f"./res/alumnosAsignados{self.cuatrimestre}.txt", "w") as f:
+        # Rellenar documento
+        ruta = DIR_PATH / ".." / "output" / f"alumnosAsignados{self.cuatrimestre}.txt"
+        with open(str(ruta), "w") as f:
             vacios = 0
 
             for alumno, asignaturas in self.solAlumno.items():

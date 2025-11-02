@@ -17,7 +17,6 @@ class matriculaHorario():
         dnis = df["DNI"].tolist()
         codigos = df["CEA"].tolist()
         grupos = df["GRUPO"].tolist()
-        #denominaciones = df["DENOMINACIÓN"].tolist()
 
         ###
         # Cargar horarios

@@ -1,4 +1,6 @@
-/prueba
-.vscode
-/codigo/__pycache__/
-/codigo/.venv
+venv/
+__pycache__/
+
+.vscode/
+
+.DS_Store
