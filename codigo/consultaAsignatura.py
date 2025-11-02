@@ -1,4 +1,5 @@
 import ast
+import statistics
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet
@@ -32,7 +33,7 @@ def procesarTexto(ruta):
 
             # Información de cada entrada
             else:
-                valores = ast.literal_eval(linea)  # convierte texto en valorest
+                valores = ast.literal_eval(linea)  # convierte texto en valores
                 datos[clave_actual] = valores
 
     return datos
@@ -54,7 +55,7 @@ def exportPDF(objeto, nombrePDF="salida.pdf"):
     ###
 
     # Cabeceras de la tabla
-    info = [["Asignatura", "Grupo", "Teoría", "Subgrupos (S1, S2, S3, S4)"]]
+    info = [["Asignatura", "Grupo", "Teoría", "Subgrupos (S1, S2, S3, S4)", "Desviación"]]
 
     # Convertir el objeto a filas
     for asignatura, grupos in objeto.items():
@@ -70,13 +71,19 @@ def exportPDF(objeto, nombrePDF="salida.pdf"):
                 teoria = ""
                 resto = []
 
+            # Desviación entre subgrupos
+            if len(resto) > 1:
+                desviacion = round(statistics.stdev([int(x) for x in resto]), 2)
+            else:
+                desviacion = 0
+
             # Rellenar
-            info.append([asignatura, grupo, str(teoria), ", ".join(map(str, resto))])
+            info.append([asignatura, grupo, str(teoria), ", ".join(map(str, resto)), str(desviacion)])
 
     ###
 
     # Crear la tabla
-    tabla = Table(info, colWidths=[80, 50, 75, 180])
+    tabla = Table(info, colWidths=[80, 50, 75, 160, 70])
     tabla.setStyle(TableStyle([
         ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#11645d")),
         ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
