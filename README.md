@@ -1,6 +1,6 @@
 # Iniciar entorno virtual
 
-```cmd
+```bash
 python3 -m venv venv
 ```
 
@@ -8,22 +8,34 @@ python3 -m venv venv
 
 - Linux:
 
-```cmd
+```bash
 source venv/bin/activate
 ```
-- Windows
+- Windows (Powershell)
 
-```cmd
+```powershell
 venv\Scripts\activate
 ```
 
+## Excepciones (Windows)
+
+- Si durante cualquier paso del proceso, en cuanto a la terminal, da error de dependencias, ejecutar **python.exe** en lugar de **python3**.
+
+- Si powershell indica que no es posible la ejecución de código ya que no tenemos permisos, podemos ejecutar el siguiente comando para permitirlos temporalmente en la sesión que tenemos activa:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+- Las rutas en Windows se indican con la barra invertida "\\", en lugar de la normal "/".
+
 # Instalar dependencias
 
-```cmd
+```bash
 pip install -r requirements.txt
 ```
 
 # Ejecutar
-```cmd
+```bash
 python3 src/main.py
 ```
