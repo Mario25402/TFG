@@ -174,29 +174,6 @@ class gruposAsignatura:
             for asignatura, datos in self.solAsignaturasFinal.items():
                 f.write(f"Asignatura: {asignatura}:\n {datos}\n\n")
 
-            ###
-            # Recuento de alumnos matriculados y alumnos asignados
-
-            asignados = []
-            matriculados = []
-            
-            for alumno in self.matricula.keys():
-                if len(self.matricula[alumno]) > 0:
-                    matriculados.append(alumno) # Matriculados
-
-                nextAlumno = False
-                for asignatura, datos in self.solAsignaturasFinal.items():
-                    if alumno in datos["alumnos"]:
-                        asignados.append(alumno) # Asignados
-                        nextAlumno = True
-                        break
-
-                if nextAlumno:
-                    continue
-
-            f.write('\n\n')
-            print(f"Alumnos matriculados: {len(matriculados)}, Alumnos asignados: {len(asignados)}\n")
-
     ###################################
     # Rellenar Aulas
     # Órden 4, llamada desde órden 3
@@ -655,19 +632,6 @@ class gruposAsignatura:
 
                 copia[alumno] = seleccionadas[alumno]
 
-        combinacionesSelec = 0
-        combinacionesOriginales = 0
-
-        for alumno, combinaciones in seleccionadas.items():
-            for combinacion in combinaciones:
-                combinacionesSelec += 1
-
-        for alumno, combinaciones in self.sinAsignar.items():
-            for combinacion in combinaciones:
-                combinacionesOriginales += 1
-
-        print(f"Combinaciones seleccionadas: {combinacionesSelec} de {combinacionesOriginales}")
-
         return seleccionadas
     
      ###################################
@@ -759,18 +723,12 @@ class gruposAsignatura:
         # Rellenar documento
         ruta = DIR_PATH / ".." / "output" / f"alumnosAsignados{self.cuatrimestre}.txt"
         with open(str(ruta), "w") as f:
-            vacios = 0
-
             for alumno, asignaturas in self.solAlumno.items():
                 f.write(f"\n{alumno}:\n")
 
-                if (len(asignaturas) == 0):
-                        vacios += 1
-                else:
+                if (len(asignaturas) > 0):
                     for asignatura in sorted(asignaturas):
                         abrv, grupo = asignatura
                         horas = self.datos[asignatura]["horario"]
 
                         f.write(f"{abrv} - {grupo} - [{', '.join(map(str, horas))}]\n")
-
-            print(f"\nAlumnos sin asignaturas: {vacios}\n")
