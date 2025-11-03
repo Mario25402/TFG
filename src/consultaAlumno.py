@@ -1,3 +1,5 @@
+import sys
+import argparse
 from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
@@ -195,11 +197,21 @@ datos2 = procesarTexto(SEGUNDOCUATRI)
 ###
 # Entrada
 
-dni = input("\nIntroduzca su identificador de alumno: ")
+parser = argparse.ArgumentParser(description="Argumento con entrada manual si falta")
+parser.add_argument("id", nargs="?", help="DNI del usuario")
+args = parser.parse_args()
+
+if not args.id:
+	args.id = input("Por favor, ingresa tu nombre: ")
 
 ###
 # Salida
 
-ruta = DIR_PATH / ".." / "output" / "alumnos" / f"{dni}.pdf"
-exportPDF(datos1[dni], datos2[dni], dni, str(ruta))
+ruta = DIR_PATH / ".." / "output" / "alumnos" / f"{args.id}.pdf"
+
+if not args.id in datos1.keys() and not args.id in datos2.keys():
+	print("\nClave erronea. Cancelando ejecución.")
+	sys.exit(1)	
+else:
+	exportPDF(datos1[args.id], datos2[args.id], args.id, str(ruta))
 
