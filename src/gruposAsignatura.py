@@ -163,7 +163,7 @@ class gruposAsignatura:
         ###
         # Rellenar documento
 
-        ruta = DIR_PATH / ".." / "output" / f"asignaturasAsignadas{self.cuatrimestre}.txt"
+        ruta = DIR_PATH / ".." / "output" / "raw" / f"asignaturasAsignadas{self.cuatrimestre}.txt"
         with open(str(ruta), "w") as f:
             for asignatura, datos in self.solAsignaturasFinal.items():
                 f.write(f"Asignatura: {asignatura}:\n {datos}\n\n")
@@ -715,7 +715,7 @@ class gruposAsignatura:
                     self.solAlumno[alumno].add(asignatura)
 
         # Rellenar documento
-        ruta = DIR_PATH / ".." / "output" / f"alumnosAsignados{self.cuatrimestre}.txt"
+        ruta = DIR_PATH / ".." / "output" / "raw" / f"alumnosAsignados{self.cuatrimestre}.txt"
         with open(str(ruta), "w") as f:
             for alumno, asignaturas in self.solAlumno.items():
                 f.write(f"\n{alumno}:\n")

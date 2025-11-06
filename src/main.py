@@ -1,4 +1,5 @@
 import sys
+import consultaGeneral
 import consultaAsignatura
 
 from pathlib import Path
@@ -33,6 +34,7 @@ def main():
     ###
     # PDF
     
+    consultaGeneral.execute()
     consultaAsignatura.execute()
 
 ##########

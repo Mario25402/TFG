@@ -11,8 +11,8 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Spacer, Par
 
 DIR_PATH = Path(__file__).parent.resolve()
 
-PRIMERCUATRI = DIR_PATH / ".." / "output" / "alumnosAsignados1.txt"
-SEGUNDOCUATRI = DIR_PATH / ".." / "output" / "alumnosAsignados2.txt"
+PRIMERCUATRI = DIR_PATH / ".." / "output" / "raw" / "alumnosAsignados1.txt"
+SEGUNDOCUATRI = DIR_PATH / ".." / "output" / "raw" / "alumnosAsignados2.txt"
 
 ###
 # Convierte el texto en información estructurada
