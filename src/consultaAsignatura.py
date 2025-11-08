@@ -2,6 +2,7 @@ import ast
 from pathlib import Path
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
+from reportlab.lib.enums import TA_CENTER
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Spacer, Paragraph
 
@@ -57,13 +58,19 @@ def exportPDF(objeto, ruta):
             doc = SimpleDocTemplate(str(rutaFinal), pagesize=A4)
             contenido = []
 
-            # Titulo y Cabeceras de la tabla
+            # Titulos y cabeceras de la tabla
             titulo = Paragraph(f"{asignatura} {grupo}", getSampleStyleSheet()["Title"])
+
+            estilo = getSampleStyleSheet()["Heading2"]
+            estilo.alignment = TA_CENTER
+            subtitulo = Paragraph(f"Alumnos: {len(lista_grupos[0])}", estilo)
+
             cabecera = [["DNI", "Subgrupo"]]
             info = []
 
             contenido.append(titulo)
-            contenido.append(Spacer(1, 20))
+            contenido.append(subtitulo)
+            contenido.append(Spacer(1, 12))
 
             ###
 
@@ -146,5 +153,3 @@ def execute():
 
     ruta = DIR_PATH / ".." / "output" / "asignaturas" 
     exportPDF(res, ruta)
-
-execute()
