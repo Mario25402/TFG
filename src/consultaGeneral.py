@@ -125,7 +125,7 @@ def execute():
     for clave, valores in datos1.items():
         if clave[0] == 'TDRC':
             clave = ('TDRC(T)', clave[1])
-        res[str(clave[0])][str(clave[1])[0]].append(valores["capacidad"])
+        res[str(clave[0])][str(clave[1])[0]].append(valores["ocupacion"])
 
     ###
     # Segundo Cuatrimestre
@@ -137,7 +137,7 @@ def execute():
         res[str(clave[0])][str(clave[1])[0]] = []
 
     for clave, valores in datos2.items():
-        res[str(clave[0])][str(clave[1])[0]].append(valores["capacidad"])
+        res[str(clave[0])][str(clave[1])[0]].append(valores["ocupacion"])
 
     ###
     # Salida

@@ -100,7 +100,7 @@ class gruposAsignatura:
 
             self.datos[clave] = {
                 "codigo" : codigos[i],
-                "capacidad" : 0,
+                "ocupacion" : 0,
                 "alumnos": [],
                 "horario": codigoHoras
             }
@@ -146,7 +146,7 @@ class gruposAsignatura:
                     if asignatura["asignatura"] == 'IES':
                         clave = (asignatura["asignatura"], asignatura["grupo"])
                         self.datos[clave]["alumnos"].append(alumno)
-                        self.datos[clave]["capacidad"] += 1
+                        self.datos[clave]["ocupacion"] += 1
 
     ###################################
     # Asignar Asignaturas
@@ -225,7 +225,7 @@ class gruposAsignatura:
                 for clave in claves:
                     if alumno not in self.datos[clave]["alumnos"]:
                         self.datos[clave]["alumnos"].append(alumno)
-                        self.datos[clave]["capacidad"] += 1
+                        self.datos[clave]["ocupacion"] += 1
 
     ###################################
     # Filtrar Subgrupos
@@ -291,7 +291,7 @@ class gruposAsignatura:
 
             if alumno not in configuracion[clave]["alumnos"]:
                 configuracion[clave]["alumnos"].append(alumno)
-                configuracion[clave]["capacidad"] += 1
+                configuracion[clave]["ocupacion"] += 1
 
     ###################################
     # Sort
@@ -468,7 +468,7 @@ class gruposAsignatura:
 
             # Añadir capacidad actual de cada subgrupo
             for clave in clavesSubgrupos:
-                capacidades[clave[0]].append(configuracion[clave]["capacidad"])
+                capacidades[clave[0]].append(configuracion[clave]["ocupacion"])
 
         # Calcular desviaciones estándar de los subgrupos de cada asignatura
         for clave in capacidades.keys():
@@ -651,7 +651,7 @@ class gruposAsignatura:
             else:
                 parteCompleta[asignatura]["alumnos"].extend(datos["alumnos"])
                 parteCompleta[asignatura]["alumnos"] = list(set(parteCompleta[asignatura]["alumnos"]))
-                parteCompleta[asignatura]["capacidad"] = len(parteCompleta[asignatura]["alumnos"])
+                parteCompleta[asignatura]["ocupacion"] = len(parteCompleta[asignatura]["alumnos"])
 
         return parteCompleta
     
@@ -694,7 +694,7 @@ class gruposAsignatura:
             clave = (asignatura["asignatura"], asignatura["grupo"])
 
             reparto[clave]["alumnos"].remove(alumno)
-            reparto[clave]["capacidad"] -= 1
+            reparto[clave]["ocupacion"] -= 1
 
     ###################################
     # Get Results Alumno
