@@ -371,17 +371,12 @@ class gruposAsignatura:
             soluciones.append(copy.deepcopy(actual))
             return True
         
-        diasBool = {}
         desviaciones = {}
         combEliminadas = []
 
         alumno, combinaciones = alumnos[indice]
 
-        if alumno == 37947823:
-            pass
-
         for i, combinacion in enumerate(combinaciones):
-            diasBool[i] = {}
             desviaciones[i] = self.calcDesviaciones(alumno, copy.deepcopy(actual), combinacion)
 
         # Calcular desviaciones de cada asignatura por grupo perteneciente
@@ -406,7 +401,7 @@ class gruposAsignatura:
                 horas.update(asignatura["horario"])
 
             # Eliminar combinaciones con horas muy separadas
-            if self.isSeparacionHoras(horas, asignaturas, diasBool[i]):
+            if self.isSeparacionHoras(horas, asignaturas):
                 combEliminadas.append((i, combinaciones[i]))
                 continue
 
@@ -489,7 +484,7 @@ class gruposAsignatura:
     # Órden 16, llamada desde órden 13
     # Comprueba si las horas de un alumno están muy separadas
 
-    def isSeparacionHoras(self, horas, asignaturas, resultado):
+    def isSeparacionHoras(self, horas, asignaturas):
 
         # Añadir horas de teoría
         for asignatura in asignaturas:
@@ -528,7 +523,6 @@ class gruposAsignatura:
         if todoFalse:
             return False
         
-        resultado = resultados
         return True
     
     ###################################
