@@ -663,7 +663,6 @@ class gruposAsignatura:
     def repaso(self, reparto):
         explorados = set() # Estudiantes cambiados
         sol = []
-        estudiante = 1
 
         for par, contenido in reparto.items():
             if len(par[1]) == 1: # Buscar en grupos de teoría
@@ -671,7 +670,6 @@ class gruposAsignatura:
                     if alumno not in explorados and len(self.combinaciones[alumno]) > 1:
                         # Marcar alumno como cambiado
                         explorados.add(alumno)
-                        estudiante += 1
 
                         # Eliminar alumno de sus subgrupos
                         self.__desmatricular(alumno, reparto)

@@ -59,7 +59,7 @@ def exportPDF(objeto, ruta):
             contenido = []
 
             # Titulos y cabeceras de la tabla
-            titulo = Paragraph(f"{asignatura} {grupo}", getSampleStyleSheet()["Title"])
+            titulo = Paragraph(f"Asignatura: {asignatura} - Grupo: {grupo}", getSampleStyleSheet()["Title"])
 
             estilo = getSampleStyleSheet()["Heading2"]
             estilo.alignment = TA_CENTER
