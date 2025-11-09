@@ -443,11 +443,11 @@ class gruposAsignatura:
         desviaciones = {}
         capacidades = {}
 
+        # Guardar codigos y grupos de las asignaturas añadidas
         asignaturasModificadas = [combinacion[i]["asignatura"] for i in range(len(combinacion))]
         gruposModificados = [combinacion[i]["grupo"] for i in range(len(combinacion))]
 
         for i in range(len(asignaturasModificadas)):
-
             patron = f"{gruposModificados[i][:-1]}."
             clavesSubgrupos = []
 
