@@ -39,3 +39,9 @@ pip install -r requirements.txt
 ```bash
 python3 src/main.py
 ```
+
+## Consultar horario de un alumno
+```bash
+python3 src/consultaAlumno.py <dni>
+```
+- Este script puede recibirá un identificador de un alumno, en este caso el DNI, y devolverá un PDF con el horario. La entrada puede darse como un parámetro de ejecución o si no se especifica, se pedirá dentro del script una vez iniciada su ejecución.
