@@ -202,7 +202,7 @@ parser.add_argument("id", nargs="?", help="DNI del usuario")
 args = parser.parse_args()
 
 if not args.id:
-	args.id = input("Por favor, ingresa tu nombre: ")
+	args.id = input("Por favor, ingresa tu identificador: ")
 
 ###
 # Salida
